@@ -116,11 +116,24 @@ export function Chart({ props }: { props: ChartComponent['props'] }) {
     }
   };
 
+  const chart = renderChart();
+
+  if (!chart) {
+    return (
+      <div style={{ width: '100%' }}>
+        {title && <h3 className="re-card-title">{title}</h3>}
+        <div style={{ padding: '2rem', textAlign: 'center', color: 'var(--re-text-secondary)' }}>
+          Unsupported chart type: {chartType}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div style={{ width: '100%' }}>
       {title && <h3 className="re-card-title">{title}</h3>}
       <ResponsiveContainer width="100%" height={300}>
-        {renderChart()}
+        {chart}
       </ResponsiveContainer>
     </div>
   );

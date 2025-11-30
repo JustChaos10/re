@@ -14,7 +14,7 @@
     "./styles.css": "./dist/index.css"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --external react --external react-dom",
+    "build": "tsup src/index.ts --format cjs,esm --dts --external react --external react-dom && cp src/styles/index.css dist/index.css",
     "dev": "tsup src/index.ts --format cjs,esm --dts --external react --external react-dom --watch"
   },
   "keywords": ["react", "ui", "components"],
