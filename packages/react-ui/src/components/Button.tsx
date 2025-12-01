@@ -8,7 +8,7 @@ export interface ButtonProps {
 }
 
 export function Button({ props, onAction }: ButtonProps) {
-  const { label, variant = 'primary', size = 'md', onClick, disabled } = props;
+  const { label = 'Button', variant = 'primary', size = 'md', onClick, disabled } = props;
 
   const handleClick = () => {
     if (onClick && onAction) {
@@ -16,13 +16,16 @@ export function Button({ props, onAction }: ButtonProps) {
     }
   };
 
+  // Ensure label is not empty
+  const buttonLabel = label && label.trim() !== '' ? label : 'Button';
+
   return (
     <button
       className={clsx('re-button', `re-button-${variant}`, `re-button-${size}`)}
       onClick={handleClick}
       disabled={disabled}
     >
-      {label}
+      {buttonLabel}
     </button>
   );
 }

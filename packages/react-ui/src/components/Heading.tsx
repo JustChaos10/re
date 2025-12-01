@@ -3,8 +3,11 @@ import clsx from 'clsx';
 import { HeadingComponent } from '@re/core';
 
 export function Heading({ props }: { props: HeadingComponent['props'] }) {
-  const { content, level = 2 } = props;
+  const { content = 'Heading', level = 2 } = props;
   const Tag = `h${level}` as keyof JSX.IntrinsicElements;
 
-  return <Tag className={clsx('re-heading', `re-heading-${level}`)}>{content}</Tag>;
+  // Ensure content is not empty
+  const headingContent = content && content.trim() !== '' ? content : 'Heading';
+
+  return <Tag className={clsx('re-heading', `re-heading-${level}`)}>{headingContent}</Tag>;
 }
