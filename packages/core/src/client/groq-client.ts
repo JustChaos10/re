@@ -82,13 +82,14 @@ export class GroqClient {
 
   constructor(config: ReClientConfig) {
     this.config = {
-      model: 'llama-3.1-70b-versatile',
+      model: 'llama-3.3-70b-versatile',
       temperature: 0.7,
       maxTokens: 4096,
       ...config,
     };
     this.client = new Groq({
       apiKey: config.apiKey,
+      dangerouslyAllowBrowser: true,
     });
   }
 

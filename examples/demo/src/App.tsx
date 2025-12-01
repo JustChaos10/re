@@ -83,6 +83,7 @@ function ChatDemo() {
       <div className="chat-wrapper">
         <ReChat
           apiKey={apiKey}
+          model="llama-3.3-70b-versatile"
           placeholder="Ask me to create a UI... (e.g., 'Show me a sales dashboard')"
           className="chat-interface"
           onError={(error) => {

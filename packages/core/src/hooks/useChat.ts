@@ -80,6 +80,9 @@ export function useChat(options: UseChatOptions): UseChatReturn {
           {
             prompt: content,
             messages: history,
+            model: options.model,
+            temperature: options.temperature,
+            maxTokens: options.maxTokens,
           },
           {
             onComponent: (comps) => {
