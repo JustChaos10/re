@@ -1,0 +1,479 @@
+{
+  "prompt": "Display team members with roles",
+  "generatedAt": "2025-12-04T07:11:40.371Z",
+  "response": {
+    "components": [
+      {
+        "id": "team-page",
+        "type": "stack",
+        "props": {
+          "gap": "xl"
+        },
+        "children": [
+          {
+            "id": "page-header",
+            "type": "section",
+            "props": {
+              "title": "Our Talented Team",
+              "subtitle": "Meet the dedicated individuals driving our success across various departments."
+            }
+          },
+          {
+            "id": "members-list",
+            "type": "stack",
+            "props": {
+              "gap": "md"
+            },
+            "children": [
+              {
+                "id": "member-card-1",
+                "type": "card",
+                "props": {
+                  "variant": "outline",
+                  "padding": "md"
+                },
+                "children": [
+                  {
+                    "id": "member-1-layout",
+                    "type": "split",
+                    "props": {
+                      "ratio": "1:4",
+                      "gap": "md",
+                      "align": "center"
+                    },
+                    "children": [
+                      {
+                        "id": "avatar-1",
+                        "type": "avatar",
+                        "props": {
+                          "name": "Elena Petrova",
+                          "status": "online",
+                          "size": "lg"
+                        }
+                      },
+                      {
+                        "id": "info-1",
+                        "type": "stack",
+                        "props": {
+                          "gap": "xs"
+                        },
+                        "children": [
+                          {
+                            "id": "name-1",
+                            "type": "text",
+                            "props": {
+                              "content": "Elena Petrova",
+                              "weight": "bold",
+                              "size": "lg"
+                            }
+                          },
+                          {
+                            "id": "role-row-1",
+                            "type": "container",
+                            "props": {
+                              "direction": "row",
+                              "gap": "sm",
+                              "align": "center"
+                            },
+                            "children": [
+                              {
+                                "id": "badge-1",
+                                "type": "badge",
+                                "props": {
+                                  "label": "CEO & Founder",
+                                  "variant": "primary"
+                                }
+                              },
+                              {
+                                "id": "icon-1",
+                                "type": "icon",
+                                "props": {
+                                  "name": "mail",
+                                  "size": "sm",
+                                  "color": "muted"
+                                }
+                              },
+                              {
+                                "id": "email-1",
+                                "type": "text",
+                                "props": {
+                                  "content": "elena.p@example.com",
+                                  "size": "sm",
+                                  "color": "#666"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "member-card-2",
+                "type": "card",
+                "props": {
+                  "variant": "outline",
+                  "padding": "md"
+                },
+                "children": [
+                  {
+                    "id": "member-2-layout",
+                    "type": "split",
+                    "props": {
+                      "ratio": "1:4",
+                      "gap": "md",
+                      "align": "center"
+                    },
+                    "children": [
+                      {
+                        "id": "avatar-2",
+                        "type": "avatar",
+                        "props": {
+                          "name": "David Kim",
+                          "status": "away",
+                          "size": "lg"
+                        }
+                      },
+                      {
+                        "id": "info-2",
+                        "type": "stack",
+                        "props": {
+                          "gap": "xs"
+                        },
+                        "children": [
+                          {
+                            "id": "name-2",
+                            "type": "text",
+                            "props": {
+                              "content": "David Kim",
+                              "weight": "bold",
+                              "size": "lg"
+                            }
+                          },
+                          {
+                            "id": "role-row-2",
+                            "type": "container",
+                            "props": {
+                              "direction": "row",
+                              "gap": "sm",
+                              "align": "center"
+                            },
+                            "children": [
+                              {
+                                "id": "badge-2",
+                                "type": "badge",
+                                "props": {
+                                  "label": "Lead Engineer",
+                                  "variant": "info"
+                                }
+                              },
+                              {
+                                "id": "icon-2",
+                                "type": "icon",
+                                "props": {
+                                  "name": "mail",
+                                  "size": "sm",
+                                  "color": "muted"
+                                }
+                              },
+                              {
+                                "id": "email-2",
+                                "type": "text",
+                                "props": {
+                                  "content": "david.k@example.com",
+                                  "size": "sm",
+                                  "color": "#666"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "member-card-3",
+                "type": "card",
+                "props": {
+                  "variant": "outline",
+                  "padding": "md"
+                },
+                "children": [
+                  {
+                    "id": "member-3-layout",
+                    "type": "split",
+                    "props": {
+                      "ratio": "1:4",
+                      "gap": "md",
+                      "align": "center"
+                    },
+                    "children": [
+                      {
+                        "id": "avatar-3",
+                        "type": "avatar",
+                        "props": {
+                          "name": "Sophia Garcia",
+                          "status": "busy",
+                          "size": "lg"
+                        }
+                      },
+                      {
+                        "id": "info-3",
+                        "type": "stack",
+                        "props": {
+                          "gap": "xs"
+                        },
+                        "children": [
+                          {
+                            "id": "name-3",
+                            "type": "text",
+                            "props": {
+                              "content": "Sophia Garcia",
+                              "weight": "bold",
+                              "size": "lg"
+                            }
+                          },
+                          {
+                            "id": "role-row-3",
+                            "type": "container",
+                            "props": {
+                              "direction": "row",
+                              "gap": "sm",
+                              "align": "center"
+                            },
+                            "children": [
+                              {
+                                "id": "badge-3",
+                                "type": "badge",
+                                "props": {
+                                  "label": "Product Designer",
+                                  "variant": "success"
+                                }
+                              },
+                              {
+                                "id": "icon-3",
+                                "type": "icon",
+                                "props": {
+                                  "name": "mail",
+                                  "size": "sm",
+                                  "color": "muted"
+                                }
+                              },
+                              {
+                                "id": "email-3",
+                                "type": "text",
+                                "props": {
+                                  "content": "sophia.g@example.com",
+                                  "size": "sm",
+                                  "color": "#666"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "member-card-4",
+                "type": "card",
+                "props": {
+                  "variant": "outline",
+                  "padding": "md"
+                },
+                "children": [
+                  {
+                    "id": "member-4-layout",
+                    "type": "split",
+                    "props": {
+                      "ratio": "1:4",
+                      "gap": "md",
+                      "align": "center"
+                    },
+                    "children": [
+                      {
+                        "id": "avatar-4",
+                        "type": "avatar",
+                        "props": {
+                          "name": "Michael Chen",
+                          "status": "offline",
+                          "size": "lg"
+                        }
+                      },
+                      {
+                        "id": "info-4",
+                        "type": "stack",
+                        "props": {
+                          "gap": "xs"
+                        },
+                        "children": [
+                          {
+                            "id": "name-4",
+                            "type": "text",
+                            "props": {
+                              "content": "Michael Chen",
+                              "weight": "bold",
+                              "size": "lg"
+                            }
+                          },
+                          {
+                            "id": "role-row-4",
+                            "type": "container",
+                            "props": {
+                              "direction": "row",
+                              "gap": "sm",
+                              "align": "center"
+                            },
+                            "children": [
+                              {
+                                "id": "badge-4",
+                                "type": "badge",
+                                "props": {
+                                  "label": "Marketing Specialist",
+                                  "variant": "warning"
+                                }
+                              },
+                              {
+                                "id": "icon-4",
+                                "type": "icon",
+                                "props": {
+                                  "name": "mail",
+                                  "size": "sm",
+                                  "color": "muted"
+                                }
+                              },
+                              {
+                                "id": "email-4",
+                                "type": "text",
+                                "props": {
+                                  "content": "michael.c@example.com",
+                                  "size": "sm",
+                                  "color": "#666"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "member-card-5",
+                "type": "card",
+                "props": {
+                  "variant": "outline",
+                  "padding": "md"
+                },
+                "children": [
+                  {
+                    "id": "member-5-layout",
+                    "type": "split",
+                    "props": {
+                      "ratio": "1:4",
+                      "gap": "md",
+                      "align": "center"
+                    },
+                    "children": [
+                      {
+                        "id": "avatar-5",
+                        "type": "avatar",
+                        "props": {
+                          "name": "Jessica Lee",
+                          "status": "online",
+                          "size": "lg"
+                        }
+                      },
+                      {
+                        "id": "info-5",
+                        "type": "stack",
+                        "props": {
+                          "gap": "xs"
+                        },
+                        "children": [
+                          {
+                            "id": "name-5",
+                            "type": "text",
+                            "props": {
+                              "content": "Jessica Lee",
+                              "weight": "bold",
+                              "size": "lg"
+                            }
+                          },
+                          {
+                            "id": "role-row-5",
+                            "type": "container",
+                            "props": {
+                              "direction": "row",
+                              "gap": "sm",
+                              "align": "center"
+                            },
+                            "children": [
+                              {
+                                "id": "badge-5",
+                                "type": "badge",
+                                "props": {
+                                  "label": "Customer Support Lead",
+                                  "variant": "default"
+                                }
+                              },
+                              {
+                                "id": "icon-5",
+                                "type": "icon",
+                                "props": {
+                                  "name": "mail",
+                                  "size": "sm",
+                                  "color": "muted"
+                                }
+                              },
+                              {
+                                "id": "email-5",
+                                "type": "text",
+                                "props": {
+                                  "content": "jessica.l@example.com",
+                                  "size": "sm",
+                                  "color": "#666"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "title": "Team Directory",
+      "description": "A directory of active team members with their roles and contact information."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "card",
+      "split",
+      "avatar",
+      "text",
+      "container",
+      "badge",
+      "icon"
+    ],
+    "nestingDepth": 7,
+    "placeholderDetected": false
+  }
+}

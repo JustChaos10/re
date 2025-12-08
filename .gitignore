@@ -8,3 +8,7 @@ coverage
 .vscode
 .idea
 *.tsbuildinfo
+service.json
+packages/api/service.json
+packages/core/service.json
+nul

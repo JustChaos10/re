@@ -2,21 +2,25 @@
   "name": "re-generative-ui",
   "version": "0.1.0",
   "private": true,
-  "description": "A Generative UI framework powered by Groq - Build agentic interfaces beyond text",
+  "description": "A Generative UI framework powered by Google Vertex AI Gemini - Build agentic interfaces beyond text",
   "workspaces": [
     "packages/*",
-    "examples/*"
+    "examples/*",
+    "apps/*"
   ],
   "scripts": {
     "dev": "npm run dev --workspace=examples/demo",
     "dev:api": "npm run dev --workspace=packages/api",
+    "dev:stack": "tsx scripts/dev-stack.ts",
     "build": "npm run build --workspaces --if-present",
+    "test:quality": "tsx scripts/test-quality.ts",
     "clean": "rm -rf node_modules packages/*/node_modules packages/*/dist examples/*/node_modules examples/*/dist"
   },
   "keywords": [
     "generative-ui",
-    "groq",
     "ai",
+    "gemini",
+    "vertex-ai",
     "llm",
     "react",
     "agents"
@@ -24,9 +28,11 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@google/generative-ai": "^0.24.1",
     "@types/node": "^20.10.0",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
+    "tsx": "^4.21.0",
     "typescript": "^5.3.3"
   }
 }

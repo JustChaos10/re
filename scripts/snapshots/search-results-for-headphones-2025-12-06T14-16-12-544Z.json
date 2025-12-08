@@ -1,0 +1,476 @@
+{
+  "prompt": "Search results for 'headphones'",
+  "generatedAt": "2025-12-06T14:19:04.730Z",
+  "response": {
+    "components": [
+      {
+        "id": "search-results-page",
+        "type": "stack",
+        "children": [
+          {
+            "id": "search-summary-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "search-query-info",
+                "type": "text",
+                "props": {
+                  "content": "Text",
+                  "size": "md",
+                  "weight": "normal"
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "main-content-split",
+            "type": "split",
+            "children": [
+              {
+                "id": "filters-sidebar",
+                "type": "container",
+                "children": [
+                  {
+                    "id": "filters-heading",
+                    "type": "heading",
+                    "props": {
+                      "content": "Heading",
+                      "level": 2
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "filters-divider-1",
+                    "type": "divider",
+                    "props": {},
+                    "children": []
+                  },
+                  {
+                    "id": "category-filter",
+                    "type": "select",
+                    "props": {
+                      "name": "select-k4pd1r",
+                      "label": "Select",
+                      "options": [
+                        {
+                          "value": "option-1",
+                          "label": "Option 1"
+                        },
+                        {
+                          "value": "option-2",
+                          "label": "Option 2"
+                        },
+                        {
+                          "value": "option-3",
+                          "label": "Option 3"
+                        }
+                      ]
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "brand-filter",
+                    "type": "select",
+                    "props": {
+                      "name": "select-pyyjne",
+                      "label": "Select",
+                      "options": [
+                        {
+                          "value": "option-1",
+                          "label": "Option 1"
+                        },
+                        {
+                          "value": "option-2",
+                          "label": "Option 2"
+                        },
+                        {
+                          "value": "option-3",
+                          "label": "Option 3"
+                        }
+                      ]
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "rating-filter",
+                    "type": "select",
+                    "props": {
+                      "name": "select-4i1ia2",
+                      "label": "Select",
+                      "options": [
+                        {
+                          "value": "option-1",
+                          "label": "Option 1"
+                        },
+                        {
+                          "value": "option-2",
+                          "label": "Option 2"
+                        },
+                        {
+                          "value": "option-3",
+                          "label": "Option 3"
+                        }
+                      ]
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "apply-filters-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {}
+              },
+              {
+                "id": "results-area",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "sort-options-container",
+                    "type": "container",
+                    "children": [
+                      {
+                        "id": "sort-split",
+                        "type": "split",
+                        "children": [
+                          {
+                            "id": "sort-by-select",
+                            "type": "select",
+                            "props": {
+                              "name": "select-itv2h2",
+                              "label": "Select",
+                              "options": [
+                                {
+                                  "value": "option-1",
+                                  "label": "Option 1"
+                                },
+                                {
+                                  "value": "option-2",
+                                  "label": "Option 2"
+                                },
+                                {
+                                  "value": "option-3",
+                                  "label": "Option 3"
+                                }
+                              ]
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "sort-spacer",
+                            "type": "spacer",
+                            "props": {
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "product-list",
+                    "type": "list",
+                    "children": [
+                      {
+                        "id": "product-card-1",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "product-card-split-1",
+                            "type": "split",
+                            "children": [
+                              {
+                                "id": "product-image-1",
+                                "type": "image"
+                              },
+                              {
+                                "id": "product-details-1",
+                                "type": "stack",
+                                "children": [
+                                  {
+                                    "id": "product-name-1",
+                                    "type": "heading"
+                                  },
+                                  {
+                                    "id": "product-price-1",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "product-rating-1",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "add-to-cart-1",
+                                    "type": "button"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-2",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "product-card-split-2",
+                            "type": "split",
+                            "children": [
+                              {
+                                "id": "product-image-2",
+                                "type": "image"
+                              },
+                              {
+                                "id": "product-details-2",
+                                "type": "stack",
+                                "children": [
+                                  {
+                                    "id": "product-name-2",
+                                    "type": "heading"
+                                  },
+                                  {
+                                    "id": "product-price-2",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "product-rating-2",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "add-to-cart-2",
+                                    "type": "button"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-3",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "product-card-split-3",
+                            "type": "split",
+                            "children": [
+                              {
+                                "id": "product-image-3",
+                                "type": "image"
+                              },
+                              {
+                                "id": "product-details-3",
+                                "type": "stack",
+                                "children": [
+                                  {
+                                    "id": "product-name-3",
+                                    "type": "heading"
+                                  },
+                                  {
+                                    "id": "product-price-3",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "product-rating-3",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "add-to-cart-3",
+                                    "type": "button"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-4",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "product-card-split-4",
+                            "type": "split",
+                            "children": [
+                              {
+                                "id": "product-image-4",
+                                "type": "image"
+                              },
+                              {
+                                "id": "product-details-4",
+                                "type": "stack",
+                                "children": [
+                                  {
+                                    "id": "product-name-4",
+                                    "type": "heading"
+                                  },
+                                  {
+                                    "id": "product-price-4",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "product-rating-4",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "add-to-cart-4",
+                                    "type": "button"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-5",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "product-card-split-5",
+                            "type": "split",
+                            "children": [
+                              {
+                                "id": "product-image-5",
+                                "type": "image"
+                              },
+                              {
+                                "id": "product-details-5",
+                                "type": "stack",
+                                "children": [
+                                  {
+                                    "id": "product-name-5",
+                                    "type": "heading"
+                                  },
+                                  {
+                                    "id": "product-price-5",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "product-rating-5",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "add-to-cart-5",
+                                    "type": "button"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "props": {
+                      "items": [
+                        {
+                          "id": "item-qeysh7",
+                          "label": "Item"
+                        },
+                        {
+                          "id": "item-xcnmsq",
+                          "label": "Item"
+                        },
+                        {
+                          "id": "item-ufupcm",
+                          "label": "Item"
+                        }
+                      ],
+                      "variant": "none"
+                    }
+                  },
+                  {
+                    "id": "pagination-container",
+                    "type": "container",
+                    "children": [
+                      {
+                        "id": "pagination-split",
+                        "type": "split",
+                        "children": [
+                          {
+                            "id": "prev-page-button",
+                            "type": "button",
+                            "props": {
+                              "label": "Action",
+                              "variant": "primary",
+                              "size": "md"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "page-1-button",
+                            "type": "button",
+                            "props": {
+                              "label": "Action",
+                              "variant": "primary",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "gap": "md"
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Headphones Search Results",
+      "description": "Desktop interface displaying search results for headphones with filtering, sorting, and product listings."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "text",
+      "split",
+      "container",
+      "heading",
+      "divider",
+      "select",
+      "button",
+      "spacer",
+      "list",
+      "card",
+      "image"
+    ],
+    "nestingDepth": 8,
+    "placeholderDetected": false
+  }
+}

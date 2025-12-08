@@ -1,0 +1,116 @@
+{
+  "prompt": "Empty shopping cart",
+  "generatedAt": "2025-12-04T07:12:13.475Z",
+  "response": {
+    "components": [
+      {
+        "id": "cart-empty-layout",
+        "type": "stack",
+        "props": {
+          "gap": "lg",
+          "align": "center"
+        },
+        "children": [
+          {
+            "id": "cart-section",
+            "type": "section",
+            "props": {
+              "title": "Your cart is empty",
+              "subtitle": "When you add items, they will appear here for quick checkout.",
+              "variant": "card",
+              "background": "subtle",
+              "padding": "xl"
+            },
+            "children": [
+              {
+                "id": "empty-content",
+                "type": "stack",
+                "props": {
+                  "gap": "md",
+                  "align": "center"
+                },
+                "children": [
+                  {
+                    "id": "empty-illustration",
+                    "type": "illustration",
+                    "props": {
+                      "name": "empty-state",
+                      "size": "lg",
+                      "color": "primary"
+                    }
+                  },
+                  {
+                    "id": "empty-text",
+                    "type": "text",
+                    "props": {
+                      "content": "Browse the latest additions from curated creators and add favorites to your bag.",
+                      "size": "md"
+                    }
+                  },
+                  {
+                    "id": "empty-callout",
+                    "type": "callout",
+                    "props": {
+                      "variant": "tip",
+                      "message": "Pro tip: save items to your wishlist to sync them across devices.",
+                      "icon": "bookmark"
+                    }
+                  },
+                  {
+                    "id": "empty-actions",
+                    "type": "container",
+                    "props": {
+                      "direction": "row",
+                      "gap": "sm",
+                      "align": "center",
+                      "justify": "center"
+                    },
+                    "children": [
+                      {
+                        "id": "browse-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Browse Products",
+                          "variant": "primary",
+                          "size": "md",
+                          "onClick": "browse-products"
+                        }
+                      },
+                      {
+                        "id": "view-wishlist-button",
+                        "type": "button",
+                        "props": {
+                          "label": "View Wishlist",
+                          "variant": "secondary",
+                          "onClick": "open-wishlist"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "title": "Empty Cart",
+      "description": "Empty cart experience with helpful guidance and next steps"
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "illustration",
+      "text",
+      "callout",
+      "container",
+      "button"
+    ],
+    "nestingDepth": 5,
+    "placeholderDetected": false
+  }
+}

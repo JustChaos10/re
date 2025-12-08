@@ -1,0 +1,244 @@
+{
+  "prompt": "Product details page for a gadget",
+  "generatedAt": "2025-12-04T07:12:04.336Z",
+  "response": {
+    "components": [
+      {
+        "id": "product-page",
+        "type": "stack",
+        "props": {
+          "gap": "xl"
+        },
+        "children": [
+          {
+            "id": "product-title",
+            "type": "heading",
+            "props": {
+              "content": "Quantum Leap Smartwatch X1",
+              "level": 1
+            }
+          },
+          {
+            "id": "product-overview-section",
+            "type": "section",
+            "props": {
+              "title": "Product Overview",
+              "subtitle": "Advanced health tracking, seamless notifications, and sleek design.",
+              "variant": "card",
+              "padding": "lg"
+            },
+            "children": [
+              {
+                "id": "product-layout",
+                "type": "split",
+                "props": {
+                  "ratio": "2:3",
+                  "gap": "lg"
+                },
+                "children": [
+                  {
+                    "id": "product-media-card",
+                    "type": "card",
+                    "props": {
+                      "variant": "outline"
+                    },
+                    "children": [
+                      {
+                        "id": "product-image",
+                        "type": "image",
+                        "props": {
+                          "src": "https://images.example.com/gadgets/smartwatch-x1.png",
+                          "alt": "Quantum Leap Smartwatch X1 with a black strap on a wrist",
+                          "width": 400,
+                          "height": 400,
+                          "rounded": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "product-details-stack",
+                    "type": "stack",
+                    "props": {
+                      "gap": "md"
+                    },
+                    "children": [
+                      {
+                        "id": "price-availability-row",
+                        "type": "container",
+                        "props": {
+                          "direction": "row",
+                          "gap": "sm",
+                          "align": "center"
+                        },
+                        "children": [
+                          {
+                            "id": "price-text",
+                            "type": "heading",
+                            "props": {
+                              "content": "$299.99",
+                              "level": 3
+                            }
+                          },
+                          {
+                            "id": "availability-badge",
+                            "type": "badge",
+                            "props": {
+                              "label": "In Stock",
+                              "variant": "success"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-description",
+                        "type": "text",
+                        "props": {
+                          "content": "Experience the future on your wrist with the Quantum Leap Smartwatch X1. Featuring a vibrant OLED display, 24/7 heart rate monitoring, GPS tracking, and up to 7 days of battery life. Stay connected with smart notifications and personalize your style with interchangeable bands."
+                        }
+                      },
+                      {
+                        "id": "feature-tags",
+                        "type": "tag-group",
+                        "props": {
+                          "size": "md",
+                          "tags": [
+                            {
+                              "id": "tag-gps",
+                              "label": "Built-in GPS",
+                              "variant": "primary"
+                            },
+                            {
+                              "id": "tag-hr",
+                              "label": "Heart Rate Monitor",
+                              "variant": "info"
+                            },
+                            {
+                              "id": "tag-waterproof",
+                              "label": "5ATM Waterproof",
+                              "variant": "success"
+                            },
+                            {
+                              "id": "tag-oled",
+                              "label": "OLED Display",
+                              "variant": "warning"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "product-stats-grid",
+                        "type": "container",
+                        "props": {
+                          "variant": "grid",
+                          "cols": 3,
+                          "gap": "md"
+                        },
+                        "children": [
+                          {
+                            "id": "battery-stat",
+                            "type": "stat",
+                            "props": {
+                              "label": "Battery Life",
+                              "value": "7 Days",
+                              "description": "Typical usage",
+                              "icon": "battery-charging"
+                            }
+                          },
+                          {
+                            "id": "rating-stat",
+                            "type": "stat",
+                            "props": {
+                              "label": "Customer Rating",
+                              "value": "4.7",
+                              "description": "Based on 850 reviews",
+                              "icon": "star"
+                            }
+                          },
+                          {
+                            "id": "shipping-stat",
+                            "type": "stat",
+                            "props": {
+                              "label": "Shipping",
+                              "value": "Free",
+                              "description": "2-3 business days",
+                              "icon": "truck"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "promo-callout",
+                        "type": "callout",
+                        "props": {
+                          "variant": "tip",
+                          "title": "Limited Time Offer",
+                          "message": "Get a free extra strap with your purchase of the Smartwatch X1 today!",
+                          "icon": "gift"
+                        }
+                      },
+                      {
+                        "id": "product-actions-row",
+                        "type": "container",
+                        "props": {
+                          "direction": "row",
+                          "gap": "sm",
+                          "align": "center"
+                        },
+                        "children": [
+                          {
+                            "id": "add-to-cart-button",
+                            "type": "button",
+                            "props": {
+                              "label": "Add to Cart",
+                              "variant": "primary",
+                              "size": "lg",
+                              "onClick": "add-to-cart-smartwatch-x1"
+                            }
+                          },
+                          {
+                            "id": "view-specs-button",
+                            "type": "button",
+                            "props": {
+                              "label": "View Full Specifications",
+                              "variant": "secondary",
+                              "onClick": "view-smartwatch-specs"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "title": "Quantum Leap Smartwatch X1 Details",
+      "description": "Detailed product page for the Quantum Leap Smartwatch X1, including features, pricing, and purchase options."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "heading",
+      "section",
+      "split",
+      "card",
+      "image",
+      "container",
+      "badge",
+      "text",
+      "tag-group",
+      "stat",
+      "callout",
+      "button"
+    ],
+    "nestingDepth": 6,
+    "placeholderDetected": false
+  }
+}

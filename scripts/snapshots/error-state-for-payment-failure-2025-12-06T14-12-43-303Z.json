@@ -1,0 +1,230 @@
+{
+  "prompt": "Error state for payment failure",
+  "generatedAt": "2025-12-06T14:15:03.016Z",
+  "response": {
+    "components": [
+      {
+        "id": "payment-failure-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "failure-header-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "failure-illustration-container",
+                "type": "container",
+                "children": [
+                  {
+                    "id": "payment-error-illustration",
+                    "type": "illustration",
+                    "props": {
+                      "name": "document",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {}
+              },
+              {
+                "id": "failure-message-text",
+                "type": "text",
+                "props": {
+                  "content": "Text",
+                  "size": "md",
+                  "weight": "normal"
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "details-actions-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "details-actions-split",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "failure-details-card",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "details-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "transaction-id-text",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "error-code-text",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "reason-text",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "timestamp-text",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "action-options-card",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "actions-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "try-again-button",
+                            "type": "button",
+                            "props": {
+                              "label": "Action",
+                              "variant": "primary",
+                              "size": "md"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "update-method-button",
+                            "type": "button",
+                            "props": {
+                              "label": "Action",
+                              "variant": "primary",
+                              "size": "md"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "view-orders-button",
+                            "type": "button",
+                            "props": {
+                              "label": "Action",
+                              "variant": "primary",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "support-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "support-container",
+                "type": "container",
+                "children": [
+                  {
+                    "id": "support-text",
+                    "type": "text",
+                    "props": {
+                      "content": "Text",
+                      "size": "md",
+                      "weight": "normal"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "contact-support-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {}
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Payment Failure",
+      "description": "User interface for displaying a payment failure error and guiding the user to next steps."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "container",
+      "illustration",
+      "text",
+      "split",
+      "card",
+      "button"
+    ],
+    "nestingDepth": 6,
+    "placeholderDetected": false
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "prompt": "Loading state for data fetch",
+  "generatedAt": "2025-12-06T14:24:52.550Z",
+  "response": {
+    "components": [
+      {
+        "id": "loading-page-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "overall-loading-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "loading-progress-bar",
+                "type": "progress",
+                "props": {
+                  "value": 50,
+                  "max": 100,
+                  "showPercentage": true
+                },
+                "children": []
+              },
+              {
+                "id": "loading-illustration-container",
+                "type": "container",
+                "children": [
+                  {
+                    "id": "data-fetch-illustration",
+                    "type": "illustration",
+                    "props": {
+                      "name": "document",
+                      "size": "md"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "loading-tip-text",
+                    "type": "text",
+                    "props": {
+                      "content": "Text",
+                      "size": "md",
+                      "weight": "normal"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {}
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "loading-content-split",
+            "type": "split",
+            "children": [
+              {
+                "id": "recent-activity-card-loading",
+                "type": "card",
+                "children": [
+                  {
+                    "id": "recent-activity-heading",
+                    "type": "heading",
+                    "props": {
+                      "content": "Heading",
+                      "level": 2
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "activity-list-loading",
+                    "type": "list",
+                    "props": {
+                      "items": [
+                        {
+                          "id": "item-e20pb6",
+                          "label": "Item"
+                        },
+                        {
+                          "id": "item-1bw11k",
+                          "label": "Item"
+                        },
+                        {
+                          "id": "item-ptxtah",
+                          "label": "Item"
+                        }
+                      ],
+                      "variant": "none"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {}
+              },
+              {
+                "id": "key-metrics-card-loading",
+                "type": "card",
+                "children": [
+                  {
+                    "id": "key-metrics-heading",
+                    "type": "heading",
+                    "props": {
+                      "content": "Heading",
+                      "level": 2
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "metrics-stack-loading",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "metric-1-loading",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "metric-2-loading",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "metric-3-loading",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  }
+                ],
+                "props": {}
+              }
+            ],
+            "props": {
+              "gap": "md"
+            }
+          },
+          {
+            "id": "loading-actions-container",
+            "type": "container",
+            "children": [
+              {
+                "id": "cancel-loading-button",
+                "type": "button",
+                "props": {
+                  "label": "Action",
+                  "variant": "primary",
+                  "size": "md"
+                },
+                "children": []
+              }
+            ],
+            "props": {}
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Loading Data",
+      "description": "A desktop UI showing a loading state for data fetching with progress indicators and skeleton loaders."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "progress",
+      "container",
+      "illustration",
+      "text",
+      "split",
+      "card",
+      "heading",
+      "list",
+      "button"
+    ],
+    "nestingDepth": 5,
+    "placeholderDetected": false
+  }
+}

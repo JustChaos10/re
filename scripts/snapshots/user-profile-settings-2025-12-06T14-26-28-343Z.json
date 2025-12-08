@@ -1,0 +1,454 @@
+{
+  "prompt": "User profile settings",
+  "generatedAt": "2025-12-06T14:27:57.297Z",
+  "response": {
+    "components": [
+      {
+        "id": "profile-settings-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "general-info-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "general-info-form",
+                "type": "form",
+                "children": [
+                  {
+                    "id": "general-info-form-stack",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "avatar-split",
+                        "type": "split",
+                        "children": [
+                          {
+                            "id": "avatar-display-stack",
+                            "type": "stack",
+                            "children": [
+                              {
+                                "id": "avatar-label",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "user-avatar",
+                                "type": "avatar",
+                                "props": {
+                                  "name": "User",
+                                  "size": "md"
+                                },
+                                "children": []
+                              }
+                            ],
+                            "props": {
+                              "gap": "md"
+                            }
+                          },
+                          {
+                            "id": "avatar-actions-stack",
+                            "type": "stack",
+                            "children": [
+                              {
+                                "id": "upload-avatar-button",
+                                "type": "button",
+                                "props": {
+                                  "label": "Action",
+                                  "variant": "primary",
+                                  "size": "md"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "remove-avatar-button",
+                                "type": "button",
+                                "props": {
+                                  "label": "Action",
+                                  "variant": "primary",
+                                  "size": "md"
+                                },
+                                "children": []
+                              }
+                            ],
+                            "props": {
+                              "gap": "md"
+                            }
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      },
+                      {
+                        "id": "profile-name-input",
+                        "type": "input",
+                        "props": {
+                          "name": "input-gke21u",
+                          "label": "Input",
+                          "type": "text"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "save-general-info-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  }
+                ],
+                "props": {
+                  "submitLabel": "Submit"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "divider-1",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "security-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "security-form",
+                "type": "form",
+                "children": [
+                  {
+                    "id": "security-form-stack",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "change-password-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  }
+                ],
+                "props": {
+                  "submitLabel": "Submit"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "divider-2",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "preferences-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "preferences-form",
+                "type": "form",
+                "children": [
+                  {
+                    "id": "preferences-form-stack",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "theme-select",
+                        "type": "select",
+                        "props": {
+                          "name": "select-m4q3nb",
+                          "label": "Select",
+                          "options": [
+                            {
+                              "value": "option-1",
+                              "label": "Option 1"
+                            },
+                            {
+                              "value": "option-2",
+                              "label": "Option 2"
+                            },
+                            {
+                              "value": "option-3",
+                              "label": "Option 3"
+                            }
+                          ]
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "language-select",
+                        "type": "select",
+                        "props": {
+                          "name": "select-0872yo",
+                          "label": "Select",
+                          "options": [
+                            {
+                              "value": "option-1",
+                              "label": "Option 1"
+                            },
+                            {
+                              "value": "option-2",
+                              "label": "Option 2"
+                            },
+                            {
+                              "value": "option-3",
+                              "label": "Option 3"
+                            }
+                          ]
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "save-preferences-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  }
+                ],
+                "props": {
+                  "submitLabel": "Submit"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "divider-3",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "notifications-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "notifications-form",
+                "type": "form",
+                "children": [
+                  {
+                    "id": "notifications-form-stack",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "email-notifications-heading",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "marketing-emails-select",
+                        "type": "select",
+                        "props": {
+                          "name": "select-cb39fq",
+                          "label": "Select",
+                          "options": [
+                            {
+                              "value": "option-1",
+                              "label": "Option 1"
+                            },
+                            {
+                              "value": "option-2",
+                              "label": "Option 2"
+                            },
+                            {
+                              "value": "option-3",
+                              "label": "Option 3"
+                            }
+                          ]
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "product-updates-select",
+                        "type": "select",
+                        "props": {
+                          "name": "select-greatu",
+                          "label": "Select",
+                          "options": [
+                            {
+                              "value": "option-1",
+                              "label": "Option 1"
+                            },
+                            {
+                              "value": "option-2",
+                              "label": "Option 2"
+                            },
+                            {
+                              "value": "option-3",
+                              "label": "Option 3"
+                            }
+                          ]
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "inapp-notifications-heading",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "inapp-messages-select",
+                        "type": "select",
+                        "props": {
+                          "name": "select-zfqwrm",
+                          "label": "Select",
+                          "options": [
+                            {
+                              "value": "option-1",
+                              "label": "Option 1"
+                            },
+                            {
+                              "value": "option-2",
+                              "label": "Option 2"
+                            },
+                            {
+                              "value": "option-3",
+                              "label": "Option 3"
+                            }
+                          ]
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "save-notifications-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  }
+                ],
+                "props": {
+                  "submitLabel": "Submit"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "divider-4",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "account-actions-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "account-actions-stack",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "delete-account-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "User Profile Settings",
+      "description": "Manage your personal information, security, preferences, and notification settings."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "form",
+      "split",
+      "text",
+      "avatar",
+      "button",
+      "input",
+      "divider",
+      "select"
+    ],
+    "nestingDepth": 7,
+    "placeholderDetected": false
+  }
+}

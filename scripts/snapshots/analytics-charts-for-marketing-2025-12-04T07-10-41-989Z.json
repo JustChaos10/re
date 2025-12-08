@@ -1,0 +1,249 @@
+{
+  "prompt": "Analytics charts for marketing",
+  "generatedAt": "2025-12-04T07:12:53.980Z",
+  "response": {
+    "components": [
+      {
+        "id": "marketing-dashboard-container",
+        "type": "stack",
+        "props": {
+          "gap": "xl"
+        },
+        "children": [
+          {
+            "id": "page-title",
+            "type": "heading",
+            "props": {
+              "content": "Marketing Analytics Dashboard",
+              "level": 1
+            }
+          },
+          {
+            "id": "kpi-section",
+            "type": "section",
+            "props": {
+              "title": "Key Performance Indicators",
+              "variant": "card",
+              "padding": "lg"
+            },
+            "children": [
+              {
+                "id": "kpi-grid",
+                "type": "container",
+                "props": {
+                  "variant": "grid",
+                  "cols": 4,
+                  "gap": "lg"
+                },
+                "children": [
+                  {
+                    "id": "visits-stat",
+                    "type": "stat",
+                    "props": {
+                      "label": "Total Website Visits",
+                      "value": "185,432",
+                      "change": {
+                        "value": "+15.2%",
+                        "type": "increase"
+                      },
+                      "icon": "globe",
+                      "description": "vs last month"
+                    }
+                  },
+                  {
+                    "id": "leads-stat",
+                    "type": "stat",
+                    "props": {
+                      "label": "New Leads Generated",
+                      "value": "4,128",
+                      "change": {
+                        "value": "+9.8%",
+                        "type": "increase"
+                      },
+                      "icon": "users",
+                      "description": "vs last month"
+                    }
+                  },
+                  {
+                    "id": "conversion-stat",
+                    "type": "stat",
+                    "props": {
+                      "label": "Conversion Rate",
+                      "value": "2.23%",
+                      "change": {
+                        "value": "+0.15%",
+                        "type": "increase"
+                      },
+                      "icon": "trending-up",
+                      "description": "vs last month"
+                    }
+                  },
+                  {
+                    "id": "ad-spend-stat",
+                    "type": "stat",
+                    "props": {
+                      "label": "Total Ad Spend",
+                      "value": "$12,500",
+                      "change": {
+                        "value": "-5.0%",
+                        "type": "decrease"
+                      },
+                      "icon": "dollar-sign",
+                      "description": "vs last month"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "traffic-trend-section",
+            "type": "section",
+            "props": {
+              "title": "Website Traffic Trend",
+              "subtitle": "Last 6 months",
+              "variant": "card",
+              "padding": "lg"
+            },
+            "children": [
+              {
+                "id": "traffic-chart",
+                "type": "chart",
+                "props": {
+                  "chartType": "area",
+                  "xKey": "month",
+                  "yKey": "visits",
+                  "data": [
+                    {
+                      "month": "Jul",
+                      "visits": 120000
+                    },
+                    {
+                      "month": "Aug",
+                      "visits": 135000
+                    },
+                    {
+                      "month": "Sep",
+                      "visits": 148000
+                    },
+                    {
+                      "month": "Oct",
+                      "visits": 162000
+                    },
+                    {
+                      "month": "Nov",
+                      "visits": 175000
+                    },
+                    {
+                      "month": "Dec",
+                      "visits": 185432
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "leads-by-channel-section",
+            "type": "section",
+            "props": {
+              "title": "Leads by Channel",
+              "subtitle": "Last 30 days",
+              "variant": "card",
+              "padding": "lg"
+            },
+            "children": [
+              {
+                "id": "leads-chart",
+                "type": "chart",
+                "props": {
+                  "chartType": "bar",
+                  "xKey": "channel",
+                  "yKey": "leads",
+                  "data": [
+                    {
+                      "channel": "Organic Search",
+                      "leads": 1500
+                    },
+                    {
+                      "channel": "Paid Search",
+                      "leads": 980
+                    },
+                    {
+                      "channel": "Social Media",
+                      "leads": 750
+                    },
+                    {
+                      "channel": "Email Marketing",
+                      "leads": 520
+                    },
+                    {
+                      "channel": "Referral",
+                      "leads": 378
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "ad-spend-distribution-section",
+            "type": "section",
+            "props": {
+              "title": "Ad Spend Distribution",
+              "subtitle": "Current month",
+              "variant": "card",
+              "padding": "lg"
+            },
+            "children": [
+              {
+                "id": "ad-spend-chart",
+                "type": "chart",
+                "props": {
+                  "chartType": "pie",
+                  "xKey": "platform",
+                  "yKey": "spend",
+                  "data": [
+                    {
+                      "platform": "Google Ads",
+                      "spend": 6000
+                    },
+                    {
+                      "platform": "Facebook Ads",
+                      "spend": 3500
+                    },
+                    {
+                      "platform": "LinkedIn Ads",
+                      "spend": 2000
+                    },
+                    {
+                      "platform": "Other",
+                      "spend": 1000
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "title": "Marketing Analytics",
+      "description": "Dashboard displaying key marketing performance indicators and trends."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "heading",
+      "section",
+      "container",
+      "stat",
+      "chart"
+    ],
+    "nestingDepth": 4,
+    "placeholderDetected": false
+  }
+}

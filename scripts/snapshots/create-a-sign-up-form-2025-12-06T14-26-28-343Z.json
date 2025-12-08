@@ -1,0 +1,101 @@
+{
+  "prompt": "Create a sign-up form",
+  "generatedAt": "2025-12-06T14:26:48.885Z",
+  "response": {
+    "components": [
+      {
+        "id": "signup-page-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "signup-form-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "user-signup-form",
+                "type": "form",
+                "children": [
+                  {
+                    "id": "form-fields-stack",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "name-fields-split",
+                        "type": "split",
+                        "children": [
+                          {
+                            "id": "first-name-input",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "last-name-input",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      },
+                      {
+                        "id": "signup-submit-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  }
+                ],
+                "props": {
+                  "submitLabel": "Submit"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Sign Up",
+      "description": "User registration form for creating a new account."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "form",
+      "split",
+      "text",
+      "button"
+    ],
+    "nestingDepth": 6,
+    "placeholderDetected": false
+  }
+}

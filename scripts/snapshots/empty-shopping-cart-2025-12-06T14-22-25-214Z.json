@@ -1,0 +1,81 @@
+{
+  "prompt": "Empty shopping cart",
+  "generatedAt": "2025-12-06T14:23:30.171Z",
+  "response": {
+    "components": [
+      {
+        "id": "empty-cart-page",
+        "type": "stack",
+        "children": [
+          {
+            "id": "cart-status-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "empty-cart-content",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "empty-cart-illustration",
+                    "type": "illustration",
+                    "props": {
+                      "name": "document",
+                      "size": "md"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "empty-cart-message",
+                    "type": "text",
+                    "props": {
+                      "content": "Text",
+                      "size": "md",
+                      "weight": "normal"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "start-shopping-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Empty Shopping Cart",
+      "description": "User interface for an empty shopping cart, prompting the user to start shopping."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "illustration",
+      "text",
+      "button"
+    ],
+    "nestingDepth": 4,
+    "placeholderDetected": false
+  }
+}

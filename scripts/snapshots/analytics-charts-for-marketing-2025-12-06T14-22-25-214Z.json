@@ -1,0 +1,527 @@
+{
+  "prompt": "Analytics charts for marketing",
+  "generatedAt": "2025-12-06T14:24:02.918Z",
+  "response": {
+    "components": [
+      {
+        "id": "marketing-dashboard-stack",
+        "type": "stack",
+        "props": {
+          "gap": "xl"
+        },
+        "children": [
+          {
+            "id": "overview-section",
+            "type": "section",
+            "props": {
+              "title": "Marketing Dashboard Overview",
+              "subtitle": "Key performance indicators for your marketing efforts."
+            },
+            "children": [
+              {
+                "id": "overview-stats-split",
+                "type": "split",
+                "props": {
+                  "gap": "lg"
+                },
+                "children": [
+                  {
+                    "id": "total-campaigns-stat",
+                    "type": "stat",
+                    "props": {
+                      "label": "Total Campaigns",
+                      "value": "48",
+                      "change": "+12%",
+                      "changeType": "positive"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "conversion-rate-stat",
+                    "type": "stat",
+                    "props": {
+                      "label": "Conversion Rate",
+                      "value": "3.8%",
+                      "change": "+0.5%",
+                      "changeType": "positive"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "performance-trends-section",
+            "type": "section",
+            "props": {
+              "title": "Performance Trends",
+              "subtitle": "Analyze campaign and channel performance over time."
+            },
+            "children": [
+              {
+                "id": "performance-charts-split",
+                "type": "split",
+                "props": {
+                  "gap": "lg"
+                },
+                "children": [
+                  {
+                    "id": "campaign-performance-chart-card",
+                    "type": "card",
+                    "props": {
+                      "title": "Campaign Performance (Last 6 Months)"
+                    },
+                    "children": [
+                      {
+                        "id": "campaign-performance-chart",
+                        "type": "chart",
+                        "props": {
+                          "type": "line",
+                          "data": [
+                            {
+                              "label": "Jan",
+                              "value": 40
+                            },
+                            {
+                              "label": "Feb",
+                              "value": 55
+                            },
+                            {
+                              "label": "Mar",
+                              "value": 52
+                            },
+                            {
+                              "label": "Apr",
+                              "value": 61
+                            },
+                            {
+                              "label": "May",
+                              "value": 68
+                            },
+                            {
+                              "label": "Jun",
+                              "value": 73
+                            }
+                          ],
+                          "options": {
+                            "xLabel": "Month",
+                            "yLabel": "Count"
+                          },
+                          "chartType": "line",
+                          "xKey": "label",
+                          "yKey": "value"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "channel-performance-chart-card",
+                    "type": "card",
+                    "props": {
+                      "title": "Channel Performance by Conversions"
+                    },
+                    "children": [
+                      {
+                        "id": "channel-performance-chart",
+                        "type": "chart",
+                        "props": {
+                          "type": "bar",
+                          "data": [
+                            {
+                              "label": "Jan",
+                              "value": 40
+                            },
+                            {
+                              "label": "Feb",
+                              "value": 55
+                            },
+                            {
+                              "label": "Mar",
+                              "value": 52
+                            },
+                            {
+                              "label": "Apr",
+                              "value": 61
+                            },
+                            {
+                              "label": "May",
+                              "value": 68
+                            },
+                            {
+                              "label": "Jun",
+                              "value": 73
+                            }
+                          ],
+                          "options": {
+                            "xLabel": "Channel",
+                            "yLabel": "Conversions"
+                          },
+                          "chartType": "line",
+                          "xKey": "label",
+                          "yKey": "value"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "audience-insights-section",
+            "type": "section",
+            "props": {
+              "title": "Audience Insights",
+              "subtitle": "Understand your audience demographics and engagement."
+            },
+            "children": [
+              {
+                "id": "audience-charts-split",
+                "type": "split",
+                "props": {
+                  "gap": "lg"
+                },
+                "children": [
+                  {
+                    "id": "demographics-chart-card",
+                    "type": "card",
+                    "props": {
+                      "title": "Audience Demographics (Age)"
+                    },
+                    "children": [
+                      {
+                        "id": "demographics-chart",
+                        "type": "chart",
+                        "props": {
+                          "type": "pie",
+                          "data": [
+                            {
+                              "label": "Jan",
+                              "value": 40
+                            },
+                            {
+                              "label": "Feb",
+                              "value": 55
+                            },
+                            {
+                              "label": "Mar",
+                              "value": 52
+                            },
+                            {
+                              "label": "Apr",
+                              "value": 61
+                            },
+                            {
+                              "label": "May",
+                              "value": 68
+                            },
+                            {
+                              "label": "Jun",
+                              "value": 73
+                            }
+                          ],
+                          "chartType": "line",
+                          "xKey": "label",
+                          "yKey": "value"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "top-campaigns-by-conversion-card",
+                    "type": "card",
+                    "props": {
+                      "title": "Top Campaigns by Conversion Rate"
+                    },
+                    "children": [
+                      {
+                        "id": "top-campaigns-chart",
+                        "type": "chart",
+                        "props": {
+                          "type": "bar",
+                          "data": [
+                            {
+                              "label": "Jan",
+                              "value": 40
+                            },
+                            {
+                              "label": "Feb",
+                              "value": 55
+                            },
+                            {
+                              "label": "Mar",
+                              "value": 52
+                            },
+                            {
+                              "label": "Apr",
+                              "value": 61
+                            },
+                            {
+                              "label": "May",
+                              "value": 68
+                            },
+                            {
+                              "label": "Jun",
+                              "value": 73
+                            }
+                          ],
+                          "options": {
+                            "xLabel": "Campaign",
+                            "yLabel": "Conversion Rate (%)"
+                          },
+                          "chartType": "line",
+                          "xKey": "label",
+                          "yKey": "value"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "recent-campaigns-section",
+            "type": "section",
+            "props": {
+              "title": "Recent Campaigns",
+              "subtitle": "Overview of your latest marketing campaigns."
+            },
+            "children": [
+              {
+                "id": "recent-campaigns-table",
+                "type": "table",
+                "props": {
+                  "columns": [
+                    {
+                      "id": "campaign-name-col",
+                      "header": "Campaign Name",
+                      "accessor": "name"
+                    },
+                    {
+                      "id": "status-col",
+                      "header": "Status",
+                      "accessor": "status"
+                    },
+                    {
+                      "id": "start-date-col",
+                      "header": "Start Date",
+                      "accessor": "startDate"
+                    },
+                    {
+                      "id": "end-date-col",
+                      "header": "End Date",
+                      "accessor": "endDate"
+                    },
+                    {
+                      "id": "impressions-col",
+                      "header": "Impressions",
+                      "accessor": "impressions"
+                    },
+                    {
+                      "id": "clicks-col",
+                      "header": "Clicks",
+                      "accessor": "clicks"
+                    },
+                    {
+                      "id": "conversions-col",
+                      "header": "Conversions",
+                      "accessor": "conversions"
+                    },
+                    {
+                      "id": "spend-col",
+                      "header": "Spend",
+                      "accessor": "spend"
+                    },
+                    {
+                      "id": "actions-col",
+                      "header": "Actions",
+                      "accessor": "actions"
+                    }
+                  ],
+                  "data": [
+                    {
+                      "id": "campaign-1",
+                      "name": "Spring Collection 2025",
+                      "status": {
+                        "type": "badge",
+                        "props": {
+                          "text": "Active",
+                          "color": "green"
+                        }
+                      },
+                      "startDate": "Mar 1, 2025",
+                      "endDate": "Apr 15, 2025",
+                      "impressions": "250K",
+                      "clicks": "15.2K",
+                      "conversions": "850",
+                      "spend": "$8,500",
+                      "actions": {
+                        "type": "button",
+                        "props": {
+                          "text": "View Details",
+                          "variant": "secondary",
+                          "onClick": "view-campaign-details-1"
+                        }
+                      }
+                    },
+                    {
+                      "id": "campaign-2",
+                      "name": "Q1 Lead Generation",
+                      "status": {
+                        "type": "badge",
+                        "props": {
+                          "text": "Completed",
+                          "color": "gray"
+                        }
+                      },
+                      "startDate": "Jan 1, 2025",
+                      "endDate": "Mar 31, 2025",
+                      "impressions": "380K",
+                      "clicks": "22.8K",
+                      "conversions": "1,200",
+                      "spend": "$12,000",
+                      "actions": {
+                        "type": "button",
+                        "props": {
+                          "text": "View Details",
+                          "variant": "secondary",
+                          "onClick": "view-campaign-details-2"
+                        }
+                      }
+                    },
+                    {
+                      "id": "campaign-3",
+                      "name": "Social Media Boost",
+                      "status": {
+                        "type": "badge",
+                        "props": {
+                          "text": "Active",
+                          "color": "green"
+                        }
+                      },
+                      "startDate": "Apr 10, 2025",
+                      "endDate": "May 10, 2025",
+                      "impressions": "180K",
+                      "clicks": "9.5K",
+                      "conversions": "420",
+                      "spend": "$4,200",
+                      "actions": {
+                        "type": "button",
+                        "props": {
+                          "text": "View Details",
+                          "variant": "secondary",
+                          "onClick": "view-campaign-details-3"
+                        }
+                      }
+                    },
+                    {
+                      "id": "campaign-4",
+                      "name": "Email Nurture Series",
+                      "status": {
+                        "type": "badge",
+                        "props": {
+                          "text": "Ongoing",
+                          "color": "blue"
+                        }
+                      },
+                      "startDate": "Feb 15, 2025",
+                      "endDate": "N/A",
+                      "impressions": "N/A",
+                      "clicks": "7.1K",
+                      "conversions": "310",
+                      "spend": "$2,800",
+                      "actions": {
+                        "type": "button",
+                        "props": {
+                          "text": "View Details",
+                          "variant": "secondary",
+                          "onClick": "view-campaign-details-4"
+                        }
+                      }
+                    },
+                    {
+                      "id": "campaign-5",
+                      "name": "Partnership Promotion",
+                      "status": {
+                        "type": "badge",
+                        "props": {
+                          "text": "Pending",
+                          "color": "yellow"
+                        }
+                      },
+                      "startDate": "May 1, 2025",
+                      "endDate": "Jun 30, 2025",
+                      "impressions": "N/A",
+                      "clicks": "N/A",
+                      "conversions": "N/A",
+                      "spend": "$6,000",
+                      "actions": {
+                        "type": "button",
+                        "props": {
+                          "text": "View Details",
+                          "variant": "secondary",
+                          "onClick": "view-campaign-details-5"
+                        }
+                      }
+                    }
+                  ],
+                  "headers": [
+                    "Column A",
+                    "Column B"
+                  ],
+                  "rows": [
+                    {
+                      "id": "row-2hi123",
+                      "Column A": "Row 1 A",
+                      "Column B": "Row 1 B"
+                    },
+                    {
+                      "id": "row-2zvduz",
+                      "Column A": "Row 2 A",
+                      "Column B": "Row 2 B"
+                    },
+                    {
+                      "id": "row-mk9jft",
+                      "Column A": "Row 3 A",
+                      "Column B": "Row 3 B"
+                    },
+                    {
+                      "id": "row-449eg6",
+                      "Column A": "Row 4 A",
+                      "Column B": "Row 4 B"
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "title": "Marketing Analytics Dashboard",
+      "description": "Comprehensive overview of marketing campaign performance and audience insights."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "split",
+      "stat",
+      "card",
+      "chart",
+      "table"
+    ],
+    "nestingDepth": 5,
+    "placeholderDetected": false
+  }
+}

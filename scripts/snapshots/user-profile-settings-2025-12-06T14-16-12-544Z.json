@@ -1,0 +1,422 @@
+{
+  "prompt": "User profile settings",
+  "generatedAt": "2025-12-06T14:17:34.353Z",
+  "response": {
+    "components": [
+      {
+        "id": "profile-settings-page",
+        "type": "stack",
+        "children": [
+          {
+            "id": "general-info-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "general-info-form",
+                "type": "form",
+                "children": [
+                  {
+                    "id": "avatar-details-split",
+                    "type": "split",
+                    "children": [
+                      {
+                        "id": "avatar-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "avatar-label",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "user-avatar",
+                            "type": "avatar",
+                            "props": {
+                              "name": "User",
+                              "size": "md"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "upload-avatar-button",
+                            "type": "button",
+                            "props": {
+                              "label": "Action",
+                              "variant": "primary",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      },
+                      {
+                        "id": "name-email-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "full-name-input",
+                            "type": "input",
+                            "props": {
+                              "name": "input-j6yukt",
+                              "label": "Input",
+                              "type": "text"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "email-input",
+                            "type": "input",
+                            "props": {
+                              "name": "input-6dqgw1",
+                              "label": "Input",
+                              "type": "text"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  },
+                  {
+                    "id": "general-info-spacer",
+                    "type": "spacer",
+                    "props": {
+                      "size": "md"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "save-general-info-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "submitLabel": "Submit"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "security-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "password-card",
+                "type": "card",
+                "children": [
+                  {
+                    "id": "password-stack",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "password-heading",
+                        "type": "heading",
+                        "props": {
+                          "content": "Heading",
+                          "level": 2
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "password-description",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "change-password-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  }
+                ],
+                "props": {}
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "preferences-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "preferences-form",
+                "type": "form",
+                "children": [
+                  {
+                    "id": "theme-language-split",
+                    "type": "split",
+                    "children": [
+                      {
+                        "id": "theme-select",
+                        "type": "select",
+                        "props": {
+                          "name": "select-x3wk3n",
+                          "label": "Select",
+                          "options": [
+                            {
+                              "value": "option-1",
+                              "label": "Option 1"
+                            },
+                            {
+                              "value": "option-2",
+                              "label": "Option 2"
+                            },
+                            {
+                              "value": "option-3",
+                              "label": "Option 3"
+                            }
+                          ]
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "language-select",
+                        "type": "select",
+                        "props": {
+                          "name": "select-2jyoe2",
+                          "label": "Select",
+                          "options": [
+                            {
+                              "value": "option-1",
+                              "label": "Option 1"
+                            },
+                            {
+                              "value": "option-2",
+                              "label": "Option 2"
+                            },
+                            {
+                              "value": "option-3",
+                              "label": "Option 3"
+                            }
+                          ]
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  },
+                  {
+                    "id": "preferences-spacer",
+                    "type": "spacer",
+                    "props": {
+                      "size": "md"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "save-preferences-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "submitLabel": "Submit"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "notifications-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "notification-settings-card",
+                "type": "card",
+                "children": [
+                  {
+                    "id": "notification-settings-stack",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "notification-types-list",
+                        "type": "list",
+                        "props": {
+                          "items": [
+                            {
+                              "id": "item-hk2if2",
+                              "label": "Item"
+                            },
+                            {
+                              "id": "item-7xxff1",
+                              "label": "Item"
+                            },
+                            {
+                              "id": "item-n8tgks",
+                              "label": "Item"
+                            }
+                          ],
+                          "variant": "none"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "notification-list-spacer",
+                        "type": "spacer",
+                        "props": {
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "update-notification-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  }
+                ],
+                "props": {}
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "account-actions-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "delete-account-card",
+                "type": "card",
+                "children": [
+                  {
+                    "id": "delete-account-stack",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "delete-account-heading",
+                        "type": "heading",
+                        "props": {
+                          "content": "Heading",
+                          "level": 2
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "delete-account-description",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "delete-account-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  }
+                ],
+                "props": {}
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "User Profile Settings",
+      "description": "Manage your personal information, security, preferences, and account actions."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "form",
+      "split",
+      "text",
+      "avatar",
+      "button",
+      "input",
+      "spacer",
+      "card",
+      "heading",
+      "select",
+      "list"
+    ],
+    "nestingDepth": 6,
+    "placeholderDetected": false
+  }
+}

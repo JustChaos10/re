@@ -1,0 +1,151 @@
+{
+  "prompt": "Loading state for data fetch",
+  "generatedAt": "2025-12-06T14:29:00.833Z",
+  "response": {
+    "components": [
+      {
+        "id": "loading-page-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "loading-data-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "loading-indicator-stack",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "loading-status-message",
+                    "type": "text",
+                    "props": {
+                      "content": "Text",
+                      "size": "md",
+                      "weight": "normal"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              },
+              {
+                "id": "spacer-1",
+                "type": "spacer",
+                "props": {
+                  "size": "md"
+                },
+                "children": []
+              },
+              {
+                "id": "placeholder-hint-text",
+                "type": "text",
+                "props": {
+                  "content": "Text",
+                  "size": "md",
+                  "weight": "normal"
+                },
+                "children": []
+              },
+              {
+                "id": "spacer-2",
+                "type": "spacer",
+                "props": {
+                  "size": "md"
+                },
+                "children": []
+              },
+              {
+                "id": "placeholder-cards-split",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "placeholder-card-1",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "metrics-illustration",
+                        "type": "illustration",
+                        "props": {
+                          "name": "document",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "metrics-placeholder-text",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "placeholder-card-2",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "activity-illustration",
+                        "type": "illustration",
+                        "props": {
+                          "name": "document",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "activity-placeholder-text",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Loading Dashboard",
+      "description": "A loading state UI for a data-intensive dashboard, showing a spinner and placeholder cards."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "text",
+      "spacer",
+      "split",
+      "card",
+      "illustration"
+    ],
+    "nestingDepth": 5,
+    "placeholderDetected": false
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "prompt": "Feature comparison for tiers",
+  "generatedAt": "2025-12-06T14:32:08.286Z",
+  "response": {
+    "components": [
+      {
+        "id": "feature-comparison-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "comparison-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "feature-comparison-table",
+                "type": "table",
+                "props": {
+                  "headers": [
+                    "Column A",
+                    "Column B"
+                  ],
+                  "rows": [
+                    {
+                      "id": "row-brjytf",
+                      "Column A": "Row 1 A",
+                      "Column B": "Row 1 B"
+                    },
+                    {
+                      "id": "row-wpayqt",
+                      "Column A": "Row 2 A",
+                      "Column B": "Row 2 B"
+                    },
+                    {
+                      "id": "row-yiwd8q",
+                      "Column A": "Row 3 A",
+                      "Column B": "Row 3 B"
+                    },
+                    {
+                      "id": "row-p3gajf",
+                      "Column A": "Row 4 A",
+                      "Column B": "Row 4 B"
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Feature Comparison",
+      "description": "A detailed comparison of features available across different product tiers."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "table"
+    ],
+    "nestingDepth": 3,
+    "placeholderDetected": false
+  }
+}

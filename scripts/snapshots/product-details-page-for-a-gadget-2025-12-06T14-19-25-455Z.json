@@ -1,0 +1,671 @@
+{
+  "prompt": "Product details page for a gadget",
+  "generatedAt": "2025-12-06T14:20:21.891Z",
+  "response": {
+    "components": [
+      {
+        "id": "product-page-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "product-overview-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "product-details-split",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "product-image-gallery",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "main-product-image",
+                        "type": "image",
+                        "props": {
+                          "src": "https://placehold.co/600x360/png",
+                          "alt": "Image",
+                          "rounded": false
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "thumbnail-images",
+                        "type": "container",
+                        "children": [
+                          {
+                            "id": "thumb-1",
+                            "type": "image",
+                            "props": {
+                              "src": "https://placehold.co/600x360/png",
+                              "alt": "Image",
+                              "rounded": false
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "thumb-2",
+                            "type": "image",
+                            "props": {
+                              "src": "https://placehold.co/600x360/png",
+                              "alt": "Image",
+                              "rounded": false
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "thumb-3",
+                            "type": "image",
+                            "props": {
+                              "src": "https://placehold.co/600x360/png",
+                              "alt": "Image",
+                              "rounded": false
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {}
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  },
+                  {
+                    "id": "product-info-stack",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "product-name-heading",
+                        "type": "heading",
+                        "props": {
+                          "content": "Heading",
+                          "level": 2
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "product-tagline",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "price-rating-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "product-price",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "product-rating",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      },
+                      {
+                        "id": "product-description-divider",
+                        "type": "divider",
+                        "props": {},
+                        "children": []
+                      },
+                      {
+                        "id": "product-full-description",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "key-features-tags",
+                        "type": "tag-group",
+                        "props": {
+                          "tags": [
+                            {
+                              "id": "tag-x3blc5",
+                              "label": "Tag 1"
+                            },
+                            {
+                              "id": "tag-grht50",
+                              "label": "Tag 2"
+                            }
+                          ]
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "add-to-cart-form",
+                        "type": "form",
+                        "children": [
+                          {
+                            "id": "quantity-selector-stack",
+                            "type": "stack",
+                            "children": [
+                              {
+                                "id": "quantity-input",
+                                "type": "input",
+                                "props": {
+                                  "name": "input-uojkzx",
+                                  "label": "Input",
+                                  "type": "text"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "add-to-cart-button",
+                                "type": "button",
+                                "props": {
+                                  "label": "Action",
+                                  "variant": "primary",
+                                  "size": "md"
+                                },
+                                "children": []
+                              }
+                            ],
+                            "props": {
+                              "gap": "md"
+                            }
+                          }
+                        ],
+                        "props": {
+                          "submitLabel": "Submit"
+                        }
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "specifications-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "specifications-list",
+                "type": "list",
+                "props": {
+                  "items": [
+                    {
+                      "id": "item-lbchwc",
+                      "label": "Item"
+                    },
+                    {
+                      "id": "item-zsw2y5",
+                      "label": "Item"
+                    },
+                    {
+                      "id": "item-netw5f",
+                      "label": "Item"
+                    }
+                  ],
+                  "variant": "none"
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "customer-reviews-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "reviews-list",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "review-card-1",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "review-1-header",
+                        "type": "split",
+                        "children": [
+                          {
+                            "id": "review-1-avatar",
+                            "type": "avatar",
+                            "props": {
+                              "name": "User",
+                              "size": "md"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "review-1-details",
+                            "type": "stack",
+                            "children": [
+                              {
+                                "id": "review-1-author",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "review-1-rating",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              }
+                            ],
+                            "props": {
+                              "gap": "md"
+                            }
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      },
+                      {
+                        "id": "review-1-title",
+                        "type": "heading",
+                        "props": {
+                          "content": "Heading",
+                          "level": 2
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "review-1-comment",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "review-card-2",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "review-2-header",
+                        "type": "split",
+                        "children": [
+                          {
+                            "id": "review-2-avatar",
+                            "type": "avatar",
+                            "props": {
+                              "name": "User",
+                              "size": "md"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "review-2-details",
+                            "type": "stack",
+                            "children": [
+                              {
+                                "id": "review-2-author",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "review-2-rating",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              }
+                            ],
+                            "props": {
+                              "gap": "md"
+                            }
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      },
+                      {
+                        "id": "review-2-title",
+                        "type": "heading",
+                        "props": {
+                          "content": "Heading",
+                          "level": 2
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "review-2-comment",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "review-card-3",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "review-3-header",
+                        "type": "split",
+                        "children": [
+                          {
+                            "id": "review-3-avatar",
+                            "type": "avatar",
+                            "props": {
+                              "name": "User",
+                              "size": "md"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "review-3-details",
+                            "type": "stack",
+                            "children": [
+                              {
+                                "id": "review-3-author",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "review-3-rating",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              }
+                            ],
+                            "props": {
+                              "gap": "md"
+                            }
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      },
+                      {
+                        "id": "review-3-title",
+                        "type": "heading",
+                        "props": {
+                          "content": "Heading",
+                          "level": 2
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "review-3-comment",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "related-products-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "related-products-container",
+                "type": "container",
+                "children": [
+                  {
+                    "id": "related-product-1",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "related-prod-1-image",
+                        "type": "image",
+                        "props": {
+                          "src": "https://placehold.co/600x360/png",
+                          "alt": "Image",
+                          "rounded": false
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "related-prod-1-title",
+                        "type": "heading",
+                        "props": {
+                          "content": "Heading",
+                          "level": 2
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "related-prod-1-price",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "related-prod-1-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "related-product-2",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "related-prod-2-image",
+                        "type": "image",
+                        "props": {
+                          "src": "https://placehold.co/600x360/png",
+                          "alt": "Image",
+                          "rounded": false
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "related-prod-2-title",
+                        "type": "heading",
+                        "props": {
+                          "content": "Heading",
+                          "level": 2
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "related-prod-2-price",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "related-prod-2-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "related-product-3",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "related-prod-3-image",
+                        "type": "image",
+                        "props": {
+                          "src": "https://placehold.co/600x360/png",
+                          "alt": "Image",
+                          "rounded": false
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "related-prod-3-title",
+                        "type": "heading",
+                        "props": {
+                          "content": "Heading",
+                          "level": 2
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "related-prod-3-price",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "related-prod-3-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {}
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Quantum Leap Smartwatch Pro - Product Details",
+      "description": "Detailed product page for the Quantum Leap Smartwatch Pro, featuring specifications, reviews, and related products."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "split",
+      "image",
+      "container",
+      "heading",
+      "text",
+      "divider",
+      "tag-group",
+      "form",
+      "input",
+      "button",
+      "list",
+      "card",
+      "avatar"
+    ],
+    "nestingDepth": 7,
+    "placeholderDetected": false
+  }
+}

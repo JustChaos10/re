@@ -1,0 +1,223 @@
+{
+  "prompt": "Pricing table for SaaS plans",
+  "generatedAt": "2025-12-06T14:21:07.987Z",
+  "response": {
+    "components": [
+      {
+        "id": "pricing-page-stack",
+        "type": "stack",
+        "props": {
+          "gap": "xl"
+        },
+        "children": [
+          {
+            "id": "pricing-section",
+            "type": "section",
+            "props": {
+              "title": "Flexible Pricing Plans",
+              "subtitle": "Choose the perfect plan that scales with your business needs."
+            },
+            "children": [
+              {
+                "id": "pricing-plans-split",
+                "type": "split",
+                "props": {
+                  "gap": "lg",
+                  "align": "stretch"
+                },
+                "children": [
+                  {
+                    "id": "plan-card-basic",
+                    "type": "card",
+                    "props": {
+                      "padding": "lg",
+                      "elevation": "sm"
+                    },
+                    "children": [
+                      {
+                        "id": "basic-plan-content",
+                        "type": "stack",
+                        "props": {
+                          "gap": "md"
+                        },
+                        "children": [
+                          {
+                            "id": "basic-plan-heading",
+                            "type": "heading",
+                            "props": {
+                              "level": "h3",
+                              "text": "Basic",
+                              "content": "Heading"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "basic-plan-price",
+                            "type": "text",
+                            "props": {
+                              "text": "$19 / month",
+                              "size": "xl",
+                              "weight": "bold",
+                              "content": "Text"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "basic-plan-description",
+                            "type": "text",
+                            "props": {
+                              "text": "Ideal for small teams and startups.",
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "basic-plan-features",
+                            "type": "list",
+                            "props": {
+                              "items": [
+                                "5 Projects",
+                                "10GB Storage",
+                                "Basic Analytics",
+                                "Email Support"
+                              ],
+                              "variant": "none"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "basic-plan-button",
+                            "type": "button",
+                            "props": {
+                              "text": "Start Free Trial",
+                              "variant": "secondary",
+                              "onClick": "start-basic-trial",
+                              "label": "Action",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "plan-card-pro",
+                    "type": "card",
+                    "props": {
+                      "padding": "lg",
+                      "elevation": "md",
+                      "border": "highlight"
+                    },
+                    "children": [
+                      {
+                        "id": "pro-plan-content",
+                        "type": "stack",
+                        "props": {
+                          "gap": "md"
+                        },
+                        "children": [
+                          {
+                            "id": "pro-plan-badge",
+                            "type": "badge",
+                            "props": {
+                              "text": "Popular",
+                              "variant": "primary",
+                              "label": "Badge"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "pro-plan-heading",
+                            "type": "heading",
+                            "props": {
+                              "level": "h3",
+                              "text": "Pro",
+                              "content": "Heading"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "pro-plan-price",
+                            "type": "text",
+                            "props": {
+                              "text": "$49 / month",
+                              "size": "xl",
+                              "weight": "bold",
+                              "content": "Text"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "pro-plan-description",
+                            "type": "text",
+                            "props": {
+                              "text": "Perfect for growing businesses and agencies.",
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "pro-plan-features",
+                            "type": "list",
+                            "props": {
+                              "items": [
+                                "Unlimited Projects",
+                                "100GB Storage",
+                                "Advanced Analytics",
+                                "Priority Support",
+                                "Custom Branding"
+                              ],
+                              "variant": "none"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "pro-plan-button",
+                            "type": "button",
+                            "props": {
+                              "text": "Get Started",
+                              "variant": "primary",
+                              "onClick": "get-started-pro",
+                              "label": "Action",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "title": "SaaS Pricing Plans",
+      "description": "Overview of available subscription plans for the SaaS product."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "split",
+      "card",
+      "heading",
+      "text",
+      "list",
+      "button",
+      "badge"
+    ],
+    "nestingDepth": 6,
+    "placeholderDetected": false
+  }
+}

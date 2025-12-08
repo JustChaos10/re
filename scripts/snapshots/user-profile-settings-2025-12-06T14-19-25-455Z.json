@@ -1,0 +1,282 @@
+{
+  "prompt": "User profile settings",
+  "generatedAt": "2025-12-06T14:20:42.193Z",
+  "response": {
+    "components": [
+      {
+        "id": "profile-settings-page",
+        "type": "stack",
+        "children": [
+          {
+            "id": "profile-info-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "profile-info-content",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "avatar-upload-container",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "user-avatar",
+                        "type": "avatar",
+                        "props": {
+                          "name": "User",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "change-avatar-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  },
+                  {
+                    "id": "profile-details-form",
+                    "type": "form",
+                    "children": [
+                      {
+                        "id": "full-name-input",
+                        "type": "input",
+                        "props": {
+                          "name": "input-c5g78s",
+                          "label": "Input",
+                          "type": "text"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "email-input",
+                        "type": "input",
+                        "props": {
+                          "name": "input-44b86d",
+                          "label": "Input",
+                          "type": "text"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "save-profile-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "submitLabel": "Submit"
+                    }
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "security-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "password-change-form",
+                "type": "form",
+                "children": [
+                  {
+                    "id": "current-password-input",
+                    "type": "input",
+                    "props": {
+                      "name": "input-6e705t",
+                      "label": "Input",
+                      "type": "text"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "new-password-input",
+                    "type": "input",
+                    "props": {
+                      "name": "input-0aeynw",
+                      "label": "Input",
+                      "type": "text"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "confirm-password-input",
+                    "type": "input",
+                    "props": {
+                      "name": "input-3rfn0d",
+                      "label": "Input",
+                      "type": "text"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "change-password-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "submitLabel": "Submit"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "notification-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "notification-form",
+                "type": "form",
+                "children": [
+                  {
+                    "id": "email-notifications-input",
+                    "type": "input",
+                    "props": {
+                      "name": "input-tb5dhx",
+                      "label": "Input",
+                      "type": "text"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "push-notifications-input",
+                    "type": "input",
+                    "props": {
+                      "name": "input-8jbr7x",
+                      "label": "Input",
+                      "type": "text"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "sms-notifications-input",
+                    "type": "input",
+                    "props": {
+                      "name": "input-tsk61h",
+                      "label": "Input",
+                      "type": "text"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "save-notification-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "submitLabel": "Submit"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "account-management-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "delete-account-callout",
+                "type": "callout",
+                "children": [
+                  {
+                    "id": "delete-account-text",
+                    "type": "text",
+                    "props": {
+                      "content": "Text",
+                      "size": "md",
+                      "weight": "normal"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "delete-account-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "message": "Note",
+                  "variant": "info",
+                  "collapsible": false
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "User Profile Settings",
+      "description": "Manage your personal information, security, and notification preferences."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "split",
+      "avatar",
+      "button",
+      "form",
+      "input",
+      "callout",
+      "text"
+    ],
+    "nestingDepth": 5,
+    "placeholderDetected": false
+  }
+}

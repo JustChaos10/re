@@ -1,0 +1,226 @@
+{
+  "prompt": "Loading state for data fetch",
+  "generatedAt": "2025-12-06T14:15:18.093Z",
+  "response": {
+    "components": [
+      {
+        "id": "dashboard-loading-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "page-header-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "overall-progress-container",
+                "type": "container",
+                "children": [
+                  {
+                    "id": "overall-progress-bar",
+                    "type": "progress",
+                    "props": {
+                      "value": 50,
+                      "max": 100,
+                      "showPercentage": true
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "overall-progress-text",
+                    "type": "text",
+                    "props": {
+                      "content": "Text",
+                      "size": "md",
+                      "weight": "normal"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {}
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "main-content-split",
+            "type": "split",
+            "children": [
+              {
+                "id": "performance-trend-card",
+                "type": "card",
+                "children": [
+                  {
+                    "id": "performance-loading-stack",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "performance-chart-illustration",
+                        "type": "illustration",
+                        "props": {
+                          "name": "document",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "performance-chart-progress",
+                        "type": "progress",
+                        "props": {
+                          "value": 50,
+                          "max": 100,
+                          "showPercentage": true
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "performance-chart-text",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  }
+                ],
+                "props": {}
+              },
+              {
+                "id": "right-panel-stack",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "key-metrics-card",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "metrics-loading-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "metrics-illustration",
+                            "type": "illustration",
+                            "props": {
+                              "name": "document",
+                              "size": "md"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "metrics-progress",
+                            "type": "progress",
+                            "props": {
+                              "value": 50,
+                              "max": 100,
+                              "showPercentage": true
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "metrics-text",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "recent-activity-card",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "activity-loading-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "activity-illustration",
+                            "type": "illustration",
+                            "props": {
+                              "name": "document",
+                              "size": "md"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "activity-progress",
+                            "type": "progress",
+                            "props": {
+                              "value": 50,
+                              "max": 100,
+                              "showPercentage": true
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "activity-text",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "gap": "md"
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Dashboard Loading State",
+      "description": "A desktop UI displaying various loading indicators and placeholders for a dashboard while data is being fetched."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "container",
+      "progress",
+      "text",
+      "split",
+      "card",
+      "illustration"
+    ],
+    "nestingDepth": 6,
+    "placeholderDetected": false
+  }
+}

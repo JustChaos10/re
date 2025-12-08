@@ -1,25 +1,49 @@
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import { GroqClient } from '@re/core';
+import fs from 'fs';
+import path from 'path';
+import { GeminiClient, ServiceAccountCredentials } from '@re/core';
+import { logError, logInfo } from './logger';
 
-dotenv.config();
+// Load .env from project root (3 levels up from packages/api/src)
+const envPaths = [
+  path.resolve(process.cwd(), '.env'),
+  path.resolve(__dirname, '..', '.env'),
+  path.resolve(__dirname, '../..', '.env'),
+  path.resolve(__dirname, '../../..', '.env'),
+];
+for (const envPath of envPaths) {
+  if (fs.existsSync(envPath)) {
+    dotenv.config({ path: envPath });
+    console.log(`[Config] Loaded .env from: ${envPath}`);
+    break;
+  }
+}
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+// Use GA Gemini 2.5 Pro for better structured JSON output quality
+const DEFAULT_LOCATION = process.env.VERTEX_LOCATION || 'us-central1';
+const DEFAULT_MODEL = process.env.VERTEX_MODEL || 'gemini-2.5-pro';
 
-// Security Fix #2: Configure CORS with proper origin restrictions
+const LOG_PATH =
+  process.env.API_LOG_PATH ||
+  path.resolve(process.cwd(), 'logs', 're-api.log');
+
 const allowedOrigins = process.env.ALLOWED_ORIGINS
   ? process.env.ALLOWED_ORIGINS.split(',')
-  : ['http://localhost:3000', 'http://localhost:5173']; // Default dev origins
+  : ['http://localhost:3000', 'http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175', 'http://localhost:5176'];
 
 app.use(
   cors({
     origin: (origin, callback) => {
-      // Allow requests with no origin (like mobile apps or curl requests)
       if (!origin) return callback(null, true);
 
-      if (allowedOrigins.includes(origin)) {
+      // In development, allow any localhost origin
+      if (process.env.NODE_ENV !== 'production' && origin?.startsWith('http://localhost:')) {
+        callback(null, true);
+      } else if (allowedOrigins.includes(origin)) {
         callback(null, true);
       } else {
         callback(new Error('Not allowed by CORS'));
@@ -29,40 +53,81 @@ app.use(
   })
 );
 
-// Security Fix #3: Add request size limits to prevent DOS attacks
 app.use(express.json({ limit: '1mb' }));
 
-// Helper function to get API key from environment or header
-// Security Fix #1: Remove API key from request body
-function getApiKey(req: Request): string | null {
-  // Try to get from X-API-Key header first
-  const headerKey = req.headers['x-api-key'] as string;
-  if (headerKey) return headerKey;
+function loadServiceAccount(): ServiceAccountCredentials {
+  const inline = process.env.VERTEX_SERVICE_ACCOUNT_JSON;
+  if (inline) {
+    return JSON.parse(inline);
+  }
 
-  // Fall back to environment variable
-  return process.env.GROQ_API_KEY || null;
-}
+  const candidatePath =
+    process.env.VERTEX_SERVICE_ACCOUNT_PATH ||
+    process.env.GOOGLE_APPLICATION_CREDENTIALS ||
+    'service.json';
 
-// Helper function to sanitize error messages
-// Security Fix #4: Don't expose internal error details to clients
-function sanitizeError(error: unknown): string {
-  if (error instanceof Error) {
-    // Log full error server-side
-    console.error('Full error details:', error);
+  const searchPaths = [
+    candidatePath,
+    path.resolve(process.cwd(), candidatePath),
+    path.resolve(__dirname, '..', candidatePath),
+    path.resolve(__dirname, '../..', candidatePath),
+    path.resolve(__dirname, '../../..', candidatePath),
+  ];
 
-    // Only send generic message to client
-    // In production, don't expose error.message which might contain sensitive info
-    if (process.env.NODE_ENV === 'production') {
-      return 'An error occurred while processing your request';
-    } else {
-      // In development, can show more details for debugging
-      return error.message;
+  for (const p of searchPaths) {
+    if (p && fs.existsSync(p)) {
+      const raw = fs.readFileSync(p, 'utf-8');
+      return JSON.parse(raw);
     }
   }
-  return 'An unexpected error occurred';
+
+  throw new Error(
+    'Vertex AI credentials not found. Set VERTEX_SERVICE_ACCOUNT_JSON or VERTEX_SERVICE_ACCOUNT_PATH / GOOGLE_APPLICATION_CREDENTIALS.'
+  );
 }
 
-// Validation helper for input parameters
+function buildGeminiClient() {
+  const credentials = loadServiceAccount();
+  const projectId = process.env.VERTEX_PROJECT_ID || credentials.project_id;
+  if (!projectId) {
+    throw new Error(
+      'Vertex AI project id missing. Set VERTEX_PROJECT_ID or include project_id in the service account json.'
+    );
+  }
+
+  return new GeminiClient({
+    projectId,
+    location: DEFAULT_LOCATION,
+    model: DEFAULT_MODEL,
+    credentials,
+  });
+}
+
+let geminiClient: GeminiClient;
+try {
+  console.log(`[Config] Using model: ${DEFAULT_MODEL}`);
+  console.log(`[Config] Using location: ${DEFAULT_LOCATION}`);
+  console.log(`[Config] PORT: ${PORT}`);
+  geminiClient = buildGeminiClient();
+} catch (error) {
+  logError('Failed to initialize Vertex AI client', error);
+  process.exit(1);
+}
+
+function sanitizeError(error: unknown): string {
+  const message =
+    error instanceof Error ? error.message : typeof error === 'string' ? error : 'An unexpected error occurred';
+
+  // Log full details to file, not stdout.
+  logError(message, error);
+
+  if (process.env.NODE_ENV === 'production') {
+    return 'An error occurred while processing your request';
+  }
+
+  return message;
+}
+
 function validateGenerateParams(params: {
   temperature?: number;
   maxTokens?: number;
@@ -74,20 +139,18 @@ function validateGenerateParams(params: {
   }
 
   if (params.maxTokens !== undefined) {
-    if (typeof params.maxTokens !== 'number' || params.maxTokens < 1 || params.maxTokens > 8192) {
-      return { valid: false, error: 'maxTokens must be a number between 1 and 8192' };
+    if (typeof params.maxTokens !== 'number' || params.maxTokens < 1 || params.maxTokens > 16384) {
+      return { valid: false, error: 'maxTokens must be a number between 1 and 16384' };
     }
   }
 
   return { valid: true };
 }
 
-// Health check
 app.get('/health', (req: Request, res: Response) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// Generate UI endpoint (non-streaming)
 app.post('/api/generate', async (req: Request, res: Response) => {
   try {
     const { prompt, model, temperature, maxTokens } = req.body;
@@ -100,23 +163,14 @@ app.post('/api/generate', async (req: Request, res: Response) => {
       return res.status(400).json({ error: 'Prompt too long (max 10000 characters)' });
     }
 
-    // Validate parameters
     const validation = validateGenerateParams({ temperature, maxTokens });
     if (!validation.valid) {
       return res.status(400).json({ error: validation.error });
     }
 
-    const groqApiKey = getApiKey(req);
-    if (!groqApiKey) {
-      return res.status(401).json({
-        error: 'API key required. Set GROQ_API_KEY environment variable or provide X-API-Key header'
-      });
-    }
-
-    const client = new GroqClient({ apiKey: groqApiKey });
-    const response = await client.generateUI({
+    const response = await geminiClient.generateUI({
       prompt,
-      model,
+      model: model || DEFAULT_MODEL,
       temperature,
       maxTokens,
     });
@@ -131,79 +185,102 @@ app.post('/api/generate', async (req: Request, res: Response) => {
   }
 });
 
-// Generate UI endpoint (streaming)
 app.post('/api/generate/stream', async (req: Request, res: Response) => {
+  const requestId = `req-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+
   try {
     const { prompt, model, temperature, maxTokens } = req.body;
 
+    logInfo(`[${requestId}] Stream request received`, {
+      promptLength: prompt?.length || 0,
+      model: model || DEFAULT_MODEL,
+      origin: req.headers.origin,
+    });
+
     if (!prompt || typeof prompt !== 'string') {
+      logError(`[${requestId}] Invalid prompt`, { prompt });
       return res.status(400).json({ error: 'Valid prompt is required' });
     }
 
     if (prompt.length > 10000) {
+      logError(`[${requestId}] Prompt too long`, { length: prompt.length });
       return res.status(400).json({ error: 'Prompt too long (max 10000 characters)' });
     }
 
-    // Validate parameters
     const validation = validateGenerateParams({ temperature, maxTokens });
     if (!validation.valid) {
+      logError(`[${requestId}] Validation failed`, { error: validation.error });
       return res.status(400).json({ error: validation.error });
     }
 
-    const groqApiKey = getApiKey(req);
-    if (!groqApiKey) {
-      return res.status(401).json({
-        error: 'API key required. Set GROQ_API_KEY environment variable or provide X-API-Key header'
-      });
-    }
-
-    // Set up SSE headers
     res.setHeader('Content-Type', 'text/event-stream');
     res.setHeader('Cache-Control', 'no-cache');
     res.setHeader('Connection', 'keep-alive');
 
-    const client = new GroqClient({ apiKey: groqApiKey });
+    let streamEnded = false;
 
-    await client.generateUIWithCallbacks(
+    const safeWrite = (data: string) => {
+      if (!streamEnded && !res.writableEnded) {
+        res.write(data);
+      }
+    };
+
+    const safeEnd = () => {
+      if (!streamEnded && !res.writableEnded) {
+        streamEnded = true;
+        res.end();
+      }
+    };
+
+    await geminiClient.generateUIWithCallbacks(
       {
         prompt,
-        model,
+        model: model || DEFAULT_MODEL,
         temperature,
         maxTokens,
       },
       {
         onComponent: (components) => {
-          res.write(`data: ${JSON.stringify({ type: 'components', data: components })}\n\n`);
+          logInfo(`[${requestId}] Components received: ${components.length} components`);
+          if (components.length > 0) {
+            logInfo(`[${requestId}] First component type: ${components[0]?.type}, id: ${components[0]?.id}`);
+          }
+          safeWrite(`data: ${JSON.stringify({ type: 'components', data: components })}\n\n`);
         },
         onMetadata: (metadata) => {
-          res.write(`data: ${JSON.stringify({ type: 'metadata', data: metadata })}\n\n`);
+          logInfo(`[${requestId}] Metadata: ${metadata?.title || 'No title'}`);
+          safeWrite(`data: ${JSON.stringify({ type: 'metadata', data: metadata })}\n\n`);
         },
         onError: (error) => {
+          logError(`[${requestId}] Generation error`, error);
           const errorMessage = sanitizeError(error);
-          res.write(
+          safeWrite(
             `data: ${JSON.stringify({ type: 'error', data: { message: errorMessage } })}\n\n`
           );
-          res.end();
+          safeEnd();
         },
         onDone: () => {
-          res.write(`data: ${JSON.stringify({ type: 'done' })}\n\n`);
-          res.end();
+          logInfo(`[${requestId}] Stream completed successfully`);
+          safeWrite(`data: ${JSON.stringify({ type: 'done' })}\n\n`);
+          safeEnd();
         },
       }
     );
   } catch (error) {
+    logError(`[${requestId}] Stream generation failed`, error);
     const errorMessage = sanitizeError(error);
-    res.write(
-      `data: ${JSON.stringify({
-        type: 'error',
-        data: { message: errorMessage },
-      })}\n\n`
-    );
-    res.end();
+    if (!res.writableEnded) {
+      res.write(
+        `data: ${JSON.stringify({
+          type: 'error',
+          data: { message: errorMessage },
+        })}\n\n`
+      );
+      res.end();
+    }
   }
 });
 
-// OpenAI-compatible chat completions endpoint
 app.post('/v1/chat/completions', async (req: Request, res: Response) => {
   try {
     const { messages, model, temperature, max_tokens, stream } = req.body;
@@ -216,40 +293,29 @@ app.post('/v1/chat/completions', async (req: Request, res: Response) => {
       return res.status(400).json({ error: 'Messages array cannot be empty' });
     }
 
-    // Validate parameters
     const validation = validateGenerateParams({
       temperature,
-      maxTokens: max_tokens
+      maxTokens: max_tokens,
     });
     if (!validation.valid) {
       return res.status(400).json({ error: validation.error });
     }
 
-    const groqApiKey = getApiKey(req);
-    if (!groqApiKey) {
-      return res.status(401).json({
-        error: 'API key required. Set GROQ_API_KEY environment variable or provide X-API-Key header'
-      });
-    }
-
-    // Extract the last user message as prompt
     const lastUserMessage = messages.filter((m: any) => m.role === 'user').pop();
     if (!lastUserMessage) {
       return res.status(400).json({ error: 'No user message found' });
     }
-
-    const client = new GroqClient({ apiKey: groqApiKey });
 
     if (stream) {
       res.setHeader('Content-Type', 'text/event-stream');
       res.setHeader('Cache-Control', 'no-cache');
       res.setHeader('Connection', 'keep-alive');
 
-      await client.generateUIWithCallbacks(
+      await geminiClient.generateUIWithCallbacks(
         {
           prompt: lastUserMessage.content,
           messages: messages.slice(0, -1),
-          model,
+          model: model || DEFAULT_MODEL,
           temperature,
           maxTokens: max_tokens,
         },
@@ -274,10 +340,10 @@ app.post('/v1/chat/completions', async (req: Request, res: Response) => {
         }
       );
     } else {
-      const response = await client.generateUI({
+      const response = await geminiClient.generateUI({
         prompt: lastUserMessage.content,
         messages: messages.slice(0, -1),
-        model,
+        model: model || DEFAULT_MODEL,
         temperature,
         maxTokens: max_tokens,
       });
@@ -310,19 +376,33 @@ app.post('/v1/chat/completions', async (req: Request, res: Response) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`\n🚀 Re Generative UI API Server`);
-  console.log(`📡 Server running on http://localhost:${PORT}`);
-  console.log(`✨ Powered by Groq\n`);
-  console.log(`Endpoints:`);
-  console.log(`  GET  /health - Health check`);
-  console.log(`  POST /api/generate - Generate UI (non-streaming)`);
-  console.log(`  POST /api/generate/stream - Generate UI (streaming)`);
-  console.log(`  POST /v1/chat/completions - OpenAI-compatible endpoint\n`);
-  console.log(`Security:`);
-  console.log(`  ✅ CORS configured for: ${allowedOrigins.join(', ')}`);
-  console.log(`  ✅ Request size limit: 1mb`);
-  console.log(`  ✅ Input validation enabled`);
-  console.log(`  ✅ Error sanitization active\n`);
+  const startupMessage = `\nRe Generative UI API Server
+Server running on http://localhost:${PORT}
+Powered by Google Vertex AI Gemini
+
+Endpoints:
+  GET  /health - Health check
+  POST /api/generate - Generate UI (non-streaming)
+  POST /api/generate/stream - Generate UI (streaming)
+  POST /v1/chat/completions - OpenAI-compatible endpoint
+
+Security:
+  CORS configured for: ${allowedOrigins.join(', ')}
+  Request size limit: 1mb
+  Input validation enabled
+  Error sanitization active
+
+Logging:
+  API logs: ${LOG_PATH}
+`;
+
+  console.log(startupMessage);
+  logInfo('API Server started', {
+    port: PORT,
+    model: DEFAULT_MODEL,
+    location: DEFAULT_LOCATION,
+    allowedOrigins,
+  });
 });
 
 export default app;

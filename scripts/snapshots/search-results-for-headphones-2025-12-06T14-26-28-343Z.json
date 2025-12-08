@@ -1,0 +1,312 @@
+{
+  "prompt": "Search results for 'headphones'",
+  "generatedAt": "2025-12-06T14:29:21.050Z",
+  "response": {
+    "components": [
+      {
+        "id": "search-results-page",
+        "type": "stack",
+        "children": [
+          {
+            "id": "search-header-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "search-query-display",
+                "type": "text",
+                "props": {
+                  "content": "Text",
+                  "size": "md",
+                  "weight": "normal"
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "main-content-split",
+            "type": "split",
+            "children": [
+              {
+                "id": "filter-sidebar",
+                "type": "container",
+                "children": [
+                  {
+                    "id": "filter-options-stack",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "filters-heading",
+                        "type": "heading",
+                        "props": {
+                          "content": "Heading",
+                          "level": 2
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "sort-by-select",
+                        "type": "select",
+                        "props": {
+                          "name": "select-e1y11h",
+                          "label": "Select",
+                          "options": [
+                            {
+                              "value": "option-1",
+                              "label": "Option 1"
+                            },
+                            {
+                              "value": "option-2",
+                              "label": "Option 2"
+                            },
+                            {
+                              "value": "option-3",
+                              "label": "Option 3"
+                            }
+                          ]
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "filter-divider-1",
+                        "type": "divider",
+                        "props": {},
+                        "children": []
+                      },
+                      {
+                        "id": "category-filter-section",
+                        "type": "section",
+                        "children": [
+                          {
+                            "id": "category-tags",
+                            "type": "tag-group",
+                            "props": {
+                              "tags": [
+                                {
+                                  "id": "tag-11c993",
+                                  "label": "Tag 1"
+                                },
+                                {
+                                  "id": "tag-cq3pgy",
+                                  "label": "Tag 2"
+                                }
+                              ]
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "title": "Section",
+                          "subtitle": ""
+                        }
+                      },
+                      {
+                        "id": "filter-divider-2",
+                        "type": "divider",
+                        "props": {},
+                        "children": []
+                      },
+                      {
+                        "id": "brand-filter-section",
+                        "type": "section",
+                        "children": [
+                          {
+                            "id": "brand-list",
+                            "type": "list",
+                            "props": {
+                              "items": [
+                                {
+                                  "id": "item-nwc7df",
+                                  "label": "Item"
+                                },
+                                {
+                                  "id": "item-nl6j4z",
+                                  "label": "Item"
+                                },
+                                {
+                                  "id": "item-fr1od7",
+                                  "label": "Item"
+                                }
+                              ],
+                              "variant": "none"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "title": "Section",
+                          "subtitle": ""
+                        }
+                      },
+                      {
+                        "id": "filter-divider-3",
+                        "type": "divider",
+                        "props": {},
+                        "children": []
+                      },
+                      {
+                        "id": "price-filter-section",
+                        "type": "section",
+                        "children": [
+                          {
+                            "id": "price-inputs",
+                            "type": "stack",
+                            "children": [],
+                            "props": {
+                              "gap": "md"
+                            }
+                          },
+                          {
+                            "id": "apply-price-filter-button",
+                            "type": "button",
+                            "props": {
+                              "label": "Action",
+                              "variant": "primary",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "title": "Section",
+                          "subtitle": ""
+                        }
+                      },
+                      {
+                        "id": "clear-filters-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  }
+                ],
+                "props": {}
+              },
+              {
+                "id": "product-results-stack",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "product-grid-container",
+                    "type": "container",
+                    "children": [],
+                    "props": {}
+                  },
+                  {
+                    "id": "pagination-container",
+                    "type": "container",
+                    "children": [
+                      {
+                        "id": "pagination-buttons",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "prev-page-button",
+                            "type": "button",
+                            "props": {
+                              "label": "Action",
+                              "variant": "primary",
+                              "size": "md"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "page-1-button",
+                            "type": "button",
+                            "props": {
+                              "label": "Action",
+                              "variant": "primary",
+                              "size": "md"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "page-2-button",
+                            "type": "button",
+                            "props": {
+                              "label": "Action",
+                              "variant": "primary",
+                              "size": "md"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "page-3-button",
+                            "type": "button",
+                            "props": {
+                              "label": "Action",
+                              "variant": "primary",
+                              "size": "md"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "next-page-button",
+                            "type": "button",
+                            "props": {
+                              "label": "Action",
+                              "variant": "primary",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "gap": "md"
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Headphones Search Results",
+      "description": "Desktop interface for displaying search results for 'headphones' with filtering and product cards."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "text",
+      "split",
+      "container",
+      "heading",
+      "select",
+      "divider",
+      "tag-group",
+      "list",
+      "button"
+    ],
+    "nestingDepth": 6,
+    "placeholderDetected": false
+  }
+}

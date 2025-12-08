@@ -16,7 +16,17 @@ export type ComponentType =
   | 'progress'
   | 'badge'
   | 'divider'
-  | 'container';
+  | 'container'
+  | 'icon'
+  | 'stack'
+  | 'section'
+  | 'split'
+  | 'spacer'
+  | 'illustration'
+  | 'callout'
+  | 'stat'
+  | 'avatar'
+  | 'tag-group';
 
 export interface BaseComponent {
   id: string;
@@ -181,10 +191,126 @@ export interface ContainerComponent extends BaseComponent {
   type: 'container';
   props?: {
     direction?: 'row' | 'column';
-    gap?: 'sm' | 'md' | 'lg';
-    align?: 'start' | 'center' | 'end';
+    gap?: 'none' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';
+    align?: 'start' | 'center' | 'end' | 'stretch';
+    justify?: 'start' | 'center' | 'end' | 'between' | 'around';
+    variant?: 'flex' | 'grid';
+    cols?: number;
+    wrap?: boolean;
+    padding?: 'none' | 'sm' | 'md' | 'lg' | 'xl';
   };
   children: Component[];
+}
+
+// NEW COMPONENTS
+
+export interface IconComponent extends BaseComponent {
+  type: 'icon';
+  props: {
+    name: string; // Lucide icon name
+    size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+    color?: 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'muted' | string;
+    strokeWidth?: number;
+  };
+}
+
+export interface StackComponent extends BaseComponent {
+  type: 'stack';
+  props?: {
+    gap?: 'none' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';
+    align?: 'start' | 'center' | 'end' | 'stretch';
+    dividers?: boolean;
+  };
+  children: Component[];
+}
+
+export interface SectionComponent extends BaseComponent {
+  type: 'section';
+  props?: {
+    title?: string;
+    subtitle?: string;
+    variant?: 'default' | 'card' | 'highlighted' | 'bordered';
+    padding?: 'none' | 'sm' | 'md' | 'lg' | 'xl';
+    background?: 'none' | 'subtle' | 'muted' | 'accent';
+  };
+  children: Component[];
+}
+
+export interface SplitComponent extends BaseComponent {
+  type: 'split';
+  props?: {
+    ratio?: '1:1' | '1:2' | '2:1' | '1:3' | '3:1' | '1:4' | '4:1';
+    gap?: 'none' | 'sm' | 'md' | 'lg' | 'xl';
+    vertical?: boolean; // Stack on mobile
+    reversed?: boolean;
+  };
+  children: [Component, Component]; // Exactly 2 children
+}
+
+export interface SpacerComponent extends BaseComponent {
+  type: 'spacer';
+  props?: {
+    size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl';
+  };
+}
+
+export interface IllustrationComponent extends BaseComponent {
+  type: 'illustration';
+  props: {
+    name?: 'empty-state' | 'success' | 'error' | 'search' | 'notification' | 'chart' | 'document' | 'settings' | 'user' | 'folder';
+    svg?: string; // Raw SVG string
+    size?: 'sm' | 'md' | 'lg' | 'xl';
+    color?: 'primary' | 'secondary' | 'muted';
+  };
+}
+
+export interface CalloutComponent extends BaseComponent {
+  type: 'callout';
+  props: {
+    title?: string;
+    message: string;
+    variant?: 'info' | 'success' | 'warning' | 'error' | 'tip' | 'note';
+    icon?: string;
+    collapsible?: boolean;
+  };
+  children?: Component[];
+}
+
+export interface StatComponent extends BaseComponent {
+  type: 'stat';
+  props: {
+    label: string;
+    value: string | number;
+    change?: {
+      value: string | number;
+      type: 'increase' | 'decrease' | 'neutral';
+    };
+    icon?: string;
+    description?: string;
+  };
+}
+
+export interface AvatarComponent extends BaseComponent {
+  type: 'avatar';
+  props: {
+    src?: string;
+    name: string;
+    size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+    status?: 'online' | 'offline' | 'busy' | 'away';
+  };
+}
+
+export interface TagGroupComponent extends BaseComponent {
+  type: 'tag-group';
+  props: {
+    tags: Array<{
+      id: string;
+      label: string;
+      variant?: 'default' | 'primary' | 'success' | 'warning' | 'error';
+      removable?: boolean;
+    }>;
+    size?: 'sm' | 'md';
+  };
 }
 
 export type Component =
@@ -203,7 +329,17 @@ export type Component =
   | ProgressComponent
   | BadgeComponent
   | DividerComponent
-  | ContainerComponent;
+  | ContainerComponent
+  | IconComponent
+  | StackComponent
+  | SectionComponent
+  | SplitComponent
+  | SpacerComponent
+  | IllustrationComponent
+  | CalloutComponent
+  | StatComponent
+  | AvatarComponent
+  | TagGroupComponent;
 
 export interface GeneratedUI {
   components: Component[];

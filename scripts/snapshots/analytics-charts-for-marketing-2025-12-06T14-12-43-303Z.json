@@ -1,0 +1,304 @@
+{
+  "prompt": "Analytics charts for marketing",
+  "generatedAt": "2025-12-06T14:14:25.027Z",
+  "response": {
+    "components": [
+      {
+        "id": "marketing-analytics-dashboard",
+        "type": "stack",
+        "children": [
+          {
+            "id": "dashboard-header-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "dashboard-actions",
+                "type": "container",
+                "children": [
+                  {
+                    "id": "date-range-select",
+                    "type": "select",
+                    "props": {
+                      "name": "select-mz1suf",
+                      "label": "Select",
+                      "options": [
+                        {
+                          "value": "option-1",
+                          "label": "Option 1"
+                        },
+                        {
+                          "value": "option-2",
+                          "label": "Option 2"
+                        },
+                        {
+                          "value": "option-3",
+                          "label": "Option 3"
+                        }
+                      ]
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "export-data-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {}
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "key-metrics-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "kpi-stats-split",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "total-campaigns-stat",
+                    "type": "stat",
+                    "props": {
+                      "label": "Stat",
+                      "value": "—"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "conversion-rate-stat",
+                    "type": "stat",
+                    "props": {
+                      "label": "Stat",
+                      "value": "—"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "performance-trends-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "impressions-clicks-conversions-chart",
+                "type": "chart",
+                "props": {
+                  "chartType": "line",
+                  "xKey": "label",
+                  "yKey": "value",
+                  "data": [
+                    {
+                      "label": "Jan",
+                      "value": 40
+                    },
+                    {
+                      "label": "Feb",
+                      "value": 55
+                    },
+                    {
+                      "label": "Mar",
+                      "value": 52
+                    },
+                    {
+                      "label": "Apr",
+                      "value": 61
+                    },
+                    {
+                      "label": "May",
+                      "value": 68
+                    },
+                    {
+                      "label": "Jun",
+                      "value": 73
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "channel-performance-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "channel-charts-split",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "conversions-by-channel-chart",
+                    "type": "chart",
+                    "props": {
+                      "chartType": "line",
+                      "xKey": "label",
+                      "yKey": "value",
+                      "data": [
+                        {
+                          "label": "Jan",
+                          "value": 40
+                        },
+                        {
+                          "label": "Feb",
+                          "value": 55
+                        },
+                        {
+                          "label": "Mar",
+                          "value": 52
+                        },
+                        {
+                          "label": "Apr",
+                          "value": 61
+                        },
+                        {
+                          "label": "May",
+                          "value": 68
+                        },
+                        {
+                          "label": "Jun",
+                          "value": 73
+                        }
+                      ]
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "spend-by-channel-chart",
+                    "type": "chart",
+                    "props": {
+                      "chartType": "line",
+                      "xKey": "label",
+                      "yKey": "value",
+                      "data": [
+                        {
+                          "label": "Jan",
+                          "value": 40
+                        },
+                        {
+                          "label": "Feb",
+                          "value": 55
+                        },
+                        {
+                          "label": "Mar",
+                          "value": 52
+                        },
+                        {
+                          "label": "Apr",
+                          "value": 61
+                        },
+                        {
+                          "label": "May",
+                          "value": 68
+                        },
+                        {
+                          "label": "Jun",
+                          "value": 73
+                        }
+                      ]
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "campaign-overview-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "campaign-performance-table",
+                "type": "table",
+                "props": {
+                  "headers": [
+                    "Column A",
+                    "Column B"
+                  ],
+                  "rows": [
+                    {
+                      "id": "row-6a977q",
+                      "Column A": "Row 1 A",
+                      "Column B": "Row 1 B"
+                    },
+                    {
+                      "id": "row-cjvypd",
+                      "Column A": "Row 2 A",
+                      "Column B": "Row 2 B"
+                    },
+                    {
+                      "id": "row-w5t4ik",
+                      "Column A": "Row 3 A",
+                      "Column B": "Row 3 B"
+                    },
+                    {
+                      "id": "row-cn9m1z",
+                      "Column A": "Row 4 A",
+                      "Column B": "Row 4 B"
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Marketing Analytics Dashboard",
+      "description": "A comprehensive dashboard displaying key marketing performance indicators, trends, channel breakdowns, and campaign-specific metrics for desktop viewing."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "container",
+      "select",
+      "button",
+      "split",
+      "stat",
+      "chart",
+      "table"
+    ],
+    "nestingDepth": 4,
+    "placeholderDetected": false
+  }
+}

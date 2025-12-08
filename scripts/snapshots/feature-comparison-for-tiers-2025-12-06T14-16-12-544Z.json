@@ -1,0 +1,74 @@
+{
+  "prompt": "Feature comparison for tiers",
+  "generatedAt": "2025-12-06T14:18:16.304Z",
+  "response": {
+    "components": [
+      {
+        "id": "tier-comparison-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "feature-comparison-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "feature-comparison-table",
+                "type": "table",
+                "props": {
+                  "headers": [
+                    "Column A",
+                    "Column B"
+                  ],
+                  "rows": [
+                    {
+                      "id": "row-y9jokq",
+                      "Column A": "Row 1 A",
+                      "Column B": "Row 1 B"
+                    },
+                    {
+                      "id": "row-xdqqdc",
+                      "Column A": "Row 2 A",
+                      "Column B": "Row 2 B"
+                    },
+                    {
+                      "id": "row-xeubf2",
+                      "Column A": "Row 3 A",
+                      "Column B": "Row 3 B"
+                    },
+                    {
+                      "id": "row-r5qfqe",
+                      "Column A": "Row 4 A",
+                      "Column B": "Row 4 B"
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Tier Feature Comparison",
+      "description": "A detailed comparison of features available across different subscription tiers."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "table"
+    ],
+    "nestingDepth": 3,
+    "placeholderDetected": false
+  }
+}

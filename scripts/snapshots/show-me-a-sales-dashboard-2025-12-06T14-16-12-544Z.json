@@ -1,0 +1,248 @@
+{
+  "prompt": "Show me a sales dashboard",
+  "generatedAt": "2025-12-06T14:16:27.256Z",
+  "response": {
+    "components": [
+      {
+        "id": "sales-dashboard-root",
+        "type": "stack",
+        "children": [
+          {
+            "id": "dashboard-overview-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "overview-stats-split",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "total-revenue-stat",
+                    "type": "stat",
+                    "props": {
+                      "label": "Stat",
+                      "value": "—"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "new-orders-stat",
+                    "type": "stat",
+                    "props": {
+                      "label": "Stat",
+                      "value": "—"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "monthly-revenue-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "revenue-trend-chart",
+                "type": "chart",
+                "props": {
+                  "chartType": "line",
+                  "xKey": "label",
+                  "yKey": "value",
+                  "data": [
+                    {
+                      "label": "Jan",
+                      "value": 40
+                    },
+                    {
+                      "label": "Feb",
+                      "value": 55
+                    },
+                    {
+                      "label": "Mar",
+                      "value": 52
+                    },
+                    {
+                      "label": "Apr",
+                      "value": 61
+                    },
+                    {
+                      "label": "May",
+                      "value": 68
+                    },
+                    {
+                      "label": "Jun",
+                      "value": 73
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "pipeline-products-split",
+            "type": "split",
+            "children": [
+              {
+                "id": "sales-pipeline-section",
+                "type": "section",
+                "children": [
+                  {
+                    "id": "pipeline-chart",
+                    "type": "chart",
+                    "props": {
+                      "chartType": "line",
+                      "xKey": "label",
+                      "yKey": "value",
+                      "data": [
+                        {
+                          "label": "Jan",
+                          "value": 40
+                        },
+                        {
+                          "label": "Feb",
+                          "value": 55
+                        },
+                        {
+                          "label": "Mar",
+                          "value": 52
+                        },
+                        {
+                          "label": "Apr",
+                          "value": 61
+                        },
+                        {
+                          "label": "May",
+                          "value": 68
+                        },
+                        {
+                          "label": "Jun",
+                          "value": 73
+                        }
+                      ]
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "title": "Section",
+                  "subtitle": ""
+                }
+              },
+              {
+                "id": "top-products-section",
+                "type": "section",
+                "children": [
+                  {
+                    "id": "top-products-list",
+                    "type": "list",
+                    "props": {
+                      "items": [
+                        {
+                          "id": "item-l8axam",
+                          "label": "Item"
+                        },
+                        {
+                          "id": "item-segeni",
+                          "label": "Item"
+                        },
+                        {
+                          "id": "item-77p7an",
+                          "label": "Item"
+                        }
+                      ],
+                      "variant": "none"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "title": "Section",
+                  "subtitle": ""
+                }
+              }
+            ],
+            "props": {
+              "gap": "md"
+            }
+          },
+          {
+            "id": "recent-sales-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "recent-orders-table",
+                "type": "table",
+                "props": {
+                  "headers": [
+                    "Column A",
+                    "Column B"
+                  ],
+                  "rows": [
+                    {
+                      "id": "row-bdxx5n",
+                      "Column A": "Row 1 A",
+                      "Column B": "Row 1 B"
+                    },
+                    {
+                      "id": "row-0y6kn7",
+                      "Column A": "Row 2 A",
+                      "Column B": "Row 2 B"
+                    },
+                    {
+                      "id": "row-hys2nd",
+                      "Column A": "Row 3 A",
+                      "Column B": "Row 3 B"
+                    },
+                    {
+                      "id": "row-dpro6a",
+                      "Column A": "Row 4 A",
+                      "Column B": "Row 4 B"
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Sales Dashboard",
+      "description": "A comprehensive overview of sales performance, trends, pipeline, and recent activities."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "split",
+      "stat",
+      "chart",
+      "list",
+      "table"
+    ],
+    "nestingDepth": 4,
+    "placeholderDetected": false
+  }
+}

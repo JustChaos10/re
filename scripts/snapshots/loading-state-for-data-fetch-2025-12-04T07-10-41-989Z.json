@@ -1,0 +1,95 @@
+{
+  "prompt": "Loading state for data fetch",
+  "generatedAt": "2025-12-04T07:13:58.402Z",
+  "response": {
+    "components": [
+      {
+        "id": "loading-page-container",
+        "type": "stack",
+        "props": {
+          "gap": "xl",
+          "align": "center"
+        },
+        "children": [
+          {
+            "id": "loading-section",
+            "type": "section",
+            "props": {
+              "title": "Loading Data",
+              "subtitle": "Please wait while we fetch the latest information.",
+              "variant": "card",
+              "background": "subtle",
+              "padding": "xl"
+            },
+            "children": [
+              {
+                "id": "loading-content",
+                "type": "stack",
+                "props": {
+                  "gap": "md",
+                  "align": "center"
+                },
+                "children": [
+                  {
+                    "id": "loading-illustration",
+                    "type": "illustration",
+                    "props": {
+                      "name": "chart",
+                      "size": "lg",
+                      "color": "primary"
+                    }
+                  },
+                  {
+                    "id": "loading-message",
+                    "type": "text",
+                    "props": {
+                      "content": "Retrieving your personalized dashboard metrics...",
+                      "size": "lg",
+                      "weight": "medium"
+                    }
+                  },
+                  {
+                    "id": "progress-bar",
+                    "type": "progress",
+                    "props": {
+                      "value": 75,
+                      "max": 100,
+                      "label": "Processing data",
+                      "showPercentage": false
+                    }
+                  },
+                  {
+                    "id": "tip-callout",
+                    "type": "callout",
+                    "props": {
+                      "variant": "info",
+                      "message": "This might take a few moments depending on data volume.",
+                      "icon": "info"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "title": "Loading State",
+      "description": "Indicates that data is being fetched and processed for display."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "illustration",
+      "text",
+      "progress",
+      "callout"
+    ],
+    "nestingDepth": 4,
+    "placeholderDetected": false
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "prompt": "Analytics charts for marketing",
+  "generatedAt": "2025-12-06T14:31:41.341Z",
+  "response": {
+    "components": [
+      {
+        "id": "marketing-analytics-dashboard",
+        "type": "stack",
+        "children": [
+          {
+            "id": "overview-metrics-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "overview-split",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "stats-container",
+                    "type": "container",
+                    "children": [
+                      {
+                        "id": "total-campaigns-stat",
+                        "type": "stat",
+                        "props": {
+                          "label": "Stat",
+                          "value": "—"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "total-spend-stat",
+                        "type": "stat",
+                        "props": {
+                          "label": "Stat",
+                          "value": "—"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "roi-stat",
+                        "type": "stat",
+                        "props": {
+                          "label": "Stat",
+                          "value": "—"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "conversion-rate-stat",
+                        "type": "stat",
+                        "props": {
+                          "label": "Stat",
+                          "value": "—"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "action-button-container",
+                    "type": "container",
+                    "children": [
+                      {
+                        "id": "create-new-campaign-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "campaign-performance-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "campaign-performance-chart",
+                "type": "chart",
+                "props": {
+                  "chartType": "line",
+                  "xKey": "label",
+                  "yKey": "value",
+                  "data": [
+                    {
+                      "label": "Jan",
+                      "value": 40
+                    },
+                    {
+                      "label": "Feb",
+                      "value": 55
+                    },
+                    {
+                      "label": "Mar",
+                      "value": 52
+                    },
+                    {
+                      "label": "Apr",
+                      "value": 61
+                    },
+                    {
+                      "label": "May",
+                      "value": 68
+                    },
+                    {
+                      "label": "Jun",
+                      "value": 73
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "channel-performance-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "channel-performance-chart",
+                "type": "chart",
+                "props": {
+                  "chartType": "line",
+                  "xKey": "label",
+                  "yKey": "value",
+                  "data": [
+                    {
+                      "label": "Jan",
+                      "value": 40
+                    },
+                    {
+                      "label": "Feb",
+                      "value": 55
+                    },
+                    {
+                      "label": "Mar",
+                      "value": 52
+                    },
+                    {
+                      "label": "Apr",
+                      "value": 61
+                    },
+                    {
+                      "label": "May",
+                      "value": 68
+                    },
+                    {
+                      "label": "Jun",
+                      "value": 73
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "audience-insights-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "audience-split",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "age-engagement-chart-container",
+                    "type": "container",
+                    "children": [
+                      {
+                        "id": "age-engagement-chart",
+                        "type": "chart",
+                        "props": {
+                          "chartType": "line",
+                          "xKey": "label",
+                          "yKey": "value",
+                          "data": [
+                            {
+                              "label": "Jan",
+                              "value": 40
+                            },
+                            {
+                              "label": "Feb",
+                              "value": 55
+                            },
+                            {
+                              "label": "Mar",
+                              "value": 52
+                            },
+                            {
+                              "label": "Apr",
+                              "value": 61
+                            },
+                            {
+                              "label": "May",
+                              "value": 68
+                            },
+                            {
+                              "label": "Jun",
+                              "value": 73
+                            }
+                          ]
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "top-performing-segments-container",
+                    "type": "container",
+                    "children": [
+                      {
+                        "id": "top-segments-list",
+                        "type": "list",
+                        "props": {
+                          "items": [
+                            {
+                              "id": "item-8ra97l",
+                              "label": "Item"
+                            },
+                            {
+                              "id": "item-bl94ij",
+                              "label": "Item"
+                            },
+                            {
+                              "id": "item-ocnrzn",
+                              "label": "Item"
+                            }
+                          ],
+                          "variant": "none"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "recent-campaigns-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "recent-campaigns-table",
+                "type": "table",
+                "props": {
+                  "headers": [
+                    "Column A",
+                    "Column B"
+                  ],
+                  "rows": [
+                    {
+                      "id": "row-lhtllk",
+                      "Column A": "Row 1 A",
+                      "Column B": "Row 1 B"
+                    },
+                    {
+                      "id": "row-jl9qv2",
+                      "Column A": "Row 2 A",
+                      "Column B": "Row 2 B"
+                    },
+                    {
+                      "id": "row-dvn2ml",
+                      "Column A": "Row 3 A",
+                      "Column B": "Row 3 B"
+                    },
+                    {
+                      "id": "row-7zdhfd",
+                      "Column A": "Row 4 A",
+                      "Column B": "Row 4 B"
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Marketing Analytics Dashboard",
+      "description": "Comprehensive overview of marketing campaign performance and key metrics."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "split",
+      "container",
+      "stat",
+      "button",
+      "chart",
+      "list",
+      "table"
+    ],
+    "nestingDepth": 5,
+    "placeholderDetected": false
+  }
+}

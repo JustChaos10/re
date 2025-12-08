@@ -1,0 +1,257 @@
+{
+  "prompt": "Loading state for data fetch",
+  "generatedAt": "2025-12-06T14:32:38.761Z",
+  "response": {
+    "components": [
+      {
+        "id": "loading-page-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "main-loading-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "loading-indicator-stack",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "data-fetch-illustration",
+                    "type": "illustration",
+                    "props": {
+                      "name": "document",
+                      "size": "md"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "loading-heading",
+                    "type": "heading",
+                    "props": {
+                      "content": "Heading",
+                      "level": 2
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "loading-message",
+                    "type": "text",
+                    "props": {
+                      "content": "Text",
+                      "size": "md",
+                      "weight": "normal"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "data-loading-progress",
+                    "type": "progress",
+                    "props": {
+                      "value": 50,
+                      "max": 100,
+                      "showPercentage": true
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "content-placeholder-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "placeholder-layout-stack",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "top-stats-placeholder",
+                    "type": "split",
+                    "children": [
+                      {
+                        "id": "stat-card-1",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "stat-title-1",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "stat-value-1",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {}
+                      },
+                      {
+                        "id": "stat-card-2",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "stat-title-2",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "stat-value-2",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {}
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  },
+                  {
+                    "id": "main-chart-placeholder",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "chart-area-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "chart-title-placeholder",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "chart-container-placeholder",
+                            "type": "container",
+                            "props": {},
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "recent-activity-placeholder",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "activity-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "activity-title-placeholder",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "activity-list-placeholder",
+                            "type": "list",
+                            "props": {
+                              "items": [
+                                {
+                                  "id": "item-phhgpc",
+                                  "label": "Item"
+                                },
+                                {
+                                  "id": "item-gdizma",
+                                  "label": "Item"
+                                },
+                                {
+                                  "id": "item-ztl72t",
+                                  "label": "Item"
+                                }
+                              ],
+                              "variant": "none"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Loading Dashboard",
+      "description": "A desktop-only loading state for a data-intensive dashboard, featuring a progress indicator and skeleton placeholders for content."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "illustration",
+      "heading",
+      "text",
+      "progress",
+      "split",
+      "card",
+      "container",
+      "list"
+    ],
+    "nestingDepth": 6,
+    "placeholderDetected": false
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "prompt": "Feature comparison for tiers",
+  "generatedAt": "2025-12-04T07:13:41.457Z",
+  "response": {
+    "components": [
+      {
+        "id": "comparison-page-stack",
+        "type": "stack",
+        "props": {
+          "gap": "xl"
+        },
+        "children": [
+          {
+            "id": "page-header",
+            "type": "heading",
+            "props": {
+              "content": "Choose Your Plan",
+              "level": 1
+            }
+          },
+          {
+            "id": "page-subtitle",
+            "type": "text",
+            "props": {
+              "content": "Find the perfect plan for your team, from individual projects to enterprise solutions.",
+              "size": "lg",
+              "color": "muted"
+            }
+          },
+          {
+            "id": "comparison-section",
+            "type": "section",
+            "props": {
+              "title": "Feature Comparison",
+              "subtitle": "Detailed breakdown of what each plan offers.",
+              "variant": "card",
+              "padding": "lg"
+            },
+            "children": [
+              {
+                "id": "plan-table",
+                "type": "table",
+                "props": {
+                  "headers": [
+                    "Feature",
+                    "Starter",
+                    "Pro",
+                    "Business",
+                    "Enterprise"
+                  ],
+                  "rows": [
+                    {
+                      "Feature": "Monthly Price",
+                      "Starter": "$19",
+                      "Pro": "$49",
+                      "Business": "$149",
+                      "Enterprise": "Custom"
+                    },
+                    {
+                      "Feature": "Active Users",
+                      "Starter": "1",
+                      "Pro": "Up to 5",
+                      "Business": "Up to 25",
+                      "Enterprise": "Unlimited"
+                    },
+                    {
+                      "Feature": "Project Limit",
+                      "Starter": "5",
+                      "Pro": "Unlimited",
+                      "Business": "Unlimited",
+                      "Enterprise": "Unlimited"
+                    },
+                    {
+                      "Feature": "Cloud Storage",
+                      "Starter": "10 GB",
+                      "Pro": "100 GB",
+                      "Business": "1 TB",
+                      "Enterprise": "Unlimited"
+                    },
+                    {
+                      "Feature": "Advanced Analytics",
+                      "Starter": {
+                        "type": "icon",
+                        "props": {
+                          "name": "x",
+                          "color": "error"
+                        }
+                      },
+                      "Pro": {
+                        "type": "icon",
+                        "props": {
+                          "name": "check",
+                          "color": "success"
+                        }
+                      },
+                      "Business": {
+                        "type": "icon",
+                        "props": {
+                          "name": "check",
+                          "color": "success"
+                        }
+                      },
+                      "Enterprise": {
+                        "type": "icon",
+                        "props": {
+                          "name": "check",
+                          "color": "success"
+                        }
+                      }
+                    },
+                    {
+                      "Feature": "Custom Branding",
+                      "Starter": {
+                        "type": "icon",
+                        "props": {
+                          "name": "x",
+                          "color": "error"
+                        }
+                      },
+                      "Pro": {
+                        "type": "icon",
+                        "props": {
+                          "name": "check",
+                          "color": "success"
+                        }
+                      },
+                      "Business": {
+                        "type": "icon",
+                        "props": {
+                          "name": "check",
+                          "color": "success"
+                        }
+                      },
+                      "Enterprise": {
+                        "type": "icon",
+                        "props": {
+                          "name": "check",
+                          "color": "success"
+                        }
+                      }
+                    },
+                    {
+                      "Feature": "Priority Support",
+                      "Starter": "Email",
+                      "Pro": "Email & Chat",
+                      "Business": "24/7 Phone & Chat",
+                      "Enterprise": "Dedicated Account Manager"
+                    },
+                    {
+                      "Feature": "API Access",
+                      "Starter": {
+                        "type": "icon",
+                        "props": {
+                          "name": "x",
+                          "color": "error"
+                        }
+                      },
+                      "Pro": {
+                        "type": "icon",
+                        "props": {
+                          "name": "check",
+                          "color": "success"
+                        }
+                      },
+                      "Business": {
+                        "type": "icon",
+                        "props": {
+                          "name": "check",
+                          "color": "success"
+                        }
+                      },
+                      "Enterprise": {
+                        "type": "icon",
+                        "props": {
+                          "name": "check",
+                          "color": "success"
+                        }
+                      }
+                    },
+                    {
+                      "Feature": "Single Sign-On (SSO)",
+                      "Starter": {
+                        "type": "icon",
+                        "props": {
+                          "name": "x",
+                          "color": "error"
+                        }
+                      },
+                      "Pro": {
+                        "type": "icon",
+                        "props": {
+                          "name": "x",
+                          "color": "error"
+                        }
+                      },
+                      "Business": {
+                        "type": "icon",
+                        "props": {
+                          "name": "check",
+                          "color": "success"
+                        }
+                      },
+                      "Enterprise": {
+                        "type": "icon",
+                        "props": {
+                          "name": "check",
+                          "color": "success"
+                        }
+                      }
+                    },
+                    {
+                      "Feature": "Audit Logs",
+                      "Starter": {
+                        "type": "icon",
+                        "props": {
+                          "name": "x",
+                          "color": "error"
+                        }
+                      },
+                      "Pro": {
+                        "type": "icon",
+                        "props": {
+                          "name": "x",
+                          "color": "error"
+                        }
+                      },
+                      "Business": {
+                        "type": "icon",
+                        "props": {
+                          "name": "check",
+                          "color": "success"
+                        }
+                      },
+                      "Enterprise": {
+                        "type": "icon",
+                        "props": {
+                          "name": "check",
+                          "color": "success"
+                        }
+                      }
+                    },
+                    {
+                      "Feature": "Onboarding Session",
+                      "Starter": {
+                        "type": "icon",
+                        "props": {
+                          "name": "x",
+                          "color": "error"
+                        }
+                      },
+                      "Pro": {
+                        "type": "icon",
+                        "props": {
+                          "name": "x",
+                          "color": "error"
+                        }
+                      },
+                      "Business": {
+                        "type": "icon",
+                        "props": {
+                          "name": "check",
+                          "color": "success"
+                        }
+                      },
+                      "Enterprise": {
+                        "type": "icon",
+                        "props": {
+                          "name": "check",
+                          "color": "success"
+                        }
+                      }
+                    }
+                  ],
+                  "striped": true
+                }
+              }
+            ]
+          },
+          {
+            "id": "promo-callout",
+            "type": "callout",
+            "props": {
+              "variant": "info",
+              "title": "Annual Discount",
+              "message": "Save 20% on any plan when you choose annual billing. Contact sales for Enterprise pricing.",
+              "icon": "tag"
+            }
+          },
+          {
+            "id": "action-buttons",
+            "type": "container",
+            "props": {
+              "direction": "row",
+              "gap": "md",
+              "justify": "center"
+            },
+            "children": [
+              {
+                "id": "start-free-button",
+                "type": "button",
+                "props": {
+                  "label": "Start Free Trial",
+                  "variant": "primary",
+                  "size": "lg",
+                  "onClick": "start-trial"
+                }
+              },
+              {
+                "id": "contact-sales-button",
+                "type": "button",
+                "props": {
+                  "label": "Contact Sales",
+                  "variant": "secondary",
+                  "size": "lg",
+                  "onClick": "contact-sales"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "title": "Plan & Feature Comparison",
+      "description": "Compare features and pricing across different subscription tiers to choose the best plan."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "heading",
+      "text",
+      "section",
+      "table",
+      "callout",
+      "container",
+      "button"
+    ],
+    "nestingDepth": 3,
+    "placeholderDetected": false
+  }
+}

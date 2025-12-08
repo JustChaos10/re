@@ -1,34 +1,35 @@
 # @re/core
 
-Core framework for Re Generative UI with Groq integration and React hooks.
+Core framework for Re Generative UI with Google Vertex AI Gemini client and React hooks.
 
 ## Installation
 
 ```bash
-npm install @re/core groq-sdk
+npm install @re/core
 ```
 
 ## Features
 
-- 🔌 Groq API client with streaming support
-- ⚛️ React hooks for UI generation
-- 📝 Full TypeScript definitions
-- 🔄 Streaming and non-streaming modes
-- 💬 Chat conversation support
+- Gemini (Vertex AI) client with streaming support
+- React hooks for UI generation and chat-style flows
+- Full TypeScript definitions
+- Streaming and non-streaming modes
 
 ## Usage
 
-### Direct API Usage
+### Direct API Usage (server-side)
 
 ```typescript
-import { GroqClient } from '@re/core';
+import { GeminiClient } from '@re/core';
 
-const client = new GroqClient({
-  apiKey: 'your-groq-api-key',
-  model: 'llama-3.1-70b-versatile',
+const client = new GeminiClient({
+  projectId: process.env.VERTEX_PROJECT_ID!,
+  location: process.env.VERTEX_LOCATION,
+  model: process.env.VERTEX_MODEL,
+  // Provide either credentials or keyFilename; do not expose to browsers
+  credentials: JSON.parse(process.env.VERTEX_SERVICE_ACCOUNT_JSON!),
 });
 
-// Generate UI
 const response = await client.generateUI({
   prompt: 'Show me a sales dashboard',
 });
@@ -38,16 +39,19 @@ console.log(response.ui.components);
 
 ### React Hooks
 
+Hooks wrap the same client. They expect server-side execution (do not bundle service account keys into a browser).
+
 ```tsx
 import { useGenerateUI } from '@re/core';
 
 function MyComponent() {
   const { components, generate, isLoading } = useGenerateUI({
-    apiKey: 'your-groq-api-key',
+    projectId: process.env.VERTEX_PROJECT_ID!,
+    credentials: JSON.parse(process.env.VERTEX_SERVICE_ACCOUNT_JSON!),
   });
 
   return (
-    <button onClick={() => generate('Create a form')}>
+    <button onClick={() => generate('Create a form')} disabled={isLoading}>
       Generate
     </button>
   );
@@ -72,10 +76,6 @@ await client.generateUIWithCallbacks(
   }
 );
 ```
-
-## API Reference
-
-See the [main documentation](../../README.md) for full API reference.
 
 ## License
 

@@ -1,0 +1,83 @@
+{
+  "prompt": "Display team members with roles",
+  "generatedAt": "2025-12-06T14:27:04.274Z",
+  "response": {
+    "components": [
+      {
+        "id": "team-members-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "team-overview-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "team-header-actions",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "add-member-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              },
+              {
+                "id": "team-members-list",
+                "type": "list",
+                "props": {
+                  "items": [
+                    {
+                      "id": "item-2z2nm1",
+                      "label": "Item"
+                    },
+                    {
+                      "id": "item-2nye7v",
+                      "label": "Item"
+                    },
+                    {
+                      "id": "item-rtaiyw",
+                      "label": "Item"
+                    }
+                  ],
+                  "variant": "none"
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Team Members Directory",
+      "description": "Display a list of team members with their roles and avatars."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "button",
+      "list"
+    ],
+    "nestingDepth": 4,
+    "placeholderDetected": false
+  }
+}

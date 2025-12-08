@@ -1,0 +1,710 @@
+{
+  "prompt": "Search results for 'headphones'",
+  "generatedAt": "2025-12-06T14:25:20.653Z",
+  "response": {
+    "components": [
+      {
+        "id": "search-results-page",
+        "type": "stack",
+        "children": [
+          {
+            "id": "search-results-header",
+            "type": "section",
+            "children": [
+              {
+                "id": "search-query-summary",
+                "type": "text",
+                "props": {
+                  "content": "Text",
+                  "size": "md",
+                  "weight": "normal"
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "content-split",
+            "type": "split",
+            "children": [
+              {
+                "id": "filter-sidebar",
+                "type": "container",
+                "children": [
+                  {
+                    "id": "filters-heading",
+                    "type": "heading",
+                    "props": {
+                      "content": "Heading",
+                      "level": 2
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "filter-divider-1",
+                    "type": "divider",
+                    "props": {},
+                    "children": []
+                  },
+                  {
+                    "id": "category-filter-group",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "category-filter-label",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "category-filter-select",
+                        "type": "select",
+                        "props": {
+                          "name": "select-irdzoj",
+                          "label": "Select",
+                          "options": [
+                            {
+                              "value": "option-1",
+                              "label": "Option 1"
+                            },
+                            {
+                              "value": "option-2",
+                              "label": "Option 2"
+                            },
+                            {
+                              "value": "option-3",
+                              "label": "Option 3"
+                            }
+                          ]
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  },
+                  {
+                    "id": "filter-divider-2",
+                    "type": "divider",
+                    "props": {},
+                    "children": []
+                  },
+                  {
+                    "id": "brand-filter-group",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "brand-filter-label",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "brand-filter-select",
+                        "type": "select",
+                        "props": {
+                          "name": "select-nk4l8y",
+                          "label": "Select",
+                          "options": [
+                            {
+                              "value": "option-1",
+                              "label": "Option 1"
+                            },
+                            {
+                              "value": "option-2",
+                              "label": "Option 2"
+                            },
+                            {
+                              "value": "option-3",
+                              "label": "Option 3"
+                            }
+                          ]
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  },
+                  {
+                    "id": "filter-divider-3",
+                    "type": "divider",
+                    "props": {},
+                    "children": []
+                  },
+                  {
+                    "id": "price-filter-group",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "price-filter-label",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  },
+                  {
+                    "id": "filter-divider-4",
+                    "type": "divider",
+                    "props": {},
+                    "children": []
+                  },
+                  {
+                    "id": "rating-filter-group",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "rating-filter-label",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "rating-tags",
+                        "type": "tag-group",
+                        "props": {
+                          "tags": [
+                            {
+                              "id": "tag-hpxgya",
+                              "label": "Tag 1"
+                            },
+                            {
+                              "id": "tag-jk1q6w",
+                              "label": "Tag 2"
+                            }
+                          ]
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  },
+                  {
+                    "id": "filter-spacer",
+                    "type": "spacer",
+                    "props": {
+                      "size": "md"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "apply-filters-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {}
+              },
+              {
+                "id": "main-results-area",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "sort-options-bar",
+                    "type": "container",
+                    "children": [
+                      {
+                        "id": "results-count-text",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "sort-by-select",
+                        "type": "select",
+                        "props": {
+                          "name": "select-dv6jsb",
+                          "label": "Select",
+                          "options": [
+                            {
+                              "value": "option-1",
+                              "label": "Option 1"
+                            },
+                            {
+                              "value": "option-2",
+                              "label": "Option 2"
+                            },
+                            {
+                              "value": "option-3",
+                              "label": "Option 3"
+                            }
+                          ]
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "product-results-list",
+                    "type": "list",
+                    "children": [
+                      {
+                        "id": "product-card-1",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "product-1-details-split",
+                            "type": "split",
+                            "children": [
+                              {
+                                "id": "product-1-image",
+                                "type": "image"
+                              },
+                              {
+                                "id": "product-1-info",
+                                "type": "stack",
+                                "children": [
+                                  {
+                                    "id": "product-1-name",
+                                    "type": "heading"
+                                  },
+                                  {
+                                    "id": "product-1-brand",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "product-1-price",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "product-1-rating-reviews",
+                                    "type": "container",
+                                    "children": [
+                                      {
+                                        "id": "product-1-rating",
+                                        "type": "badge"
+                                      },
+                                      {
+                                        "id": "product-1-reviews",
+                                        "type": "text"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "add-to-cart-1",
+                                    "type": "button"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-2",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "product-2-details-split",
+                            "type": "split",
+                            "children": [
+                              {
+                                "id": "product-2-image",
+                                "type": "image"
+                              },
+                              {
+                                "id": "product-2-info",
+                                "type": "stack",
+                                "children": [
+                                  {
+                                    "id": "product-2-name",
+                                    "type": "heading"
+                                  },
+                                  {
+                                    "id": "product-2-brand",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "product-2-price",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "product-2-rating-reviews",
+                                    "type": "container",
+                                    "children": [
+                                      {
+                                        "id": "product-2-rating",
+                                        "type": "badge"
+                                      },
+                                      {
+                                        "id": "product-2-reviews",
+                                        "type": "text"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "add-to-cart-2",
+                                    "type": "button"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-3",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "product-3-details-split",
+                            "type": "split",
+                            "children": [
+                              {
+                                "id": "product-3-image",
+                                "type": "image"
+                              },
+                              {
+                                "id": "product-3-info",
+                                "type": "stack",
+                                "children": [
+                                  {
+                                    "id": "product-3-name",
+                                    "type": "heading"
+                                  },
+                                  {
+                                    "id": "product-3-brand",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "product-3-price",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "product-3-rating-reviews",
+                                    "type": "container",
+                                    "children": [
+                                      {
+                                        "id": "product-3-rating",
+                                        "type": "badge"
+                                      },
+                                      {
+                                        "id": "product-3-reviews",
+                                        "type": "text"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "add-to-cart-3",
+                                    "type": "button"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-4",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "product-4-details-split",
+                            "type": "split",
+                            "children": [
+                              {
+                                "id": "product-4-image",
+                                "type": "image"
+                              },
+                              {
+                                "id": "product-4-info",
+                                "type": "stack",
+                                "children": [
+                                  {
+                                    "id": "product-4-name",
+                                    "type": "heading"
+                                  },
+                                  {
+                                    "id": "product-4-brand",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "product-4-price",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "product-4-rating-reviews",
+                                    "type": "container",
+                                    "children": [
+                                      {
+                                        "id": "product-4-rating",
+                                        "type": "badge"
+                                      },
+                                      {
+                                        "id": "product-4-reviews",
+                                        "type": "text"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "add-to-cart-4",
+                                    "type": "button"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-5",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "product-5-details-split",
+                            "type": "split",
+                            "children": [
+                              {
+                                "id": "product-5-image",
+                                "type": "image"
+                              },
+                              {
+                                "id": "product-5-info",
+                                "type": "stack",
+                                "children": [
+                                  {
+                                    "id": "product-5-name",
+                                    "type": "heading"
+                                  },
+                                  {
+                                    "id": "product-5-brand",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "product-5-price",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "product-5-rating-reviews",
+                                    "type": "container",
+                                    "children": [
+                                      {
+                                        "id": "product-5-rating",
+                                        "type": "badge"
+                                      },
+                                      {
+                                        "id": "product-5-reviews",
+                                        "type": "text"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "add-to-cart-5",
+                                    "type": "button"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-6",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "product-6-details-split",
+                            "type": "split",
+                            "children": [
+                              {
+                                "id": "product-6-image",
+                                "type": "image"
+                              },
+                              {
+                                "id": "product-6-info",
+                                "type": "stack",
+                                "children": [
+                                  {
+                                    "id": "product-6-name",
+                                    "type": "heading"
+                                  },
+                                  {
+                                    "id": "product-6-brand",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "product-6-price",
+                                    "type": "text"
+                                  },
+                                  {
+                                    "id": "product-6-rating-reviews",
+                                    "type": "container",
+                                    "children": [
+                                      {
+                                        "id": "product-6-rating",
+                                        "type": "badge"
+                                      },
+                                      {
+                                        "id": "product-6-reviews",
+                                        "type": "text"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "add-to-cart-6",
+                                    "type": "button"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "props": {
+                      "items": [
+                        {
+                          "id": "item-yrnf73",
+                          "label": "Item"
+                        },
+                        {
+                          "id": "item-4ed0e1",
+                          "label": "Item"
+                        },
+                        {
+                          "id": "item-1sy8bh",
+                          "label": "Item"
+                        }
+                      ],
+                      "variant": "none"
+                    }
+                  },
+                  {
+                    "id": "pagination-controls",
+                    "type": "container",
+                    "children": [
+                      {
+                        "id": "pagination-prev",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "pagination-page-1",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "pagination-page-2",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "pagination-page-3",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "pagination-next",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "gap": "md"
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Headphones Search Results",
+      "description": "Desktop search results page for 'headphones' with filters, sorting, and product listings."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "text",
+      "split",
+      "container",
+      "heading",
+      "divider",
+      "select",
+      "tag-group",
+      "spacer",
+      "button",
+      "list",
+      "card",
+      "image",
+      "badge"
+    ],
+    "nestingDepth": 9,
+    "placeholderDetected": false
+  }
+}

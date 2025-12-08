@@ -1,0 +1,204 @@
+{
+  "prompt": "Empty shopping cart",
+  "generatedAt": "2025-12-06T14:31:06.117Z",
+  "response": {
+    "components": [
+      {
+        "id": "empty-cart-page-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "empty-cart-message-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "empty-cart-content-stack",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "empty-cart-illustration",
+                    "type": "illustration",
+                    "props": {
+                      "name": "document",
+                      "size": "md"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "start-shopping-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "recommended-products-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "recommended-products-split",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "product-card-1",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "product-stack-1",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "product-image-1",
+                            "type": "image",
+                            "props": {
+                              "src": "https://placehold.co/600x360/png",
+                              "alt": "Image",
+                              "rounded": false
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "product-title-1",
+                            "type": "heading",
+                            "props": {
+                              "content": "Heading",
+                              "level": 2
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "product-price-1",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "add-to-cart-button-1",
+                            "type": "button",
+                            "props": {
+                              "label": "Action",
+                              "variant": "primary",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "product-card-2",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "product-stack-2",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "product-image-2",
+                            "type": "image",
+                            "props": {
+                              "src": "https://placehold.co/600x360/png",
+                              "alt": "Image",
+                              "rounded": false
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "product-title-2",
+                            "type": "heading",
+                            "props": {
+                              "content": "Heading",
+                              "level": 2
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "product-price-2",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "add-to-cart-button-2",
+                            "type": "button",
+                            "props": {
+                              "label": "Action",
+                              "variant": "primary",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Empty Shopping Cart",
+      "description": "User interface for an empty shopping cart, encouraging users to start shopping with recommendations."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "illustration",
+      "button",
+      "split",
+      "card",
+      "image",
+      "heading",
+      "text"
+    ],
+    "nestingDepth": 6,
+    "placeholderDetected": false
+  }
+}

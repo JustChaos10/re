@@ -1,0 +1,255 @@
+{
+  "prompt": "Pricing table for SaaS plans",
+  "generatedAt": "2025-12-06T14:18:06.095Z",
+  "response": {
+    "components": [
+      {
+        "id": "pricing-section",
+        "type": "section",
+        "children": [
+          {
+            "id": "pricing-content-stack",
+            "type": "stack",
+            "children": [
+              {
+                "id": "billing-cycle-toggle",
+                "type": "tag-group",
+                "props": {
+                  "tags": [
+                    {
+                      "id": "tag-uyw0wf",
+                      "label": "Tag 1"
+                    },
+                    {
+                      "id": "tag-819v6e",
+                      "label": "Tag 2"
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "plan-cards-split",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "basic-plan-container",
+                    "type": "container",
+                    "children": [
+                      {
+                        "id": "basic-plan-card",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "basic-plan-details",
+                            "type": "stack",
+                            "children": [
+                              {
+                                "id": "basic-plan-name",
+                                "type": "heading",
+                                "props": {
+                                  "content": "Heading",
+                                  "level": 2
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "basic-plan-price",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "basic-plan-description",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "basic-plan-divider",
+                                "type": "divider",
+                                "props": {},
+                                "children": []
+                              },
+                              {
+                                "id": "basic-plan-features",
+                                "type": "list",
+                                "props": {
+                                  "items": [
+                                    {
+                                      "id": "item-4ctmtv",
+                                      "label": "Item"
+                                    },
+                                    {
+                                      "id": "item-xs0hg7",
+                                      "label": "Item"
+                                    },
+                                    {
+                                      "id": "item-t8r127",
+                                      "label": "Item"
+                                    }
+                                  ],
+                                  "variant": "none"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "select-basic-plan-button",
+                                "type": "button",
+                                "props": {
+                                  "label": "Action",
+                                  "variant": "primary",
+                                  "size": "md"
+                                },
+                                "children": []
+                              }
+                            ],
+                            "props": {
+                              "gap": "md"
+                            }
+                          }
+                        ],
+                        "props": {}
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "pro-plan-container",
+                    "type": "container",
+                    "children": [
+                      {
+                        "id": "pro-plan-card",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "pro-plan-details",
+                            "type": "stack",
+                            "children": [
+                              {
+                                "id": "pro-plan-name",
+                                "type": "heading",
+                                "props": {
+                                  "content": "Heading",
+                                  "level": 2
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "pro-plan-price",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "pro-plan-description",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "pro-plan-divider",
+                                "type": "divider",
+                                "props": {},
+                                "children": []
+                              },
+                              {
+                                "id": "pro-plan-features",
+                                "type": "list",
+                                "props": {
+                                  "items": [
+                                    {
+                                      "id": "item-cy11oo",
+                                      "label": "Item"
+                                    },
+                                    {
+                                      "id": "item-q7wnrn",
+                                      "label": "Item"
+                                    },
+                                    {
+                                      "id": "item-thcmum",
+                                      "label": "Item"
+                                    }
+                                  ],
+                                  "variant": "none"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "select-pro-plan-button",
+                                "type": "button",
+                                "props": {
+                                  "label": "Action",
+                                  "variant": "primary",
+                                  "size": "md"
+                                },
+                                "children": []
+                              }
+                            ],
+                            "props": {
+                              "gap": "md"
+                            }
+                          }
+                        ],
+                        "props": {}
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "gap": "md"
+            }
+          }
+        ],
+        "props": {
+          "title": "Section",
+          "subtitle": ""
+        }
+      }
+    ],
+    "metadata": {
+      "title": "SaaS Pricing Plans",
+      "description": "Compare and choose the best plan for your business."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "section",
+      "stack",
+      "tag-group",
+      "split",
+      "container",
+      "card",
+      "heading",
+      "text",
+      "divider",
+      "list",
+      "button"
+    ],
+    "nestingDepth": 7,
+    "placeholderDetected": false
+  }
+}

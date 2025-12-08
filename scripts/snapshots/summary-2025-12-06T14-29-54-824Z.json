@@ -1,0 +1,301 @@
+{
+  "runId": "2025-12-06T14-29-54-824Z",
+  "generatedAt": "2025-12-06T14:33:14.578Z",
+  "results": [
+    {
+      "prompt": "Show me a sales dashboard",
+      "slug": "show-me-a-sales-dashboard",
+      "metrics": {
+        "componentTypesCount": 8,
+        "nestingDepth": 5,
+        "hasPlaceholderData": false,
+        "componentCount": 1,
+        "propsUsed": {
+          "gap": 3,
+          "title": 5,
+          "subtitle": 5,
+          "label": 7,
+          "value": 4,
+          "variant": 3,
+          "size": 3,
+          "chartType": 1,
+          "xKey": 1,
+          "yKey": 1,
+          "data": 1,
+          "headers": 3,
+          "rows": 3
+        }
+      },
+      "issues": []
+    },
+    {
+      "prompt": "Create a sign-up form",
+      "slug": "create-a-sign-up-form",
+      "metrics": {
+        "componentTypesCount": 5,
+        "nestingDepth": 5,
+        "hasPlaceholderData": false,
+        "componentCount": 1,
+        "propsUsed": {
+          "gap": 2,
+          "title": 1,
+          "subtitle": 1,
+          "submitLabel": 1,
+          "content": 2,
+          "size": 3,
+          "weight": 2,
+          "label": 1,
+          "variant": 1
+        }
+      },
+      "issues": []
+    },
+    {
+      "prompt": "Display team members with roles",
+      "slug": "display-team-members-with-roles",
+      "metrics": {
+        "componentTypesCount": 3,
+        "nestingDepth": 3,
+        "hasPlaceholderData": false,
+        "componentCount": 1,
+        "propsUsed": {
+          "gap": 1,
+          "title": 1,
+          "subtitle": 1,
+          "items": 1,
+          "variant": 1
+        }
+      },
+      "issues": []
+    },
+    {
+      "prompt": "Product details page for a gadget",
+      "slug": "product-details-page-for-a-gadget",
+      "metrics": {
+        "componentTypesCount": 14,
+        "nestingDepth": 7,
+        "hasPlaceholderData": false,
+        "componentCount": 1,
+        "propsUsed": {
+          "gap": 4,
+          "title": 4,
+          "subtitle": 4,
+          "src": 1,
+          "alt": 1,
+          "rounded": 1,
+          "content": 7,
+          "level": 3,
+          "size": 16,
+          "weight": 4,
+          "name": 10,
+          "label": 3,
+          "variant": 5,
+          "items": 2,
+          "headers": 1,
+          "rows": 1,
+          "tags": 1
+        }
+      },
+      "issues": []
+    },
+    {
+      "prompt": "Empty shopping cart",
+      "slug": "empty-shopping-cart",
+      "metrics": {
+        "componentTypesCount": 9,
+        "nestingDepth": 6,
+        "hasPlaceholderData": false,
+        "componentCount": 1,
+        "propsUsed": {
+          "gap": 5,
+          "title": 2,
+          "subtitle": 2,
+          "name": 1,
+          "size": 6,
+          "label": 3,
+          "variant": 3,
+          "src": 2,
+          "alt": 2,
+          "rounded": 2,
+          "content": 4,
+          "level": 2,
+          "weight": 2
+        }
+      },
+      "issues": []
+    },
+    {
+      "prompt": "User profile settings",
+      "slug": "user-profile-settings",
+      "metrics": {
+        "componentTypesCount": 12,
+        "nestingDepth": 8,
+        "hasPlaceholderData": false,
+        "componentCount": 1,
+        "propsUsed": {
+          "gap": 15,
+          "title": 4,
+          "subtitle": 4,
+          "name": 8,
+          "size": 14,
+          "label": 15,
+          "variant": 9,
+          "submitLabel": 3,
+          "type": 6,
+          "content": 9,
+          "level": 4,
+          "weight": 5,
+          "options": 1,
+          "message": 1,
+          "collapsible": 1
+        }
+      },
+      "issues": []
+    },
+    {
+      "prompt": "Analytics charts for marketing",
+      "slug": "analytics-charts-for-marketing",
+      "metrics": {
+        "componentTypesCount": 9,
+        "nestingDepth": 5,
+        "hasPlaceholderData": false,
+        "componentCount": 1,
+        "propsUsed": {
+          "gap": 3,
+          "title": 5,
+          "subtitle": 5,
+          "label": 5,
+          "value": 4,
+          "variant": 2,
+          "size": 1,
+          "chartType": 3,
+          "xKey": 3,
+          "yKey": 3,
+          "data": 3,
+          "items": 1,
+          "headers": 1,
+          "rows": 1
+        }
+      },
+      "issues": []
+    },
+    {
+      "prompt": "Pricing table for SaaS plans",
+      "slug": "pricing-table-for-saas-plans",
+      "metrics": {
+        "componentTypesCount": 9,
+        "nestingDepth": 5,
+        "hasPlaceholderData": false,
+        "componentCount": 1,
+        "propsUsed": {
+          "gap": 4,
+          "title": 1,
+          "subtitle": 1,
+          "content": 6,
+          "level": 2,
+          "size": 6,
+          "weight": 4,
+          "items": 2,
+          "variant": 4,
+          "label": 2
+        }
+      },
+      "issues": []
+    },
+    {
+      "prompt": "Feature comparison for tiers",
+      "slug": "feature-comparison-for-tiers",
+      "metrics": {
+        "componentTypesCount": 3,
+        "nestingDepth": 3,
+        "hasPlaceholderData": false,
+        "componentCount": 1,
+        "propsUsed": {
+          "gap": 1,
+          "title": 1,
+          "subtitle": 1,
+          "headers": 1,
+          "rows": 1
+        }
+      },
+      "issues": []
+    },
+    {
+      "prompt": "Error state for payment failure",
+      "slug": "error-state-for-payment-failure",
+      "metrics": {
+        "componentTypesCount": 9,
+        "nestingDepth": 4,
+        "hasPlaceholderData": false,
+        "componentCount": 1,
+        "propsUsed": {
+          "gap": 1,
+          "title": 3,
+          "subtitle": 3,
+          "name": 1,
+          "size": 10,
+          "content": 8,
+          "level": 2,
+          "weight": 6,
+          "label": 3,
+          "variant": 4,
+          "message": 1,
+          "collapsible": 1
+        }
+      },
+      "issues": []
+    },
+    {
+      "prompt": "Loading state for data fetch",
+      "slug": "loading-state-for-data-fetch",
+      "metrics": {
+        "componentTypesCount": 10,
+        "nestingDepth": 6,
+        "hasPlaceholderData": false,
+        "componentCount": 1,
+        "propsUsed": {
+          "gap": 6,
+          "title": 2,
+          "subtitle": 2,
+          "name": 1,
+          "size": 8,
+          "content": 8,
+          "level": 1,
+          "weight": 7,
+          "value": 1,
+          "max": 1,
+          "showPercentage": 1,
+          "items": 1,
+          "variant": 1
+        }
+      },
+      "issues": []
+    },
+    {
+      "prompt": "Search results for 'headphones'",
+      "slug": "search-results-for-headphones",
+      "metrics": {
+        "componentTypesCount": 14,
+        "nestingDepth": 6,
+        "hasPlaceholderData": false,
+        "componentCount": 1,
+        "propsUsed": {
+          "gap": 5,
+          "title": 1,
+          "subtitle": 1,
+          "content": 3,
+          "size": 9,
+          "weight": 2,
+          "level": 1,
+          "name": 5,
+          "label": 12,
+          "options": 3,
+          "type": 2,
+          "variant": 8,
+          "items": 1
+        }
+      },
+      "issues": []
+    }
+  ]
+}

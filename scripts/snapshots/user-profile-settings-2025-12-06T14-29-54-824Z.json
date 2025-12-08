@@ -1,0 +1,530 @@
+{
+  "prompt": "User profile settings",
+  "generatedAt": "2025-12-06T14:31:24.889Z",
+  "response": {
+    "components": [
+      {
+        "id": "profile-settings-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "personal-info-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "personal-info-split",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "avatar-stack",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "user-avatar",
+                        "type": "avatar",
+                        "props": {
+                          "name": "User",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "change-photo-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  },
+                  {
+                    "id": "personal-info-form",
+                    "type": "form",
+                    "children": [
+                      {
+                        "id": "personal-info-form-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "first-name-input",
+                            "type": "input",
+                            "props": {
+                              "name": "input-6ihh1h",
+                              "label": "Input",
+                              "type": "text"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "last-name-input",
+                            "type": "input",
+                            "props": {
+                              "name": "input-i9wql4",
+                              "label": "Input",
+                              "type": "text"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "email-input",
+                            "type": "input",
+                            "props": {
+                              "name": "input-e9a0mq",
+                              "label": "Input",
+                              "type": "text"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "save-personal-info-button",
+                            "type": "button",
+                            "props": {
+                              "label": "Action",
+                              "variant": "primary",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {
+                      "submitLabel": "Submit"
+                    }
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "account-security-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "security-cards-stack",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "change-password-card",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "change-password-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "change-password-heading",
+                            "type": "heading",
+                            "props": {
+                              "content": "Heading",
+                              "level": 2
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "change-password-form",
+                            "type": "form",
+                            "children": [
+                              {
+                                "id": "password-inputs-stack",
+                                "type": "stack",
+                                "children": [
+                                  {
+                                    "id": "current-password-input",
+                                    "type": "input",
+                                    "props": {
+                                      "name": "input-fxpjq3",
+                                      "label": "Input",
+                                      "type": "text"
+                                    },
+                                    "children": []
+                                  },
+                                  {
+                                    "id": "new-password-input",
+                                    "type": "input",
+                                    "props": {
+                                      "name": "input-lmyqqv",
+                                      "label": "Input",
+                                      "type": "text"
+                                    },
+                                    "children": []
+                                  },
+                                  {
+                                    "id": "confirm-password-input",
+                                    "type": "input",
+                                    "props": {
+                                      "name": "input-wqy9i9",
+                                      "label": "Input",
+                                      "type": "text"
+                                    },
+                                    "children": []
+                                  },
+                                  {
+                                    "id": "update-password-button",
+                                    "type": "button",
+                                    "props": {
+                                      "label": "Action",
+                                      "variant": "primary",
+                                      "size": "md"
+                                    },
+                                    "children": []
+                                  }
+                                ],
+                                "props": {
+                                  "gap": "md"
+                                }
+                              }
+                            ],
+                            "props": {
+                              "submitLabel": "Submit"
+                            }
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "two-factor-card",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "two-factor-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "two-factor-heading",
+                            "type": "heading",
+                            "props": {
+                              "content": "Heading",
+                              "level": 2
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "two-factor-description",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "two-factor-status-split",
+                            "type": "split",
+                            "children": [
+                              {
+                                "id": "two-factor-status-text",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "disable-2fa-button",
+                                "type": "button",
+                                "props": {
+                                  "label": "Action",
+                                  "variant": "primary",
+                                  "size": "md"
+                                },
+                                "children": []
+                              }
+                            ],
+                            "props": {
+                              "gap": "md"
+                            }
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "preferences-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "preferences-cards-stack",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "theme-card",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "theme-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "theme-heading",
+                            "type": "heading",
+                            "props": {
+                              "content": "Heading",
+                              "level": 2
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "theme-form",
+                            "type": "form",
+                            "children": [
+                              {
+                                "id": "theme-form-stack",
+                                "type": "stack",
+                                "children": [
+                                  {
+                                    "id": "app-theme-select",
+                                    "type": "select",
+                                    "props": {
+                                      "name": "select-etomx5",
+                                      "label": "Select",
+                                      "options": [
+                                        {
+                                          "value": "option-1",
+                                          "label": "Option 1"
+                                        },
+                                        {
+                                          "value": "option-2",
+                                          "label": "Option 2"
+                                        },
+                                        {
+                                          "value": "option-3",
+                                          "label": "Option 3"
+                                        }
+                                      ]
+                                    },
+                                    "children": []
+                                  },
+                                  {
+                                    "id": "save-theme-button",
+                                    "type": "button",
+                                    "props": {
+                                      "label": "Action",
+                                      "variant": "primary",
+                                      "size": "md"
+                                    },
+                                    "children": []
+                                  }
+                                ],
+                                "props": {
+                                  "gap": "md"
+                                }
+                              }
+                            ],
+                            "props": {
+                              "submitLabel": "Submit"
+                            }
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "notifications-card",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "notifications-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "notifications-heading",
+                            "type": "heading",
+                            "props": {
+                              "content": "Heading",
+                              "level": 2
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "notifications-description",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "email-notifications-split",
+                            "type": "split",
+                            "children": [
+                              {
+                                "id": "email-notifications-text",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "toggle-email-notifications-button",
+                                "type": "button",
+                                "props": {
+                                  "label": "Action",
+                                  "variant": "primary",
+                                  "size": "md"
+                                },
+                                "children": []
+                              }
+                            ],
+                            "props": {
+                              "gap": "md"
+                            }
+                          },
+                          {
+                            "id": "inapp-notifications-split",
+                            "type": "split",
+                            "children": [
+                              {
+                                "id": "inapp-notifications-text",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "toggle-inapp-notifications-button",
+                                "type": "button",
+                                "props": {
+                                  "label": "Action",
+                                  "variant": "primary",
+                                  "size": "md"
+                                },
+                                "children": []
+                              }
+                            ],
+                            "props": {
+                              "gap": "md"
+                            }
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "danger-zone-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "delete-account-callout",
+                "type": "callout",
+                "children": [
+                  {
+                    "id": "confirm-delete-account-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "message": "Note",
+                  "variant": "info",
+                  "collapsible": false
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "User Profile Settings",
+      "description": "Manage personal information, security, and application preferences."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "split",
+      "avatar",
+      "button",
+      "form",
+      "input",
+      "card",
+      "heading",
+      "text",
+      "select",
+      "callout"
+    ],
+    "nestingDepth": 8,
+    "placeholderDetected": false
+  }
+}

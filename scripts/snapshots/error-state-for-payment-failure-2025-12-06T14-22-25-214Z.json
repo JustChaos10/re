@@ -1,0 +1,294 @@
+{
+  "prompt": "Error state for payment failure",
+  "generatedAt": "2025-12-06T14:24:40.337Z",
+  "response": {
+    "components": [
+      {
+        "id": "payment-failure-page",
+        "type": "stack",
+        "children": [
+          {
+            "id": "failure-header-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "failure-illustration-stack",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "error-illustration",
+                    "type": "illustration",
+                    "props": {
+                      "name": "document",
+                      "size": "md"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "failure-main-heading",
+                    "type": "heading",
+                    "props": {
+                      "content": "Heading",
+                      "level": 2
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "failure-explanation-text",
+                    "type": "text",
+                    "props": {
+                      "content": "Text",
+                      "size": "md",
+                      "weight": "normal"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "details-actions-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "details-actions-split",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "failure-details-card",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "details-card-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "transaction-details-heading",
+                            "type": "heading",
+                            "props": {
+                              "content": "Heading",
+                              "level": 2
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "transaction-details-list",
+                            "type": "list",
+                            "props": {
+                              "items": [
+                                {
+                                  "id": "item-g25kjz",
+                                  "label": "Item"
+                                },
+                                {
+                                  "id": "item-uvtszr",
+                                  "label": "Item"
+                                },
+                                {
+                                  "id": "item-tvlcbm",
+                                  "label": "Item"
+                                }
+                              ],
+                              "variant": "none"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "details-divider",
+                            "type": "divider",
+                            "props": {},
+                            "children": []
+                          },
+                          {
+                            "id": "reason-heading",
+                            "type": "heading",
+                            "props": {
+                              "content": "Heading",
+                              "level": 2
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "reason-text",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "suggested-actions-card",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "actions-card-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "next-steps-heading",
+                            "type": "heading",
+                            "props": {
+                              "content": "Heading",
+                              "level": 2
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "action-list",
+                            "type": "list",
+                            "props": {
+                              "items": [
+                                {
+                                  "id": "item-iad49d",
+                                  "label": "Item"
+                                },
+                                {
+                                  "id": "item-02zmmy",
+                                  "label": "Item"
+                                },
+                                {
+                                  "id": "item-ddszub",
+                                  "label": "Item"
+                                }
+                              ],
+                              "variant": "none"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "action-buttons-stack",
+                            "type": "stack",
+                            "children": [
+                              {
+                                "id": "retry-payment-button",
+                                "type": "button",
+                                "props": {
+                                  "label": "Action",
+                                  "variant": "primary",
+                                  "size": "md"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "update-payment-method-button",
+                                "type": "button",
+                                "props": {
+                                  "label": "Action",
+                                  "variant": "primary",
+                                  "size": "md"
+                                },
+                                "children": []
+                              }
+                            ],
+                            "props": {
+                              "gap": "md"
+                            }
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "support-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "support-callout",
+                "type": "callout",
+                "children": [
+                  {
+                    "id": "support-text",
+                    "type": "text",
+                    "props": {
+                      "content": "Text",
+                      "size": "md",
+                      "weight": "normal"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "contact-support-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "message": "Note",
+                  "variant": "info",
+                  "collapsible": false
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Payment Failure",
+      "description": "Desktop interface for displaying a payment failure error state with details and suggested actions."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "illustration",
+      "heading",
+      "text",
+      "split",
+      "card",
+      "list",
+      "divider",
+      "button",
+      "callout"
+    ],
+    "nestingDepth": 7,
+    "placeholderDetected": false
+  }
+}

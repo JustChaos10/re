@@ -70,7 +70,8 @@ import { ReChat } from '@re/react-ui';
 function App() {
   return (
     <ReChat
-      apiKey="your-groq-api-key"
+      projectId={process.env.VERTEX_PROJECT_ID!}
+      credentials={JSON.parse(process.env.VERTEX_SERVICE_ACCOUNT_JSON!)}
       placeholder="Type a message..."
       onAction={(actionId, data) => {
         console.log('Action:', actionId, data);
@@ -79,6 +80,7 @@ function App() {
   );
 }
 ```
+> Only provide credentials from server-side contexts (e.g., server components/API routes).
 
 ### Theming
 

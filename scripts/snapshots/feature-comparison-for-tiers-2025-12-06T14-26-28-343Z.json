@@ -1,0 +1,74 @@
+{
+  "prompt": "Feature comparison for tiers",
+  "generatedAt": "2025-12-06T14:28:39.806Z",
+  "response": {
+    "components": [
+      {
+        "id": "main-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "feature-comparison-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "feature-comparison-table",
+                "type": "table",
+                "props": {
+                  "headers": [
+                    "Column A",
+                    "Column B"
+                  ],
+                  "rows": [
+                    {
+                      "id": "row-kj0y8b",
+                      "Column A": "Row 1 A",
+                      "Column B": "Row 1 B"
+                    },
+                    {
+                      "id": "row-zd9mk6",
+                      "Column A": "Row 2 A",
+                      "Column B": "Row 2 B"
+                    },
+                    {
+                      "id": "row-92kt79",
+                      "Column A": "Row 3 A",
+                      "Column B": "Row 3 B"
+                    },
+                    {
+                      "id": "row-pe69hi",
+                      "Column A": "Row 4 A",
+                      "Column B": "Row 4 B"
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Tier Feature Comparison",
+      "description": "A detailed comparison of features across different service tiers."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "table"
+    ],
+    "nestingDepth": 3,
+    "placeholderDetected": false
+  }
+}

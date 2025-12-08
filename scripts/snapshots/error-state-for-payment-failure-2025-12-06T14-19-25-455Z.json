@@ -1,0 +1,139 @@
+{
+  "prompt": "Error state for payment failure",
+  "generatedAt": "2025-12-06T14:21:28.528Z",
+  "response": {
+    "components": [
+      {
+        "id": "payment-failure-page-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "payment-failure-header-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "failure-details-stack",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "payment-failure-illustration",
+                    "type": "illustration",
+                    "props": {
+                      "name": "document",
+                      "size": "md"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "failure-main-message",
+                    "type": "heading",
+                    "props": {
+                      "content": "Heading",
+                      "level": 2
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "failure-reason-text",
+                    "type": "text",
+                    "props": {
+                      "content": "Text",
+                      "size": "md",
+                      "weight": "normal"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "transaction-id-text",
+                    "type": "text",
+                    "props": {
+                      "content": "Text",
+                      "size": "md",
+                      "weight": "normal"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "payment-failure-actions-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "action-buttons-container",
+                "type": "container",
+                "children": [
+                  {
+                    "id": "retry-payment-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "update-payment-method-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "contact-support-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {}
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Payment Failure",
+      "description": "User interface for displaying a payment failure error state with actionable next steps."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "illustration",
+      "heading",
+      "text",
+      "container",
+      "button"
+    ],
+    "nestingDepth": 4,
+    "placeholderDetected": false
+  }
+}

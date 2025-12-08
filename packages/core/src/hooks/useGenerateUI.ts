@@ -1,13 +1,18 @@
 import { useState, useCallback, useRef } from 'react';
-import { GroqClient } from '../client';
-import { GenerateUIRequest, Component } from '../types';
+import { GeminiClient } from '../client';
+import { GenerateUIRequest, Component, ServiceAccountCredentials } from '../types';
+import { validateUI } from '../utils/validator';
 
 export interface UseGenerateUIOptions {
-  apiKey: string;
-  baseURL?: string;
+  projectId: string;
+  location?: string;
   model?: string;
   temperature?: number;
+  topP?: number;
   maxTokens?: number;
+  maxRetries?: number;
+  credentials?: ServiceAccountCredentials;
+  keyFilename?: string;
   onError?: (error: Error) => void;
 }
 
@@ -27,13 +32,17 @@ export function useGenerateUI(options: UseGenerateUIOptions): UseGenerateUIRetur
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<Error | null>(null);
 
-  const clientRef = useRef<GroqClient>(
-    new GroqClient({
-      apiKey: options.apiKey,
-      baseURL: options.baseURL,
+  const clientRef = useRef<GeminiClient>(
+    new GeminiClient({
+      projectId: options.projectId,
+      location: options.location,
       model: options.model,
       temperature: options.temperature,
+      topP: options.topP,
       maxTokens: options.maxTokens,
+      maxRetries: options.maxRetries,
+      credentials: options.credentials,
+      keyFilename: options.keyFilename,
     })
   );
 
@@ -49,21 +58,49 @@ export function useGenerateUI(options: UseGenerateUIOptions): UseGenerateUIRetur
       setIsLoading(true);
       setError(null);
 
-      try {
-        const response = await clientRef.current.generateUI({
-          prompt,
-          ...requestOptions,
-        });
+      const maxRetries = options.maxRetries || 3;
+      let lastError: Error | null = null;
 
-        setComponents(response.ui.components || []);
-        setMetadata(response.ui.metadata || null);
-      } catch (err) {
-        const error = err instanceof Error ? err : new Error(String(err));
-        setError(error);
-        options.onError?.(error);
-      } finally {
-        setIsLoading(false);
+      for (let attempt = 1; attempt <= maxRetries; attempt++) {
+        try {
+          const response = await clientRef.current.generateUI({
+            prompt,
+            ...requestOptions,
+          });
+
+          const validation = validateUI(response.ui.components || []);
+          if (!validation.ok) {
+            // Non-blocking validation - warn but still render
+            console.warn('[Re Validation]', validation.reason);
+          }
+          // Always set components even if validation warns
+          setComponents(response.ui.components || []);
+          setMetadata(response.ui.metadata || null);
+          logTelemetry('generate', prompt, {
+            model: response.model,
+            temperature: requestOptions?.temperature ?? options.temperature,
+            topP: requestOptions?.topP ?? options.topP,
+            valid: validation.ok,
+            retryCount: attempt - 1,
+          });
+
+          setIsLoading(false);
+          return; // Success - exit retry loop
+        } catch (err) {
+          lastError = err instanceof Error ? err : new Error(String(err));
+
+          if (attempt < maxRetries) {
+            console.log(`[Re] Retry ${attempt}/${maxRetries} after error:`, lastError.message);
+            // Exponential backoff: 1s, 2s, 4s
+            await new Promise((resolve) => setTimeout(resolve, 1000 * Math.pow(2, attempt - 1)));
+          }
+        }
       }
+
+      // All retries exhausted
+      setError(lastError!);
+      options.onError?.(lastError!);
+      setIsLoading(false);
     },
     [options]
   );
@@ -74,13 +111,16 @@ export function useGenerateUI(options: UseGenerateUIOptions): UseGenerateUIRetur
       setError(null);
       setComponents([]);
       setMetadata(null);
+      const started = performance.now();
+      let acc: Component[] = [];
 
       try {
         await clientRef.current.generateUIWithCallbacks(
           { prompt, ...requestOptions },
           {
             onComponent: (comps) => {
-              setComponents(comps);
+              acc = [...acc, ...comps];
+              setComponents(acc);
             },
             onMetadata: (meta) => {
               setMetadata(meta);
@@ -90,6 +130,19 @@ export function useGenerateUI(options: UseGenerateUIOptions): UseGenerateUIRetur
               options.onError?.(err);
             },
             onDone: () => {
+              const validation = validateUI(acc || []);
+              if (!validation.ok) {
+                // Non-blocking validation - warn but still render
+                console.warn('[Re Validation]', validation.reason);
+              }
+              logTelemetry('stream', prompt, {
+                model: requestOptions?.model ?? options.model,
+                temperature: requestOptions?.temperature ?? options.temperature,
+                topP: requestOptions?.topP ?? options.topP,
+                valid: validation.ok,
+                durationMs: performance.now() - started,
+                chunkCount: acc.length,
+              });
               setIsLoading(false);
             },
           }
@@ -113,4 +166,18 @@ export function useGenerateUI(options: UseGenerateUIOptions): UseGenerateUIRetur
     stream,
     reset,
   };
+}
+
+function hashPrompt(prompt: string) {
+  let h = 0;
+  for (let i = 0; i < prompt.length; i++) h = (h << 5) - h + prompt.charCodeAt(i);
+  return Math.abs(h).toString(16);
+}
+
+function logTelemetry(kind: 'generate' | 'stream', prompt: string, extras: Record<string, any>) {
+  console.log('[Re Telemetry]', {
+    kind,
+    promptHash: hashPrompt(prompt),
+    ...extras,
+  });
 }

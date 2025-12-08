@@ -1,0 +1,363 @@
+{
+  "prompt": "Pricing table for SaaS plans",
+  "generatedAt": "2025-12-06T14:14:39.950Z",
+  "response": {
+    "components": [
+      {
+        "id": "pricing-page-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "pricing-hero-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "pricing-plans-split",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "plan-basic-card",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "plan-basic-content",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "plan-basic-title",
+                            "type": "heading",
+                            "props": {
+                              "content": "Heading",
+                              "level": 2
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "plan-basic-price",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "plan-basic-frequency",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "plan-basic-divider-1",
+                            "type": "divider",
+                            "props": {},
+                            "children": []
+                          },
+                          {
+                            "id": "plan-basic-features",
+                            "type": "list",
+                            "props": {
+                              "items": [
+                                {
+                                  "id": "item-77f746",
+                                  "label": "Item"
+                                },
+                                {
+                                  "id": "item-3poiaj",
+                                  "label": "Item"
+                                },
+                                {
+                                  "id": "item-8og2j0",
+                                  "label": "Item"
+                                }
+                              ],
+                              "variant": "none"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "plan-basic-spacer",
+                            "type": "spacer",
+                            "props": {
+                              "size": "md"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "plan-basic-cta",
+                            "type": "button",
+                            "props": {
+                              "label": "Action",
+                              "variant": "primary",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "plan-pro-card",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "plan-pro-content",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "plan-pro-title",
+                            "type": "heading",
+                            "props": {
+                              "content": "Heading",
+                              "level": 2
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "plan-pro-price",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "plan-pro-frequency",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "plan-pro-divider-1",
+                            "type": "divider",
+                            "props": {},
+                            "children": []
+                          },
+                          {
+                            "id": "plan-pro-features",
+                            "type": "list",
+                            "props": {
+                              "items": [
+                                {
+                                  "id": "item-him9v4",
+                                  "label": "Item"
+                                },
+                                {
+                                  "id": "item-b96j2t",
+                                  "label": "Item"
+                                },
+                                {
+                                  "id": "item-rs3vgu",
+                                  "label": "Item"
+                                }
+                              ],
+                              "variant": "none"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "plan-pro-spacer",
+                            "type": "spacer",
+                            "props": {
+                              "size": "md"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "plan-pro-cta",
+                            "type": "button",
+                            "props": {
+                              "label": "Action",
+                              "variant": "primary",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "faq-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "faq-items-stack",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "faq-card-1",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "faq-item-1-content",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "faq-q-1",
+                            "type": "heading",
+                            "props": {
+                              "content": "Heading",
+                              "level": 2
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "faq-a-1",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "faq-card-2",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "faq-item-2-content",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "faq-q-2",
+                            "type": "heading",
+                            "props": {
+                              "content": "Heading",
+                              "level": 2
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "faq-a-2",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "faq-card-3",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "faq-item-3-content",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "faq-q-3",
+                            "type": "heading",
+                            "props": {
+                              "content": "Heading",
+                              "level": 2
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "faq-a-3",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Our Pricing Plans",
+      "description": "Explore our flexible SaaS pricing plans designed for teams of all sizes."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "split",
+      "card",
+      "heading",
+      "text",
+      "divider",
+      "list",
+      "spacer",
+      "button"
+    ],
+    "nestingDepth": 6,
+    "placeholderDetected": false
+  }
+}

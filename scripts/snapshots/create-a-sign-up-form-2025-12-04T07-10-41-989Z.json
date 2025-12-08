@@ -1,0 +1,172 @@
+{
+  "prompt": "Create a sign-up form",
+  "generatedAt": "2025-12-04T07:11:13.730Z",
+  "response": {
+    "components": [
+      {
+        "id": "signup-container",
+        "type": "stack",
+        "props": {
+          "gap": "lg",
+          "align": "center"
+        },
+        "children": [
+          {
+            "id": "form-header",
+            "type": "stack",
+            "props": {
+              "gap": "sm",
+              "align": "center"
+            },
+            "children": [
+              {
+                "id": "title",
+                "type": "heading",
+                "props": {
+                  "content": "Create Your Account",
+                  "level": 1
+                }
+              },
+              {
+                "id": "subtitle",
+                "type": "text",
+                "props": {
+                  "content": "Join thousands of users already using our platform",
+                  "size": "md"
+                }
+              }
+            ]
+          },
+          {
+            "id": "spacer-1",
+            "type": "spacer",
+            "props": {
+              "size": "md"
+            }
+          },
+          {
+            "id": "password-info",
+            "type": "callout",
+            "props": {
+              "variant": "tip",
+              "message": "Your password must be at least 8 characters and include a number for security.",
+              "icon": "info"
+            }
+          },
+          {
+            "id": "signup-form",
+            "type": "form",
+            "props": {
+              "submitLabel": "Create Account",
+              "onSubmit": "register-user"
+            },
+            "children": [
+              {
+                "id": "fullname-input",
+                "type": "input",
+                "props": {
+                  "name": "fullname",
+                  "label": "Full Name",
+                  "placeholder": "Sarah Chen",
+                  "type": "text",
+                  "required": true
+                }
+              },
+              {
+                "id": "email-input",
+                "type": "input",
+                "props": {
+                  "name": "email",
+                  "label": "Email Address",
+                  "placeholder": "sarah.chen@example.com",
+                  "type": "email",
+                  "required": true
+                }
+              },
+              {
+                "id": "password-input",
+                "type": "input",
+                "props": {
+                  "name": "password",
+                  "label": "Password",
+                  "placeholder": "Minimum 8 characters",
+                  "type": "password",
+                  "required": true
+                }
+              },
+              {
+                "id": "confirm-password-input",
+                "type": "input",
+                "props": {
+                  "name": "confirmPassword",
+                  "label": "Confirm Password",
+                  "placeholder": "Re-enter your password",
+                  "type": "password",
+                  "required": true
+                }
+              },
+              {
+                "id": "role-select",
+                "type": "select",
+                "props": {
+                  "name": "role",
+                  "label": "I am a...",
+                  "required": true,
+                  "options": [
+                    {
+                      "value": "developer",
+                      "label": "Developer"
+                    },
+                    {
+                      "value": "designer",
+                      "label": "Designer"
+                    },
+                    {
+                      "value": "manager",
+                      "label": "Product Manager"
+                    },
+                    {
+                      "value": "marketer",
+                      "label": "Marketing Professional"
+                    },
+                    {
+                      "value": "other",
+                      "label": "Other"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "login-link",
+            "type": "text",
+            "props": {
+              "content": "Already have an account? Sign in instead.",
+              "size": "sm"
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "title": "Sign Up",
+      "description": "New user registration form"
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "heading",
+      "text",
+      "spacer",
+      "callout",
+      "form",
+      "input",
+      "select"
+    ],
+    "nestingDepth": 3,
+    "placeholderDetected": false
+  }
+}

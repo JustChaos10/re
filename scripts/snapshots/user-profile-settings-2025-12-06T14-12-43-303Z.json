@@ -1,0 +1,342 @@
+{
+  "prompt": "User profile settings",
+  "generatedAt": "2025-12-06T14:14:08.429Z",
+  "response": {
+    "components": [
+      {
+        "id": "profile-settings-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "profile-info-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "profile-info-split",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "avatar-stack",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "user-avatar",
+                        "type": "avatar",
+                        "props": {
+                          "name": "User",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "upload-photo-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  },
+                  {
+                    "id": "profile-details-form",
+                    "type": "form",
+                    "children": [
+                      {
+                        "id": "full-name-input",
+                        "type": "input",
+                        "props": {
+                          "name": "input-7j1bqr",
+                          "label": "Input",
+                          "type": "text"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "email-input",
+                        "type": "input",
+                        "props": {
+                          "name": "input-wl3q8s",
+                          "label": "Input",
+                          "type": "text"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "save-profile-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "submitLabel": "Submit"
+                    }
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "account-security-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "password-container",
+                "type": "container",
+                "children": [
+                  {
+                    "id": "password-label",
+                    "type": "text",
+                    "props": {
+                      "content": "Text",
+                      "size": "md",
+                      "weight": "normal"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "password-status",
+                    "type": "text",
+                    "props": {
+                      "content": "Text",
+                      "size": "md",
+                      "weight": "normal"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "change-password-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {}
+              },
+              {
+                "id": "security-divider",
+                "type": "divider",
+                "props": {},
+                "children": []
+              },
+              {
+                "id": "two-factor-container",
+                "type": "container",
+                "children": [
+                  {
+                    "id": "two-factor-label",
+                    "type": "text",
+                    "props": {
+                      "content": "Text",
+                      "size": "md",
+                      "weight": "normal"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "two-factor-status-stack",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "two-factor-badge",
+                        "type": "badge",
+                        "props": {
+                          "label": "Badge",
+                          "variant": "default"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "two-factor-description",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  },
+                  {
+                    "id": "disable-two-factor-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {}
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "preferences-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "preferences-form",
+                "type": "form",
+                "children": [
+                  {
+                    "id": "notification-settings-select",
+                    "type": "select",
+                    "props": {
+                      "name": "select-abtcew",
+                      "label": "Select",
+                      "options": [
+                        {
+                          "value": "option-1",
+                          "label": "Option 1"
+                        },
+                        {
+                          "value": "option-2",
+                          "label": "Option 2"
+                        },
+                        {
+                          "value": "option-3",
+                          "label": "Option 3"
+                        }
+                      ]
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "theme-select",
+                    "type": "select",
+                    "props": {
+                      "name": "select-6qkoa1",
+                      "label": "Select",
+                      "options": [
+                        {
+                          "value": "option-1",
+                          "label": "Option 1"
+                        },
+                        {
+                          "value": "option-2",
+                          "label": "Option 2"
+                        },
+                        {
+                          "value": "option-3",
+                          "label": "Option 3"
+                        }
+                      ]
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "save-preferences-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "submitLabel": "Submit"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "connected-accounts-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "connected-accounts-list",
+                "type": "list",
+                "props": {
+                  "items": [
+                    {
+                      "id": "item-gpj5ae",
+                      "label": "Item"
+                    },
+                    {
+                      "id": "item-rtfur8",
+                      "label": "Item"
+                    },
+                    {
+                      "id": "item-zdlopt",
+                      "label": "Item"
+                    }
+                  ],
+                  "variant": "none"
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "User Profile Settings",
+      "description": "Manage your profile information, security, preferences, and connected accounts."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "split",
+      "avatar",
+      "button",
+      "form",
+      "input",
+      "container",
+      "text",
+      "divider",
+      "badge",
+      "select",
+      "list"
+    ],
+    "nestingDepth": 5,
+    "placeholderDetected": false
+  }
+}

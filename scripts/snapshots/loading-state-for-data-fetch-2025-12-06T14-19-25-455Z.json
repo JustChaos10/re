@@ -1,0 +1,197 @@
+{
+  "prompt": "Loading state for data fetch",
+  "generatedAt": "2025-12-06T14:21:39.929Z",
+  "response": {
+    "components": [
+      {
+        "id": "loading-page-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "data-loading-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "loading-content-stack",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "main-progress-bar",
+                    "type": "progress",
+                    "props": {
+                      "value": 50,
+                      "max": 100,
+                      "showPercentage": true
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "loading-message-text",
+                    "type": "text",
+                    "props": {
+                      "content": "Text",
+                      "size": "md",
+                      "weight": "normal"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "loading-spacer-1",
+                    "type": "spacer",
+                    "props": {
+                      "size": "md"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "placeholder-cards-container",
+                    "type": "container",
+                    "children": [
+                      {
+                        "id": "placeholder-card-1",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "card-1-stack",
+                            "type": "stack",
+                            "children": [
+                              {
+                                "id": "card-1-title-placeholder",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "card-1-description-placeholder",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              }
+                            ],
+                            "props": {
+                              "gap": "md"
+                            }
+                          }
+                        ],
+                        "props": {}
+                      },
+                      {
+                        "id": "placeholder-card-2",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "card-2-stack",
+                            "type": "stack",
+                            "children": [
+                              {
+                                "id": "card-2-title-placeholder",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "card-2-description-placeholder",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              }
+                            ],
+                            "props": {
+                              "gap": "md"
+                            }
+                          }
+                        ],
+                        "props": {}
+                      },
+                      {
+                        "id": "placeholder-card-3",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "card-3-stack",
+                            "type": "stack",
+                            "children": [
+                              {
+                                "id": "card-3-title-placeholder",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "card-3-description-placeholder",
+                                "type": "text",
+                                "props": {
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              }
+                            ],
+                            "props": {
+                              "gap": "md"
+                            }
+                          }
+                        ],
+                        "props": {}
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Loading Data",
+      "description": "Displays a loading state for data fetching with progress indicators and placeholder content."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "progress",
+      "text",
+      "spacer",
+      "container",
+      "card"
+    ],
+    "nestingDepth": 7,
+    "placeholderDetected": false
+  }
+}

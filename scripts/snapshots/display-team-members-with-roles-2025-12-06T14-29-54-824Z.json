@@ -1,0 +1,63 @@
+{
+  "prompt": "Display team members with roles",
+  "generatedAt": "2025-12-06T14:30:32.417Z",
+  "response": {
+    "components": [
+      {
+        "id": "team-members-page-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "team-members-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "team-members-list",
+                "type": "list",
+                "props": {
+                  "items": [
+                    {
+                      "id": "item-uiof5u",
+                      "label": "Item"
+                    },
+                    {
+                      "id": "item-m53958",
+                      "label": "Item"
+                    },
+                    {
+                      "id": "item-uz77u7",
+                      "label": "Item"
+                    }
+                  ],
+                  "variant": "none"
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Team Members Directory",
+      "description": "A list of all team members with their roles and contact information."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "list"
+    ],
+    "nestingDepth": 3,
+    "placeholderDetected": false
+  }
+}

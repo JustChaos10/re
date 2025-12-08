@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dev:stack": "npm --prefix ../../ run dev:stack"
   },
   "dependencies": {
     "@re/core": "*",

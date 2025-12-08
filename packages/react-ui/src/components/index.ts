@@ -14,3 +14,15 @@ export * from './Badge';
 export * from './Image';
 export * from './Divider';
 export * from './Container';
+
+// New enhanced components
+export * from './Icon';
+export * from './Stack';
+export * from './Section';
+export * from './Split';
+export * from './Spacer';
+export * from './Illustration';
+export * from './Callout';
+export * from './Stat';
+export * from './Avatar';
+export * from './TagGroup';

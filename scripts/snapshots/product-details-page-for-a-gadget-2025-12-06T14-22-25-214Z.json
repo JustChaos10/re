@@ -1,0 +1,727 @@
+{
+  "prompt": "Product details page for a gadget",
+  "generatedAt": "2025-12-06T14:23:23.169Z",
+  "response": {
+    "components": [
+      {
+        "id": "product-page-main-stack",
+        "type": "stack",
+        "props": {
+          "gap": "xl"
+        },
+        "children": [
+          {
+            "id": "product-overview-section",
+            "type": "section",
+            "props": {
+              "title": "AuraFlow Smart Humidifier Pro",
+              "subtitle": "Experience optimal air quality with intelligent control."
+            },
+            "children": [
+              {
+                "id": "product-hero-split",
+                "type": "split",
+                "props": {
+                  "gap": "lg",
+                  "direction": "horizontal"
+                },
+                "children": [
+                  {
+                    "id": "product-image-container",
+                    "type": "container",
+                    "props": {
+                      "padding": "md",
+                      "border": true,
+                      "borderRadius": "md"
+                    },
+                    "children": [
+                      {
+                        "id": "main-product-image",
+                        "type": "image",
+                        "props": {
+                          "src": "https://assets.re-ui.com/images/gadget-humidifier-pro.webp",
+                          "alt": "AuraFlow Smart Humidifier Pro, sleek white design with mist output",
+                          "width": 500,
+                          "height": 500,
+                          "rounded": false
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "product-details-stack",
+                    "type": "stack",
+                    "props": {
+                      "gap": "md"
+                    },
+                    "children": [
+                      {
+                        "id": "product-price-text",
+                        "type": "text",
+                        "props": {
+                          "text": "$129.99",
+                          "size": "xl",
+                          "weight": "bold",
+                          "content": "Text"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "product-rating-tag-group",
+                        "type": "tag-group",
+                        "props": {
+                          "tags": [
+                            {
+                              "id": "rating-stars",
+                              "text": "4.8",
+                              "icon": "star-fill",
+                              "variant": "info"
+                            },
+                            {
+                              "id": "review-count",
+                              "text": "245 Reviews",
+                              "variant": "secondary"
+                            }
+                          ]
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "product-short-description",
+                        "type": "text",
+                        "props": {
+                          "text": "The AuraFlow Smart Humidifier Pro offers advanced ultrasonic mist technology, smart home integration, and a large 5L capacity for up to 48 hours of continuous operation. Perfect for maintaining ideal humidity levels in any room.",
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "key-features-list",
+                        "type": "list",
+                        "props": {
+                          "items": [
+                            {
+                              "id": "feature-1",
+                              "text": "5L Large Capacity, 48h Runtime"
+                            },
+                            {
+                              "id": "feature-2",
+                              "text": "Smart App & Voice Control"
+                            },
+                            {
+                              "id": "feature-3",
+                              "text": "Whisper-Quiet Operation"
+                            },
+                            {
+                              "id": "feature-4",
+                              "text": "Auto Mode with Humidity Sensor"
+                            }
+                          ],
+                          "variant": "none"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "action-buttons-stack",
+                        "type": "stack",
+                        "props": {
+                          "gap": "sm",
+                          "direction": "horizontal"
+                        },
+                        "children": [
+                          {
+                            "id": "add-to-cart-button",
+                            "type": "button",
+                            "props": {
+                              "text": "Add to Cart",
+                              "variant": "primary",
+                              "icon": "shopping-cart",
+                              "onClick": "add-to-cart-aura-flow",
+                              "label": "Action",
+                              "size": "md"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "buy-now-button",
+                            "type": "button",
+                            "props": {
+                              "text": "Buy Now",
+                              "variant": "secondary",
+                              "icon": "credit-card",
+                              "onClick": "buy-now-aura-flow",
+                              "label": "Action",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "divider-1",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "specifications-section",
+            "type": "section",
+            "props": {
+              "title": "Technical Specifications",
+              "subtitle": ""
+            },
+            "children": [
+              {
+                "id": "specs-list",
+                "type": "list",
+                "props": {
+                  "items": [
+                    {
+                      "id": "spec-capacity",
+                      "text": "Water Capacity: 5 Liters"
+                    },
+                    {
+                      "id": "spec-runtime",
+                      "text": "Max Runtime: Up to 48 hours"
+                    },
+                    {
+                      "id": "spec-coverage",
+                      "text": "Coverage Area: 500 sq ft"
+                    },
+                    {
+                      "id": "spec-noise",
+                      "text": "Noise Level: < 28dB"
+                    },
+                    {
+                      "id": "spec-connectivity",
+                      "text": "Connectivity: Wi-Fi (2.4GHz), Bluetooth"
+                    },
+                    {
+                      "id": "spec-dimensions",
+                      "text": "Dimensions: 8.5\" x 8.5\" x 13\""
+                    },
+                    {
+                      "id": "spec-weight",
+                      "text": "Weight: 4.2 lbs"
+                    }
+                  ],
+                  "variant": "none"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "divider-2",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "customer-reviews-section",
+            "type": "section",
+            "props": {
+              "title": "Customer Reviews",
+              "subtitle": "What our users are saying about the AuraFlow Pro."
+            },
+            "children": [
+              {
+                "id": "reviews-split",
+                "type": "split",
+                "props": {
+                  "gap": "lg",
+                  "direction": "horizontal"
+                },
+                "children": [
+                  {
+                    "id": "overall-rating-summary",
+                    "type": "stack",
+                    "props": {
+                      "gap": "md"
+                    },
+                    "children": [
+                      {
+                        "id": "average-rating-stat",
+                        "type": "stat",
+                        "props": {
+                          "label": "Average Rating",
+                          "value": "4.8",
+                          "unit": "/ 5.0"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "rating-breakdown-progress-stack",
+                        "type": "stack",
+                        "props": {
+                          "gap": "sm"
+                        },
+                        "children": [
+                          {
+                            "id": "5-star-progress",
+                            "type": "progress",
+                            "props": {
+                              "label": "5 Stars",
+                              "value": 85,
+                              "max": 100,
+                              "showPercentage": true
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "4-star-progress",
+                            "type": "progress",
+                            "props": {
+                              "label": "4 Stars",
+                              "value": 10,
+                              "max": 100,
+                              "showPercentage": true
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "3-star-progress",
+                            "type": "progress",
+                            "props": {
+                              "label": "3 Stars",
+                              "value": 3,
+                              "max": 100,
+                              "showPercentage": true
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "2-star-progress",
+                            "type": "progress",
+                            "props": {
+                              "label": "2 Stars",
+                              "value": 1,
+                              "max": 100,
+                              "showPercentage": true
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "1-star-progress",
+                            "type": "progress",
+                            "props": {
+                              "label": "1 Star",
+                              "value": 1,
+                              "max": 100,
+                              "showPercentage": true
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "individual-reviews-stack",
+                    "type": "stack",
+                    "props": {
+                      "gap": "md"
+                    },
+                    "children": [
+                      {
+                        "id": "review-card-1",
+                        "type": "card",
+                        "props": {
+                          "padding": "md",
+                          "border": true
+                        },
+                        "children": [
+                          {
+                            "id": "review-1-content",
+                            "type": "stack",
+                            "props": {
+                              "gap": "sm"
+                            },
+                            "children": [
+                              {
+                                "id": "review-1-header",
+                                "type": "split",
+                                "props": {
+                                  "gap": "sm",
+                                  "direction": "horizontal",
+                                  "alignItems": "center"
+                                },
+                                "children": [
+                                  {
+                                    "id": "reviewer-1-avatar",
+                                    "type": "avatar",
+                                    "props": {
+                                      "src": "https://assets.re-ui.com/avatars/avatar-1.webp",
+                                      "alt": "Avatar of Sarah Chen",
+                                      "size": "sm",
+                                      "name": "User"
+                                    },
+                                    "children": []
+                                  },
+                                  {
+                                    "id": "reviewer-1-info",
+                                    "type": "stack",
+                                    "props": {
+                                      "gap": "xs"
+                                    },
+                                    "children": [
+                                      {
+                                        "id": "reviewer-1-name",
+                                        "type": "text",
+                                        "props": {
+                                          "text": "Sarah Chen",
+                                          "weight": "medium",
+                                          "content": "Text",
+                                          "size": "md"
+                                        },
+                                        "children": []
+                                      },
+                                      {
+                                        "id": "review-1-date",
+                                        "type": "text",
+                                        "props": {
+                                          "text": "Dec 15, 2023",
+                                          "size": "sm",
+                                          "color": "text-secondary",
+                                          "content": "Text",
+                                          "weight": "normal"
+                                        },
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "review-1-title",
+                                "type": "text",
+                                "props": {
+                                  "text": "A Game Changer for My Home!",
+                                  "weight": "semibold",
+                                  "content": "Text",
+                                  "size": "md"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "review-1-body",
+                                "type": "text",
+                                "props": {
+                                  "text": "I've tried several humidifiers, but the AuraFlow Pro is by far the best. The smart features are incredibly convenient, and it keeps my living room at the perfect humidity without any fuss. Super quiet too!",
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "review-card-2",
+                        "type": "card",
+                        "props": {
+                          "padding": "md",
+                          "border": true
+                        },
+                        "children": [
+                          {
+                            "id": "review-2-content",
+                            "type": "stack",
+                            "props": {
+                              "gap": "sm"
+                            },
+                            "children": [
+                              {
+                                "id": "review-2-header",
+                                "type": "split",
+                                "props": {
+                                  "gap": "sm",
+                                  "direction": "horizontal",
+                                  "alignItems": "center"
+                                },
+                                "children": [
+                                  {
+                                    "id": "reviewer-2-avatar",
+                                    "type": "avatar",
+                                    "props": {
+                                      "src": "https://assets.re-ui.com/avatars/avatar-2.webp",
+                                      "alt": "Avatar of Marcus Rodriguez",
+                                      "size": "sm",
+                                      "name": "User"
+                                    },
+                                    "children": []
+                                  },
+                                  {
+                                    "id": "reviewer-2-info",
+                                    "type": "stack",
+                                    "props": {
+                                      "gap": "xs"
+                                    },
+                                    "children": [
+                                      {
+                                        "id": "reviewer-2-name",
+                                        "type": "text",
+                                        "props": {
+                                          "text": "Marcus Rodriguez",
+                                          "weight": "medium",
+                                          "content": "Text",
+                                          "size": "md"
+                                        },
+                                        "children": []
+                                      },
+                                      {
+                                        "id": "review-2-date",
+                                        "type": "text",
+                                        "props": {
+                                          "text": "Nov 28, 2023",
+                                          "size": "sm",
+                                          "color": "text-secondary",
+                                          "content": "Text",
+                                          "weight": "normal"
+                                        },
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "review-2-title",
+                                "type": "text",
+                                "props": {
+                                  "text": "Great Product, Minor App Glitches",
+                                  "weight": "semibold",
+                                  "content": "Text",
+                                  "size": "md"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "review-2-body",
+                                "type": "text",
+                                "props": {
+                                  "text": "The humidifier itself is fantastic – quiet, effective, and looks good. My only minor complaint is that the companion app occasionally has connection issues, but it's usually resolved with a restart. Still highly recommend!",
+                                  "content": "Text",
+                                  "size": "md",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "divider-3",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "related-products-section",
+            "type": "section",
+            "props": {
+              "title": "You Might Also Like",
+              "subtitle": "Explore other smart home essentials."
+            },
+            "children": [
+              {
+                "id": "related-products-container",
+                "type": "container",
+                "props": {
+                  "overflow": "auto"
+                },
+                "children": [
+                  {
+                    "id": "related-products-split",
+                    "type": "split",
+                    "props": {
+                      "gap": "lg",
+                      "direction": "horizontal"
+                    },
+                    "children": [
+                      {
+                        "id": "related-product-card-1",
+                        "type": "card",
+                        "props": {
+                          "padding": "md",
+                          "border": true,
+                          "width": "280px"
+                        },
+                        "children": [
+                          {
+                            "id": "related-product-1-stack",
+                            "type": "stack",
+                            "props": {
+                              "gap": "sm"
+                            },
+                            "children": [
+                              {
+                                "id": "related-product-1-image",
+                                "type": "image",
+                                "props": {
+                                  "src": "https://assets.re-ui.com/images/gadget-air-purifier.webp",
+                                  "alt": "AeroGuard Smart Air Purifier",
+                                  "width": 250,
+                                  "height": 250,
+                                  "rounded": false
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "related-product-1-name",
+                                "type": "text",
+                                "props": {
+                                  "text": "AeroGuard Smart Air Purifier",
+                                  "weight": "semibold",
+                                  "content": "Text",
+                                  "size": "md"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "related-product-1-price",
+                                "type": "text",
+                                "props": {
+                                  "text": "$199.00",
+                                  "size": "md",
+                                  "content": "Text",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "related-product-1-button",
+                                "type": "button",
+                                "props": {
+                                  "text": "View Details",
+                                  "variant": "secondary",
+                                  "onClick": "view-aeroguard-purifier",
+                                  "label": "Action",
+                                  "size": "md"
+                                },
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "related-product-card-2",
+                        "type": "card",
+                        "props": {
+                          "padding": "md",
+                          "border": true,
+                          "width": "280px"
+                        },
+                        "children": [
+                          {
+                            "id": "related-product-2-stack",
+                            "type": "stack",
+                            "props": {
+                              "gap": "sm"
+                            },
+                            "children": [
+                              {
+                                "id": "related-product-2-image",
+                                "type": "image",
+                                "props": {
+                                  "src": "https://assets.re-ui.com/images/gadget-smart-thermostat.webp",
+                                  "alt": "ClimateSense Smart Thermostat",
+                                  "width": 250,
+                                  "height": 250,
+                                  "rounded": false
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "related-product-2-name",
+                                "type": "text",
+                                "props": {
+                                  "text": "ClimateSense Smart Thermostat",
+                                  "weight": "semibold",
+                                  "content": "Text",
+                                  "size": "md"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "related-product-2-price",
+                                "type": "text",
+                                "props": {
+                                  "text": "$179.50",
+                                  "size": "md",
+                                  "content": "Text",
+                                  "weight": "normal"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "related-product-2-button",
+                                "type": "button",
+                                "props": {
+                                  "text": "View Details",
+                                  "variant": "secondary",
+                                  "onClick": "view-climatesense-thermostat",
+                                  "label": "Action",
+                                  "size": "md"
+                                },
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "title": "AuraFlow Smart Humidifier Pro - Product Details",
+      "description": "Detailed product page for the AuraFlow Smart Humidifier Pro, including features, specifications, customer reviews, and related products."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "split",
+      "container",
+      "image",
+      "text",
+      "tag-group",
+      "list",
+      "button",
+      "divider",
+      "stat",
+      "progress",
+      "card",
+      "avatar"
+    ],
+    "nestingDepth": 9,
+    "placeholderDetected": false
+  }
+}

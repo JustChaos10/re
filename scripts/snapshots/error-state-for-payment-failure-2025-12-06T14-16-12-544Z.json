@@ -1,0 +1,148 @@
+{
+  "prompt": "Error state for payment failure",
+  "generatedAt": "2025-12-06T14:18:28.471Z",
+  "response": {
+    "components": [
+      {
+        "id": "payment-failure-page-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "payment-failure-card",
+            "type": "card",
+            "children": [
+              {
+                "id": "payment-failure-content-stack",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "payment-failure-heading",
+                    "type": "heading",
+                    "props": {
+                      "content": "Heading",
+                      "level": 2
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "payment-failure-summary",
+                    "type": "text",
+                    "props": {
+                      "content": "Text",
+                      "size": "md",
+                      "weight": "normal"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "payment-failure-divider-1",
+                    "type": "divider",
+                    "props": {},
+                    "children": []
+                  },
+                  {
+                    "id": "error-details-container",
+                    "type": "container",
+                    "children": [
+                      {
+                        "id": "error-code",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "error-reason",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "payment-failure-divider-2",
+                    "type": "divider",
+                    "props": {},
+                    "children": []
+                  },
+                  {
+                    "id": "action-buttons-stack",
+                    "type": "stack",
+                    "children": [
+                      {
+                        "id": "retry-payment-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "update-payment-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "contact-support-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {}
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Payment Failure",
+      "description": "Displays an error state for a failed payment transaction with details and actionable options."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "card",
+      "heading",
+      "text",
+      "divider",
+      "container",
+      "button"
+    ],
+    "nestingDepth": 5,
+    "placeholderDetected": false
+  }
+}

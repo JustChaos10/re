@@ -1,0 +1,297 @@
+{
+  "prompt": "Show me a sales dashboard",
+  "generatedAt": "2025-12-04T07:11:04.271Z",
+  "response": {
+    "components": [
+      {
+        "id": "main-dashboard-container",
+        "type": "stack",
+        "props": {
+          "gap": "xl"
+        },
+        "children": [
+          {
+            "id": "dashboard-header",
+            "type": "heading",
+            "props": {
+              "content": "Sales Dashboard",
+              "level": 1
+            }
+          },
+          {
+            "id": "kpi-section",
+            "type": "section",
+            "props": {
+              "title": "Key Performance Indicators",
+              "variant": "card",
+              "padding": "lg"
+            },
+            "children": [
+              {
+                "id": "kpi-grid",
+                "type": "container",
+                "props": {
+                  "variant": "grid",
+                  "cols": 4,
+                  "gap": "lg"
+                },
+                "children": [
+                  {
+                    "id": "total-revenue-stat",
+                    "type": "stat",
+                    "props": {
+                      "label": "Total Revenue",
+                      "value": "$124,560",
+                      "change": {
+                        "value": "+18.2%",
+                        "type": "increase"
+                      },
+                      "icon": "dollar-sign",
+                      "description": "vs. last month"
+                    }
+                  },
+                  {
+                    "id": "total-orders-stat",
+                    "type": "stat",
+                    "props": {
+                      "label": "Total Orders",
+                      "value": "2,150",
+                      "change": {
+                        "value": "+10.5%",
+                        "type": "increase"
+                      },
+                      "icon": "shopping-cart",
+                      "description": "vs. last month"
+                    }
+                  },
+                  {
+                    "id": "conversion-rate-stat",
+                    "type": "stat",
+                    "props": {
+                      "label": "Conversion Rate",
+                      "value": "4.1%",
+                      "change": {
+                        "value": "-0.3%",
+                        "type": "decrease"
+                      },
+                      "icon": "trending-down",
+                      "description": "vs. last month"
+                    }
+                  },
+                  {
+                    "id": "average-order-value-stat",
+                    "type": "stat",
+                    "props": {
+                      "label": "Avg. Order Value",
+                      "value": "$57.93",
+                      "change": {
+                        "value": "+6.8%",
+                        "type": "increase"
+                      },
+                      "icon": "credit-card",
+                      "description": "vs. last month"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "revenue-trend-section",
+            "type": "section",
+            "props": {
+              "title": "Revenue Trend",
+              "subtitle": "Last 12 Months",
+              "variant": "card",
+              "padding": "lg"
+            },
+            "children": [
+              {
+                "id": "revenue-line-chart",
+                "type": "chart",
+                "props": {
+                  "chartType": "line",
+                  "xKey": "month",
+                  "yKey": "revenue",
+                  "data": [
+                    {
+                      "month": "Jan",
+                      "revenue": 85000
+                    },
+                    {
+                      "month": "Feb",
+                      "revenue": 92000
+                    },
+                    {
+                      "month": "Mar",
+                      "revenue": 88000
+                    },
+                    {
+                      "month": "Apr",
+                      "revenue": 95000
+                    },
+                    {
+                      "month": "May",
+                      "revenue": 102000
+                    },
+                    {
+                      "month": "Jun",
+                      "revenue": 98000
+                    },
+                    {
+                      "month": "Jul",
+                      "revenue": 105000
+                    },
+                    {
+                      "month": "Aug",
+                      "revenue": 110000
+                    },
+                    {
+                      "month": "Sep",
+                      "revenue": 115000
+                    },
+                    {
+                      "month": "Oct",
+                      "revenue": 108000
+                    },
+                    {
+                      "month": "Nov",
+                      "revenue": 124560
+                    },
+                    {
+                      "month": "Dec",
+                      "revenue": 130000
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "sales-by-category-section",
+            "type": "section",
+            "props": {
+              "title": "Sales by Category",
+              "subtitle": "Revenue distribution across product categories",
+              "variant": "card",
+              "padding": "lg"
+            },
+            "children": [
+              {
+                "id": "category-pie-chart",
+                "type": "chart",
+                "props": {
+                  "chartType": "pie",
+                  "xKey": "category",
+                  "yKey": "sales",
+                  "data": [
+                    {
+                      "category": "Electronics",
+                      "sales": 45000
+                    },
+                    {
+                      "category": "Apparel",
+                      "sales": 30000
+                    },
+                    {
+                      "category": "Home Goods",
+                      "sales": 25000
+                    },
+                    {
+                      "category": "Books",
+                      "sales": 15000
+                    },
+                    {
+                      "category": "Other",
+                      "sales": 9560
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "recent-orders-section",
+            "type": "section",
+            "props": {
+              "title": "Recent Orders",
+              "variant": "card",
+              "padding": "lg"
+            },
+            "children": [
+              {
+                "id": "orders-table",
+                "type": "table",
+                "props": {
+                  "headers": [
+                    "Order ID",
+                    "Customer",
+                    "Date",
+                    "Amount",
+                    "Status"
+                  ],
+                  "rows": [
+                    {
+                      "Order ID": "#ORD-00125",
+                      "Customer": "Alice Johnson",
+                      "Date": "Dec 3, 2024",
+                      "Amount": "$120.50",
+                      "Status": "Completed"
+                    },
+                    {
+                      "Order ID": "#ORD-00124",
+                      "Customer": "Bob Williams",
+                      "Date": "Dec 3, 2024",
+                      "Amount": "$75.00",
+                      "Status": "Processing"
+                    },
+                    {
+                      "Order ID": "#ORD-00123",
+                      "Customer": "Charlie Brown",
+                      "Date": "Dec 2, 2024",
+                      "Amount": "$210.25",
+                      "Status": "Shipped"
+                    },
+                    {
+                      "Order ID": "#ORD-00122",
+                      "Customer": "Diana Prince",
+                      "Date": "Dec 2, 2024",
+                      "Amount": "$45.75",
+                      "Status": "Completed"
+                    },
+                    {
+                      "Order ID": "#ORD-00121",
+                      "Customer": "Eve Adams",
+                      "Date": "Dec 1, 2024",
+                      "Amount": "$300.00",
+                      "Status": "Pending"
+                    }
+                  ],
+                  "striped": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "title": "Sales Dashboard",
+      "description": "Comprehensive overview of sales performance, trends, and recent order activity."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "heading",
+      "section",
+      "container",
+      "stat",
+      "chart",
+      "table"
+    ],
+    "nestingDepth": 4,
+    "placeholderDetected": false
+  }
+}

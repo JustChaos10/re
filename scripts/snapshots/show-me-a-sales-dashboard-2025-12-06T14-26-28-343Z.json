@@ -1,0 +1,213 @@
+{
+  "prompt": "Show me a sales dashboard",
+  "generatedAt": "2025-12-06T14:26:40.316Z",
+  "response": {
+    "components": [
+      {
+        "id": "sales-dashboard-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "sales-overview-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "overview-stats-actions-split",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "overview-stats-container",
+                    "type": "container",
+                    "children": [],
+                    "props": {}
+                  },
+                  {
+                    "id": "overview-actions-container",
+                    "type": "container",
+                    "children": [
+                      {
+                        "id": "new-sale-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "performance-trends-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "revenue-line-chart",
+                "type": "chart",
+                "props": {
+                  "chartType": "line",
+                  "xKey": "label",
+                  "yKey": "value",
+                  "data": [
+                    {
+                      "label": "Jan",
+                      "value": 40
+                    },
+                    {
+                      "label": "Feb",
+                      "value": 55
+                    },
+                    {
+                      "label": "Mar",
+                      "value": 52
+                    },
+                    {
+                      "label": "Apr",
+                      "value": 61
+                    },
+                    {
+                      "label": "May",
+                      "value": 68
+                    },
+                    {
+                      "label": "Jun",
+                      "value": 73
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "recent-activity-products-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "activity-products-split",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "recent-sales-card",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "recent-sales-list",
+                        "type": "list",
+                        "props": {
+                          "items": [
+                            {
+                              "id": "item-072xcz",
+                              "label": "Item"
+                            },
+                            {
+                              "id": "item-smsq52",
+                              "label": "Item"
+                            },
+                            {
+                              "id": "item-xdvb8k",
+                              "label": "Item"
+                            }
+                          ],
+                          "variant": "none"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "top-products-card",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "top-products-table",
+                        "type": "table",
+                        "props": {
+                          "headers": [
+                            "Column A",
+                            "Column B"
+                          ],
+                          "rows": [
+                            {
+                              "id": "row-4fujas",
+                              "Column A": "Row 1 A",
+                              "Column B": "Row 1 B"
+                            },
+                            {
+                              "id": "row-keg28l",
+                              "Column A": "Row 2 A",
+                              "Column B": "Row 2 B"
+                            },
+                            {
+                              "id": "row-ndh1my",
+                              "Column A": "Row 3 A",
+                              "Column B": "Row 3 B"
+                            },
+                            {
+                              "id": "row-sypl5m",
+                              "Column A": "Row 4 A",
+                              "Column B": "Row 4 B"
+                            }
+                          ]
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Sales Dashboard",
+      "description": "Comprehensive overview of sales performance, trends, and recent activities."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "split",
+      "container",
+      "button",
+      "chart",
+      "card",
+      "list",
+      "table"
+    ],
+    "nestingDepth": 5,
+    "placeholderDetected": false
+  }
+}

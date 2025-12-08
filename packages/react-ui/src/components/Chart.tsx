@@ -20,8 +20,35 @@ import { ChartComponent } from '@re/core';
 
 const COLORS = ['#0066ff', '#10b981', '#f59e0b', '#ef4444', '#3b82f6', '#8b5cf6'];
 
-export function Chart({ props }: { props: ChartComponent['props'] }) {
-  const { chartType, data, xKey, yKey, title } = props;
+// Enhanced tooltip component
+const CustomTooltip = ({ active, payload, label }: any) => {
+  if (!active || !payload || !payload.length) return null;
+
+  return (
+    <div className="re-chart-tooltip">
+      <div className="re-chart-tooltip-label">{label}</div>
+      {payload.map((entry: any, index: number) => (
+        <div key={index} className="re-chart-tooltip-item">
+          <span
+            className="re-chart-tooltip-color"
+            style={{ backgroundColor: entry.color || entry.fill }}
+          />
+          <span className="re-chart-tooltip-name">{entry.name || entry.dataKey}:</span>
+          <span className="re-chart-tooltip-value">{entry.value}</span>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export function Chart({ props }: { props?: ChartComponent['props'] }) {
+  const {
+    chartType = 'line',
+    data = [],
+    xKey = 'name',
+    yKey = 'value',
+    title,
+  } = props ?? ({} as ChartComponent['props']);
 
   const renderChart = () => {
     switch (chartType) {
@@ -31,15 +58,16 @@ export function Chart({ props }: { props: ChartComponent['props'] }) {
             <CartesianGrid strokeDasharray="3 3" stroke="var(--re-border)" />
             <XAxis dataKey={xKey} stroke="var(--re-text-secondary)" />
             <YAxis stroke="var(--re-text-secondary)" />
-            <Tooltip
-              contentStyle={{
-                backgroundColor: 'var(--re-bg-primary)',
-                border: '1px solid var(--re-border)',
-                borderRadius: 'var(--re-radius-md)',
-              }}
-            />
+            <Tooltip content={<CustomTooltip />} />
             <Legend />
-            <Line type="monotone" dataKey={yKey} stroke="var(--re-primary)" strokeWidth={2} />
+            <Line
+              type="monotone"
+              dataKey={yKey}
+              stroke="var(--re-primary)"
+              strokeWidth={2.5}
+              dot={{ r: 4, strokeWidth: 2, fill: 'var(--re-bg-primary)', stroke: 'var(--re-primary)' }}
+              activeDot={{ r: 6, strokeWidth: 0, fill: 'var(--re-primary)' }}
+            />
           </LineChart>
         );
 
@@ -49,15 +77,13 @@ export function Chart({ props }: { props: ChartComponent['props'] }) {
             <CartesianGrid strokeDasharray="3 3" stroke="var(--re-border)" />
             <XAxis dataKey={xKey} stroke="var(--re-text-secondary)" />
             <YAxis stroke="var(--re-text-secondary)" />
-            <Tooltip
-              contentStyle={{
-                backgroundColor: 'var(--re-bg-primary)',
-                border: '1px solid var(--re-border)',
-                borderRadius: 'var(--re-radius-md)',
-              }}
-            />
+            <Tooltip content={<CustomTooltip />} />
             <Legend />
-            <Bar dataKey={yKey} fill="var(--re-primary)" />
+            <Bar dataKey={yKey} radius={[4, 4, 0, 0]} maxBarSize={60}>
+              {data.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              ))}
+            </Bar>
           </BarChart>
         );
 
@@ -77,13 +103,7 @@ export function Chart({ props }: { props: ChartComponent['props'] }) {
                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
               ))}
             </Pie>
-            <Tooltip
-              contentStyle={{
-                backgroundColor: 'var(--re-bg-primary)',
-                border: '1px solid var(--re-border)',
-                borderRadius: 'var(--re-radius-md)',
-              }}
-            />
+            <Tooltip content={<CustomTooltip />} />
             <Legend />
           </PieChart>
         );
@@ -94,18 +114,13 @@ export function Chart({ props }: { props: ChartComponent['props'] }) {
             <CartesianGrid strokeDasharray="3 3" stroke="var(--re-border)" />
             <XAxis dataKey={xKey} stroke="var(--re-text-secondary)" />
             <YAxis stroke="var(--re-text-secondary)" />
-            <Tooltip
-              contentStyle={{
-                backgroundColor: 'var(--re-bg-primary)',
-                border: '1px solid var(--re-border)',
-                borderRadius: 'var(--re-radius-md)',
-              }}
-            />
+            <Tooltip content={<CustomTooltip />} />
             <Legend />
             <Area
               type="monotone"
               dataKey={yKey}
               stroke="var(--re-primary)"
+              strokeWidth={2}
               fill="var(--re-primary-light)"
             />
           </AreaChart>

@@ -1,0 +1,194 @@
+{
+  "prompt": "Loading state for data fetch",
+  "generatedAt": "2025-12-06T14:18:42.972Z",
+  "response": {
+    "components": [
+      {
+        "id": "main-loading-stack",
+        "type": "stack",
+        "children": [
+          {
+            "id": "loading-overview-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "loading-indicator-stack",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "main-spinner",
+                    "type": "progress",
+                    "props": {
+                      "value": 50,
+                      "max": 100,
+                      "showPercentage": true
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "loading-message",
+                    "type": "text",
+                    "props": {
+                      "content": "Text",
+                      "size": "md",
+                      "weight": "normal"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "section-divider",
+            "type": "divider",
+            "props": {},
+            "children": []
+          },
+          {
+            "id": "content-placeholder-section",
+            "type": "section",
+            "children": [
+              {
+                "id": "placeholder-cards-split",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "card-placeholder-stats",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "stats-card-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "stats-card-title",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "stat-placeholder-1",
+                            "type": "container",
+                            "props": {},
+                            "children": []
+                          },
+                          {
+                            "id": "stat-placeholder-2",
+                            "type": "container",
+                            "props": {},
+                            "children": []
+                          },
+                          {
+                            "id": "stat-placeholder-3",
+                            "type": "container",
+                            "props": {},
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  },
+                  {
+                    "id": "card-placeholder-list",
+                    "type": "card",
+                    "children": [
+                      {
+                        "id": "list-card-stack",
+                        "type": "stack",
+                        "children": [
+                          {
+                            "id": "list-card-title",
+                            "type": "text",
+                            "props": {
+                              "content": "Text",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "list-item-placeholder-1",
+                            "type": "container",
+                            "props": {},
+                            "children": []
+                          },
+                          {
+                            "id": "list-item-placeholder-2",
+                            "type": "container",
+                            "props": {},
+                            "children": []
+                          },
+                          {
+                            "id": "list-item-placeholder-3",
+                            "type": "container",
+                            "props": {},
+                            "children": []
+                          },
+                          {
+                            "id": "list-item-placeholder-4",
+                            "type": "container",
+                            "props": {},
+                            "children": []
+                          }
+                        ],
+                        "props": {
+                          "gap": "md"
+                        }
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Loading Dashboard",
+      "description": "A desktop-only loading state for a dashboard, featuring a spinner, loading message, and skeleton placeholders for content sections."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "progress",
+      "text",
+      "divider",
+      "split",
+      "card",
+      "container"
+    ],
+    "nestingDepth": 6,
+    "placeholderDetected": false
+  }
+}

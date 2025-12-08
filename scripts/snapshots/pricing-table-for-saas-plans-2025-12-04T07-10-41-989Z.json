@@ -1,0 +1,397 @@
+{
+  "prompt": "Pricing table for SaaS plans",
+  "generatedAt": "2025-12-04T07:13:18.673Z",
+  "response": {
+    "components": [
+      {
+        "id": "pricing-page-container",
+        "type": "stack",
+        "props": {
+          "gap": "xl",
+          "align": "center"
+        },
+        "children": [
+          {
+            "id": "page-header",
+            "type": "stack",
+            "props": {
+              "gap": "sm",
+              "align": "center"
+            },
+            "children": [
+              {
+                "id": "pricing-title",
+                "type": "heading",
+                "props": {
+                  "content": "Choose Your Plan",
+                  "level": 1
+                }
+              },
+              {
+                "id": "pricing-subtitle",
+                "type": "text",
+                "props": {
+                  "content": "Simple, transparent pricing for teams of all sizes. Start with a 14-day free trial.",
+                  "size": "lg",
+                  "color": "#666"
+                }
+              }
+            ]
+          },
+          {
+            "id": "pricing-callout",
+            "type": "callout",
+            "props": {
+              "variant": "info",
+              "title": "Save 20% with annual billing!",
+              "message": "All plans include a 14-day free trial, no credit card required.",
+              "icon": "tag"
+            }
+          },
+          {
+            "id": "pricing-grid",
+            "type": "container",
+            "props": {
+              "variant": "grid",
+              "cols": 3,
+              "gap": "lg",
+              "padding": "md"
+            },
+            "children": [
+              {
+                "id": "basic-plan-card",
+                "type": "card",
+                "props": {
+                  "variant": "outline"
+                },
+                "children": [
+                  {
+                    "id": "basic-plan-content",
+                    "type": "stack",
+                    "props": {
+                      "gap": "lg",
+                      "align": "center"
+                    },
+                    "children": [
+                      {
+                        "id": "basic-plan-header",
+                        "type": "stack",
+                        "props": {
+                          "gap": "xs",
+                          "align": "center"
+                        },
+                        "children": [
+                          {
+                            "id": "basic-plan-name",
+                            "type": "heading",
+                            "props": {
+                              "content": "Basic",
+                              "level": 3
+                            }
+                          },
+                          {
+                            "id": "basic-plan-price",
+                            "type": "text",
+                            "props": {
+                              "content": "$19/month",
+                              "size": "xl",
+                              "weight": "bold"
+                            }
+                          },
+                          {
+                            "id": "basic-plan-description",
+                            "type": "text",
+                            "props": {
+                              "content": "For individuals and small teams getting started.",
+                              "size": "sm"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "basic-plan-features",
+                        "type": "list",
+                        "props": {
+                          "variant": "none",
+                          "items": [
+                            {
+                              "id": "basic-feat-1",
+                              "label": "Up to 5 projects",
+                              "icon": "check"
+                            },
+                            {
+                              "id": "basic-feat-2",
+                              "label": "10 GB storage",
+                              "icon": "check"
+                            },
+                            {
+                              "id": "basic-feat-3",
+                              "label": "Basic analytics",
+                              "icon": "check"
+                            },
+                            {
+                              "id": "basic-feat-4",
+                              "label": "Email support",
+                              "icon": "check"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "basic-plan-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Choose Basic",
+                          "variant": "secondary",
+                          "onClick": "select-basic-plan"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "pro-plan-card",
+                "type": "card",
+                "props": {
+                  "variant": "filled",
+                  "background": "accent"
+                },
+                "children": [
+                  {
+                    "id": "pro-plan-content",
+                    "type": "stack",
+                    "props": {
+                      "gap": "lg",
+                      "align": "center"
+                    },
+                    "children": [
+                      {
+                        "id": "pro-plan-badge-container",
+                        "type": "container",
+                        "props": {
+                          "direction": "row",
+                          "justify": "center"
+                        },
+                        "children": [
+                          {
+                            "id": "pro-plan-badge",
+                            "type": "badge",
+                            "props": {
+                              "label": "Most Popular",
+                              "variant": "primary"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "pro-plan-header",
+                        "type": "stack",
+                        "props": {
+                          "gap": "xs",
+                          "align": "center"
+                        },
+                        "children": [
+                          {
+                            "id": "pro-plan-name",
+                            "type": "heading",
+                            "props": {
+                              "content": "Pro",
+                              "level": 3
+                            }
+                          },
+                          {
+                            "id": "pro-plan-price",
+                            "type": "text",
+                            "props": {
+                              "content": "$49/month",
+                              "size": "xl",
+                              "weight": "bold"
+                            }
+                          },
+                          {
+                            "id": "pro-plan-description",
+                            "type": "text",
+                            "props": {
+                              "content": "For growing teams needing advanced features.",
+                              "size": "sm"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "pro-plan-features",
+                        "type": "list",
+                        "props": {
+                          "variant": "none",
+                          "items": [
+                            {
+                              "id": "pro-feat-1",
+                              "label": "Unlimited projects",
+                              "icon": "check"
+                            },
+                            {
+                              "id": "pro-feat-2",
+                              "label": "100 GB storage",
+                              "icon": "check"
+                            },
+                            {
+                              "id": "pro-feat-3",
+                              "label": "Advanced analytics & reporting",
+                              "icon": "check"
+                            },
+                            {
+                              "id": "pro-feat-4",
+                              "label": "Priority email & chat support",
+                              "icon": "check"
+                            },
+                            {
+                              "id": "pro-feat-5",
+                              "label": "Custom branding",
+                              "icon": "check"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "pro-plan-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Choose Pro",
+                          "variant": "primary",
+                          "onClick": "select-pro-plan"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "enterprise-plan-card",
+                "type": "card",
+                "props": {
+                  "variant": "outline"
+                },
+                "children": [
+                  {
+                    "id": "enterprise-plan-content",
+                    "type": "stack",
+                    "props": {
+                      "gap": "lg",
+                      "align": "center"
+                    },
+                    "children": [
+                      {
+                        "id": "enterprise-plan-header",
+                        "type": "stack",
+                        "props": {
+                          "gap": "xs",
+                          "align": "center"
+                        },
+                        "children": [
+                          {
+                            "id": "enterprise-plan-name",
+                            "type": "heading",
+                            "props": {
+                              "content": "Enterprise",
+                              "level": 3
+                            }
+                          },
+                          {
+                            "id": "enterprise-plan-price",
+                            "type": "text",
+                            "props": {
+                              "content": "$99/month",
+                              "size": "xl",
+                              "weight": "bold"
+                            }
+                          },
+                          {
+                            "id": "enterprise-plan-description",
+                            "type": "text",
+                            "props": {
+                              "content": "For large organizations with custom needs.",
+                              "size": "sm"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "enterprise-plan-features",
+                        "type": "list",
+                        "props": {
+                          "variant": "none",
+                          "items": [
+                            {
+                              "id": "ent-feat-1",
+                              "label": "Everything in Pro",
+                              "icon": "check"
+                            },
+                            {
+                              "id": "ent-feat-2",
+                              "label": "Unlimited storage",
+                              "icon": "check"
+                            },
+                            {
+                              "id": "ent-feat-3",
+                              "label": "Dedicated account manager",
+                              "icon": "check"
+                            },
+                            {
+                              "id": "ent-feat-4",
+                              "label": "SLA & uptime guarantee",
+                              "icon": "check"
+                            },
+                            {
+                              "id": "ent-feat-5",
+                              "label": "Single Sign-On (SSO)",
+                              "icon": "check"
+                            },
+                            {
+                              "id": "ent-feat-6",
+                              "label": "On-premise deployment",
+                              "icon": "check"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "enterprise-plan-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Contact Sales",
+                          "variant": "secondary",
+                          "onClick": "contact-sales"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "title": "SaaS Pricing Plans",
+      "description": "Comparison of different subscription tiers for a SaaS product with features and pricing."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "heading",
+      "text",
+      "callout",
+      "container",
+      "card",
+      "list",
+      "button",
+      "badge"
+    ],
+    "nestingDepth": 6,
+    "placeholderDetected": false
+  }
+}

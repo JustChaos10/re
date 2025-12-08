@@ -1,31 +1,37 @@
 {
   "name": "@re/core",
   "version": "0.1.0",
-  "description": "Core framework for Re Generative UI with Groq integration",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "description": "Core framework for Re Generative UI with Google Vertex AI Gemini integration",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": "./src/index.ts",
+      "require": "./src/index.ts",
+      "types": "./src/index.ts"
     }
   },
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "dev": "tsup src/index.ts --format cjs,esm --dts --watch"
   },
-  "keywords": ["generative-ui", "groq", "ai"],
+  "keywords": [
+    "generative-ui",
+    "ai",
+    "gemini",
+    "vertex-ai"
+  ],
   "license": "MIT",
-  "dependencies": {
-    "groq-sdk": "^0.7.0",
-    "eventsource-parser": "^1.1.2"
-  },
   "devDependencies": {
     "tsup": "^8.0.1"
   },
   "peerDependencies": {
     "react": "^18.0.0"
+  },
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.9.1",
+    "jsonrepair": "^3.13.1",
+    "zod": "^4.1.13"
   }
 }

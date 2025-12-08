@@ -1,0 +1,468 @@
+{
+  "prompt": "Search results for 'headphones'",
+  "generatedAt": "2025-12-06T14:33:10.574Z",
+  "response": {
+    "components": [
+      {
+        "id": "main-layout",
+        "type": "stack",
+        "children": [
+          {
+            "id": "search-header",
+            "type": "section",
+            "children": [
+              {
+                "id": "search-summary",
+                "type": "text",
+                "props": {
+                  "content": "Text",
+                  "size": "md",
+                  "weight": "normal"
+                },
+                "children": []
+              }
+            ],
+            "props": {
+              "title": "Section",
+              "subtitle": ""
+            }
+          },
+          {
+            "id": "search-content-split",
+            "type": "split",
+            "children": [
+              {
+                "id": "filter-sidebar",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "filter-heading",
+                    "type": "heading",
+                    "props": {
+                      "content": "Heading",
+                      "level": 2
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "filter-divider-1",
+                    "type": "divider",
+                    "props": {},
+                    "children": []
+                  },
+                  {
+                    "id": "brand-filter",
+                    "type": "select",
+                    "props": {
+                      "name": "select-wu17ou",
+                      "label": "Select",
+                      "options": [
+                        {
+                          "value": "option-1",
+                          "label": "Option 1"
+                        },
+                        {
+                          "value": "option-2",
+                          "label": "Option 2"
+                        },
+                        {
+                          "value": "option-3",
+                          "label": "Option 3"
+                        }
+                      ]
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "type-filter",
+                    "type": "select",
+                    "props": {
+                      "name": "select-iactgd",
+                      "label": "Select",
+                      "options": [
+                        {
+                          "value": "option-1",
+                          "label": "Option 1"
+                        },
+                        {
+                          "value": "option-2",
+                          "label": "Option 2"
+                        },
+                        {
+                          "value": "option-3",
+                          "label": "Option 3"
+                        }
+                      ]
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "price-min",
+                    "type": "input",
+                    "props": {
+                      "name": "input-zmwed9",
+                      "label": "Input",
+                      "type": "text"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "price-max",
+                    "type": "input",
+                    "props": {
+                      "name": "input-zzhsym",
+                      "label": "Input",
+                      "type": "text"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "apply-filters-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "clear-filters-button",
+                    "type": "button",
+                    "props": {
+                      "label": "Action",
+                      "variant": "primary",
+                      "size": "md"
+                    },
+                    "children": []
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              },
+              {
+                "id": "results-area",
+                "type": "stack",
+                "children": [
+                  {
+                    "id": "sort-and-count",
+                    "type": "split",
+                    "children": [
+                      {
+                        "id": "result-count",
+                        "type": "text",
+                        "props": {
+                          "content": "Text",
+                          "size": "md",
+                          "weight": "normal"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "sort-by-select",
+                        "type": "select",
+                        "props": {
+                          "name": "select-yuy06h",
+                          "label": "Select",
+                          "options": [
+                            {
+                              "value": "option-1",
+                              "label": "Option 1"
+                            },
+                            {
+                              "value": "option-2",
+                              "label": "Option 2"
+                            },
+                            {
+                              "value": "option-3",
+                              "label": "Option 3"
+                            }
+                          ]
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {
+                      "gap": "md"
+                    }
+                  },
+                  {
+                    "id": "product-list",
+                    "type": "list",
+                    "children": [
+                      {
+                        "id": "product-card-1",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "product-image-1",
+                            "type": "image"
+                          },
+                          {
+                            "id": "product-name-1",
+                            "type": "text"
+                          },
+                          {
+                            "id": "product-price-1",
+                            "type": "text"
+                          },
+                          {
+                            "id": "product-rating-1",
+                            "type": "badge"
+                          },
+                          {
+                            "id": "view-details-1",
+                            "type": "button"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-2",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "product-image-2",
+                            "type": "image"
+                          },
+                          {
+                            "id": "product-name-2",
+                            "type": "text"
+                          },
+                          {
+                            "id": "product-price-2",
+                            "type": "text"
+                          },
+                          {
+                            "id": "product-rating-2",
+                            "type": "badge"
+                          },
+                          {
+                            "id": "view-details-2",
+                            "type": "button"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-3",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "product-image-3",
+                            "type": "image"
+                          },
+                          {
+                            "id": "product-name-3",
+                            "type": "text"
+                          },
+                          {
+                            "id": "product-price-3",
+                            "type": "text"
+                          },
+                          {
+                            "id": "product-rating-3",
+                            "type": "badge"
+                          },
+                          {
+                            "id": "view-details-3",
+                            "type": "button"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-4",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "product-image-4",
+                            "type": "image"
+                          },
+                          {
+                            "id": "product-name-4",
+                            "type": "text"
+                          },
+                          {
+                            "id": "product-price-4",
+                            "type": "text"
+                          },
+                          {
+                            "id": "product-rating-4",
+                            "type": "badge"
+                          },
+                          {
+                            "id": "view-details-4",
+                            "type": "button"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-5",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "product-image-5",
+                            "type": "image"
+                          },
+                          {
+                            "id": "product-name-5",
+                            "type": "text"
+                          },
+                          {
+                            "id": "product-price-5",
+                            "type": "text"
+                          },
+                          {
+                            "id": "product-rating-5",
+                            "type": "badge"
+                          },
+                          {
+                            "id": "view-details-5",
+                            "type": "button"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-6",
+                        "type": "card",
+                        "children": [
+                          {
+                            "id": "product-image-6",
+                            "type": "image"
+                          },
+                          {
+                            "id": "product-name-6",
+                            "type": "text"
+                          },
+                          {
+                            "id": "product-price-6",
+                            "type": "text"
+                          },
+                          {
+                            "id": "product-rating-6",
+                            "type": "badge"
+                          },
+                          {
+                            "id": "view-details-6",
+                            "type": "button"
+                          }
+                        ]
+                      }
+                    ],
+                    "props": {
+                      "items": [
+                        {
+                          "id": "item-hdtj9p",
+                          "label": "Item"
+                        },
+                        {
+                          "id": "item-4hgzp9",
+                          "label": "Item"
+                        },
+                        {
+                          "id": "item-z1bpn3",
+                          "label": "Item"
+                        }
+                      ],
+                      "variant": "none"
+                    }
+                  },
+                  {
+                    "id": "pagination-controls",
+                    "type": "container",
+                    "children": [
+                      {
+                        "id": "prev-page",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "page-1",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "page-2",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "page-3",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "next-page",
+                        "type": "button",
+                        "props": {
+                          "label": "Action",
+                          "variant": "primary",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ],
+                    "props": {}
+                  }
+                ],
+                "props": {
+                  "gap": "md"
+                }
+              }
+            ],
+            "props": {
+              "gap": "md"
+            }
+          }
+        ],
+        "props": {
+          "gap": "md"
+        }
+      }
+    ],
+    "metadata": {
+      "title": "Headphones Search Results",
+      "description": "Desktop UI for displaying search results for 'headphones' with filters, sorting, and product cards."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "text",
+      "split",
+      "heading",
+      "divider",
+      "select",
+      "input",
+      "button",
+      "list",
+      "card",
+      "image",
+      "badge",
+      "container"
+    ],
+    "nestingDepth": 6,
+    "placeholderDetected": false
+  }
+}

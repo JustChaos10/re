@@ -1,0 +1,601 @@
+{
+  "prompt": "Search results for 'headphones'",
+  "generatedAt": "2025-12-06T14:22:00.902Z",
+  "response": {
+    "components": [
+      {
+        "id": "search-results-page",
+        "type": "stack",
+        "props": {
+          "gap": "xl"
+        },
+        "children": [
+          {
+            "id": "search-header-section",
+            "type": "section",
+            "props": {
+              "title": "Search Results for 'headphones'",
+              "subtitle": "Showing 1-12 of 128 results"
+            },
+            "children": [
+              {
+                "id": "search-summary-text",
+                "type": "text",
+                "props": {
+                  "content": "Explore a wide range of headphones designed for every need, from immersive audio to crystal-clear calls.",
+                  "size": "md",
+                  "weight": "normal"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "main-content-split",
+            "type": "split",
+            "props": {
+              "gap": "xl",
+              "sizes": [
+                25,
+                75
+              ]
+            },
+            "children": [
+              {
+                "id": "filters-sidebar",
+                "type": "stack",
+                "props": {
+                  "gap": "lg"
+                },
+                "children": [
+                  {
+                    "id": "category-filter-section",
+                    "type": "section",
+                    "props": {
+                      "title": "Category",
+                      "subtitle": ""
+                    },
+                    "children": [
+                      {
+                        "id": "category-select",
+                        "type": "select",
+                        "props": {
+                          "label": "Select Category",
+                          "options": [
+                            {
+                              "label": "All Headphones",
+                              "value": "all"
+                            },
+                            {
+                              "label": "Over-Ear",
+                              "value": "over-ear"
+                            },
+                            {
+                              "label": "In-Ear",
+                              "value": "in-ear"
+                            },
+                            {
+                              "label": "On-Ear",
+                              "value": "on-ear"
+                            },
+                            {
+                              "label": "Gaming Headsets",
+                              "value": "gaming"
+                            }
+                          ],
+                          "selected": "all",
+                          "onChange": "handleCategoryChange",
+                          "name": "select-85qumv"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "brand-filter-section",
+                    "type": "section",
+                    "props": {
+                      "title": "Brand",
+                      "subtitle": ""
+                    },
+                    "children": [
+                      {
+                        "id": "brand-select",
+                        "type": "select",
+                        "props": {
+                          "label": "Select Brand",
+                          "options": [
+                            {
+                              "label": "All Brands",
+                              "value": "all"
+                            },
+                            {
+                              "label": "Sony",
+                              "value": "sony"
+                            },
+                            {
+                              "label": "Bose",
+                              "value": "bose"
+                            },
+                            {
+                              "label": "Sennheiser",
+                              "value": "sennheiser"
+                            },
+                            {
+                              "label": "Apple",
+                              "value": "apple"
+                            },
+                            {
+                              "label": "JBL",
+                              "value": "jbl"
+                            }
+                          ],
+                          "selected": "all",
+                          "onChange": "handleBrandChange",
+                          "name": "select-gyiu3s"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "price-filter-section",
+                    "type": "section",
+                    "props": {
+                      "title": "Price Range",
+                      "subtitle": ""
+                    },
+                    "children": [
+                      {
+                        "id": "price-range-tag-group",
+                        "type": "tag-group",
+                        "props": {
+                          "tags": [
+                            {
+                              "id": "price-tag-1",
+                              "label": "Under $100",
+                              "value": "under-100"
+                            },
+                            {
+                              "id": "price-tag-2",
+                              "label": "$100 - $250",
+                              "value": "100-250"
+                            },
+                            {
+                              "id": "price-tag-3",
+                              "label": "$250 - $500",
+                              "value": "250-500"
+                            },
+                            {
+                              "id": "price-tag-4",
+                              "label": "Over $500",
+                              "value": "over-500"
+                            }
+                          ],
+                          "selectedTagId": "price-tag-2",
+                          "onTagClick": "handlePriceRangeFilter"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "product-listing-area",
+                "type": "stack",
+                "props": {
+                  "gap": "lg"
+                },
+                "children": [
+                  {
+                    "id": "product-grid-container",
+                    "type": "container",
+                    "props": {
+                      "grid": "3",
+                      "gap": "lg"
+                    },
+                    "children": [
+                      {
+                        "id": "product-card-1",
+                        "type": "card",
+                        "props": {
+                          "title": "Sony WH-1000XM5",
+                          "subtitle": "Industry-leading Noise Cancelling"
+                        },
+                        "children": [
+                          {
+                            "id": "product-image-1",
+                            "type": "image",
+                            "props": {
+                              "src": "https://picsum.photos/seed/sony-xm5/300/200",
+                              "alt": "Sony WH-1000XM5 headphones in black",
+                              "rounded": false
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "product-price-1",
+                            "type": "text",
+                            "props": {
+                              "content": "$399.99",
+                              "weight": "bold",
+                              "size": "lg"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "product-rating-1",
+                            "type": "text",
+                            "props": {
+                              "content": "★★★★★ (1.2K reviews)",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "add-to-cart-btn-1",
+                            "type": "button",
+                            "props": {
+                              "label": "Add to Cart",
+                              "variant": "primary",
+                              "onClick": "addToCartSonyXM5",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-2",
+                        "type": "card",
+                        "props": {
+                          "title": "Bose QuietComfort 45",
+                          "subtitle": "Comfortable Noise Cancelling Headphones"
+                        },
+                        "children": [
+                          {
+                            "id": "product-image-2",
+                            "type": "image",
+                            "props": {
+                              "src": "https://picsum.photos/seed/bose-qc45/300/200",
+                              "alt": "Bose QuietComfort 45 headphones in white",
+                              "rounded": false
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "product-price-2",
+                            "type": "text",
+                            "props": {
+                              "content": "$329.00",
+                              "weight": "bold",
+                              "size": "lg"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "product-rating-2",
+                            "type": "text",
+                            "props": {
+                              "content": "★★★★☆ (980 reviews)",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "add-to-cart-btn-2",
+                            "type": "button",
+                            "props": {
+                              "label": "Add to Cart",
+                              "variant": "primary",
+                              "onClick": "addToCartBoseQC45",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-3",
+                        "type": "card",
+                        "props": {
+                          "title": "Apple AirPods Max",
+                          "subtitle": "High-fidelity audio. Magical experience."
+                        },
+                        "children": [
+                          {
+                            "id": "product-image-3",
+                            "type": "image",
+                            "props": {
+                              "src": "https://picsum.photos/seed/airpods-max/300/200",
+                              "alt": "Apple AirPods Max headphones in silver",
+                              "rounded": false
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "product-price-3",
+                            "type": "text",
+                            "props": {
+                              "content": "$549.00",
+                              "weight": "bold",
+                              "size": "lg"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "product-rating-3",
+                            "type": "text",
+                            "props": {
+                              "content": "★★★★☆ (750 reviews)",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "add-to-cart-btn-3",
+                            "type": "button",
+                            "props": {
+                              "label": "Add to Cart",
+                              "variant": "primary",
+                              "onClick": "addToCartAirPodsMax",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-4",
+                        "type": "card",
+                        "props": {
+                          "title": "Sennheiser HD 660S2",
+                          "subtitle": "Audiophile-grade Open-back Headphones"
+                        },
+                        "children": [
+                          {
+                            "id": "product-image-4",
+                            "type": "image",
+                            "props": {
+                              "src": "https://picsum.photos/seed/sennheiser-hd660s2/300/200",
+                              "alt": "Sennheiser HD 660S2 headphones",
+                              "rounded": false
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "product-price-4",
+                            "type": "text",
+                            "props": {
+                              "content": "$599.95",
+                              "weight": "bold",
+                              "size": "lg"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "product-rating-4",
+                            "type": "text",
+                            "props": {
+                              "content": "★★★★★ (320 reviews)",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "add-to-cart-btn-4",
+                            "type": "button",
+                            "props": {
+                              "label": "Add to Cart",
+                              "variant": "primary",
+                              "onClick": "addToCartSennheiserHD660S2",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-5",
+                        "type": "card",
+                        "props": {
+                          "title": "JBL Tune 760NC",
+                          "subtitle": "Wireless Over-Ear Noise Cancelling"
+                        },
+                        "children": [
+                          {
+                            "id": "product-image-5",
+                            "type": "image",
+                            "props": {
+                              "src": "https://picsum.photos/seed/jbl-tune760nc/300/200",
+                              "alt": "JBL Tune 760NC headphones in blue",
+                              "rounded": false
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "product-price-5",
+                            "type": "text",
+                            "props": {
+                              "content": "$129.95",
+                              "weight": "bold",
+                              "size": "lg"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "product-rating-5",
+                            "type": "text",
+                            "props": {
+                              "content": "★★★★☆ (1.5K reviews)",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "add-to-cart-btn-5",
+                            "type": "button",
+                            "props": {
+                              "label": "Add to Cart",
+                              "variant": "primary",
+                              "onClick": "addToCartJBLTune760NC",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": "product-card-6",
+                        "type": "card",
+                        "props": {
+                          "title": "Audio-Technica ATH-M50xBT2",
+                          "subtitle": "Wireless Over-Ear Studio Headphones"
+                        },
+                        "children": [
+                          {
+                            "id": "product-image-6",
+                            "type": "image",
+                            "props": {
+                              "src": "https://picsum.photos/seed/audio-technica-m50xbt2/300/200",
+                              "alt": "Audio-Technica ATH-M50xBT2 headphones",
+                              "rounded": false
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "product-price-6",
+                            "type": "text",
+                            "props": {
+                              "content": "$199.00",
+                              "weight": "bold",
+                              "size": "lg"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "product-rating-6",
+                            "type": "text",
+                            "props": {
+                              "content": "★★★★★ (890 reviews)",
+                              "size": "md",
+                              "weight": "normal"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "add-to-cart-btn-6",
+                            "type": "button",
+                            "props": {
+                              "label": "Add to Cart",
+                              "variant": "primary",
+                              "onClick": "addToCartATHM50xBT2",
+                              "size": "md"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "pagination-container",
+                    "type": "container",
+                    "props": {
+                      "align": "center",
+                      "gap": "md"
+                    },
+                    "children": [
+                      {
+                        "id": "prev-page-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Previous",
+                          "variant": "secondary",
+                          "onClick": "goToPreviousPage",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "page-1-button",
+                        "type": "button",
+                        "props": {
+                          "label": "1",
+                          "variant": "primary",
+                          "onClick": "goToPage1",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "page-2-button",
+                        "type": "button",
+                        "props": {
+                          "label": "2",
+                          "variant": "tertiary",
+                          "onClick": "goToPage2",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "page-3-button",
+                        "type": "button",
+                        "props": {
+                          "label": "3",
+                          "variant": "tertiary",
+                          "onClick": "goToPage3",
+                          "size": "md"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "next-page-button",
+                        "type": "button",
+                        "props": {
+                          "label": "Next",
+                          "variant": "secondary",
+                          "onClick": "goToNextPage",
+                          "size": "md"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "title": "Headphones Search Results",
+      "description": "Desktop UI for displaying search results for 'headphones' with filters and product cards."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "text",
+      "split",
+      "select",
+      "tag-group",
+      "container",
+      "card",
+      "image",
+      "button"
+    ],
+    "nestingDepth": 6,
+    "placeholderDetected": false
+  }
+}

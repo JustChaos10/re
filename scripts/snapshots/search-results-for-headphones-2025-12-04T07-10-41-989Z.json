@@ -1,0 +1,659 @@
+{
+  "prompt": "Search results for 'headphones'",
+  "generatedAt": "2025-12-04T07:14:47.105Z",
+  "response": {
+    "components": [
+      {
+        "id": "search-results-page",
+        "type": "stack",
+        "props": {
+          "gap": "xl"
+        },
+        "children": [
+          {
+            "id": "page-header",
+            "type": "section",
+            "props": {
+              "title": "Search Results for 'headphones'",
+              "subtitle": "Showing 8 products found",
+              "padding": "md"
+            }
+          },
+          {
+            "id": "results-grid",
+            "type": "container",
+            "props": {
+              "variant": "grid",
+              "cols": 4,
+              "gap": "lg",
+              "padding": "lg"
+            },
+            "children": [
+              {
+                "id": "product-card-1",
+                "type": "card",
+                "props": {
+                  "variant": "outline"
+                },
+                "children": [
+                  {
+                    "id": "product-image-1",
+                    "type": "image",
+                    "props": {
+                      "src": "https://images.example.com/products/aurora-pro.png",
+                      "alt": "Aurora Pro Wireless Headphones in black",
+                      "width": 200,
+                      "height": 200,
+                      "rounded": true
+                    }
+                  },
+                  {
+                    "id": "product-details-1",
+                    "type": "stack",
+                    "props": {
+                      "gap": "sm"
+                    },
+                    "children": [
+                      {
+                        "id": "product-name-1",
+                        "type": "text",
+                        "props": {
+                          "content": "Aurora Pro Wireless Headphones",
+                          "weight": "bold",
+                          "size": "lg"
+                        }
+                      },
+                      {
+                        "id": "product-price-1",
+                        "type": "text",
+                        "props": {
+                          "content": "$349.00",
+                          "weight": "bold",
+                          "size": "md"
+                        }
+                      },
+                      {
+                        "id": "product-rating-1",
+                        "type": "stat",
+                        "props": {
+                          "label": "Rating",
+                          "value": "4.8",
+                          "description": "(1,248 reviews)",
+                          "icon": "star"
+                        }
+                      },
+                      {
+                        "id": "product-status-1",
+                        "type": "badge",
+                        "props": {
+                          "label": "In Stock",
+                          "variant": "success"
+                        }
+                      },
+                      {
+                        "id": "view-button-1",
+                        "type": "button",
+                        "props": {
+                          "label": "View Details",
+                          "variant": "primary",
+                          "size": "sm",
+                          "onClick": "view-product-aurora-pro"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "product-card-2",
+                "type": "card",
+                "props": {
+                  "variant": "outline"
+                },
+                "children": [
+                  {
+                    "id": "product-image-2",
+                    "type": "image",
+                    "props": {
+                      "src": "https://images.example.com/products/soundwave-buds.png",
+                      "alt": "SoundWave In-Ear Buds in white",
+                      "width": 200,
+                      "height": 200,
+                      "rounded": true
+                    }
+                  },
+                  {
+                    "id": "product-details-2",
+                    "type": "stack",
+                    "props": {
+                      "gap": "sm"
+                    },
+                    "children": [
+                      {
+                        "id": "product-name-2",
+                        "type": "text",
+                        "props": {
+                          "content": "SoundWave In-Ear Buds",
+                          "weight": "bold",
+                          "size": "lg"
+                        }
+                      },
+                      {
+                        "id": "product-price-2",
+                        "type": "text",
+                        "props": {
+                          "content": "$129.99",
+                          "weight": "bold",
+                          "size": "md"
+                        }
+                      },
+                      {
+                        "id": "product-rating-2",
+                        "type": "stat",
+                        "props": {
+                          "label": "Rating",
+                          "value": "4.5",
+                          "description": "(890 reviews)",
+                          "icon": "star"
+                        }
+                      },
+                      {
+                        "id": "product-status-2",
+                        "type": "badge",
+                        "props": {
+                          "label": "Low Stock",
+                          "variant": "warning"
+                        }
+                      },
+                      {
+                        "id": "view-button-2",
+                        "type": "button",
+                        "props": {
+                          "label": "View Details",
+                          "variant": "primary",
+                          "size": "sm",
+                          "onClick": "view-product-soundwave-buds"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "product-card-3",
+                "type": "card",
+                "props": {
+                  "variant": "outline"
+                },
+                "children": [
+                  {
+                    "id": "product-image-3",
+                    "type": "image",
+                    "props": {
+                      "src": "https://images.example.com/products/studio-monitor.png",
+                      "alt": "Studio Monitor Headphones in silver",
+                      "width": 200,
+                      "height": 200,
+                      "rounded": true
+                    }
+                  },
+                  {
+                    "id": "product-details-3",
+                    "type": "stack",
+                    "props": {
+                      "gap": "sm"
+                    },
+                    "children": [
+                      {
+                        "id": "product-name-3",
+                        "type": "text",
+                        "props": {
+                          "content": "Studio Monitor Headphones",
+                          "weight": "bold",
+                          "size": "lg"
+                        }
+                      },
+                      {
+                        "id": "product-price-3",
+                        "type": "text",
+                        "props": {
+                          "content": "$219.50",
+                          "weight": "bold",
+                          "size": "md"
+                        }
+                      },
+                      {
+                        "id": "product-rating-3",
+                        "type": "stat",
+                        "props": {
+                          "label": "Rating",
+                          "value": "4.7",
+                          "description": "(450 reviews)",
+                          "icon": "star"
+                        }
+                      },
+                      {
+                        "id": "product-status-3",
+                        "type": "badge",
+                        "props": {
+                          "label": "In Stock",
+                          "variant": "success"
+                        }
+                      },
+                      {
+                        "id": "view-button-3",
+                        "type": "button",
+                        "props": {
+                          "label": "View Details",
+                          "variant": "primary",
+                          "size": "sm",
+                          "onClick": "view-product-studio-monitor"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "product-card-4",
+                "type": "card",
+                "props": {
+                  "variant": "outline"
+                },
+                "children": [
+                  {
+                    "id": "product-image-4",
+                    "type": "image",
+                    "props": {
+                      "src": "https://images.example.com/products/sport-earhooks.png",
+                      "alt": "Sport Earhook Headphones in neon green",
+                      "width": 200,
+                      "height": 200,
+                      "rounded": true
+                    }
+                  },
+                  {
+                    "id": "product-details-4",
+                    "type": "stack",
+                    "props": {
+                      "gap": "sm"
+                    },
+                    "children": [
+                      {
+                        "id": "product-name-4",
+                        "type": "text",
+                        "props": {
+                          "content": "Sport Earhook Headphones",
+                          "weight": "bold",
+                          "size": "lg"
+                        }
+                      },
+                      {
+                        "id": "product-price-4",
+                        "type": "text",
+                        "props": {
+                          "content": "$79.00",
+                          "weight": "bold",
+                          "size": "md"
+                        }
+                      },
+                      {
+                        "id": "product-rating-4",
+                        "type": "stat",
+                        "props": {
+                          "label": "Rating",
+                          "value": "4.2",
+                          "description": "(1,120 reviews)",
+                          "icon": "star"
+                        }
+                      },
+                      {
+                        "id": "product-status-4",
+                        "type": "badge",
+                        "props": {
+                          "label": "In Stock",
+                          "variant": "success"
+                        }
+                      },
+                      {
+                        "id": "view-button-4",
+                        "type": "button",
+                        "props": {
+                          "label": "View Details",
+                          "variant": "primary",
+                          "size": "sm",
+                          "onClick": "view-product-sport-earhooks"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "product-card-5",
+                "type": "card",
+                "props": {
+                  "variant": "outline"
+                },
+                "children": [
+                  {
+                    "id": "product-image-5",
+                    "type": "image",
+                    "props": {
+                      "src": "https://images.example.com/products/retro-wired.png",
+                      "alt": "Retro Wired Headphones in brown",
+                      "width": 200,
+                      "height": 200,
+                      "rounded": true
+                    }
+                  },
+                  {
+                    "id": "product-details-5",
+                    "type": "stack",
+                    "props": {
+                      "gap": "sm"
+                    },
+                    "children": [
+                      {
+                        "id": "product-name-5",
+                        "type": "text",
+                        "props": {
+                          "content": "Retro Wired Headphones",
+                          "weight": "bold",
+                          "size": "lg"
+                        }
+                      },
+                      {
+                        "id": "product-price-5",
+                        "type": "text",
+                        "props": {
+                          "content": "$59.99",
+                          "weight": "bold",
+                          "size": "md"
+                        }
+                      },
+                      {
+                        "id": "product-rating-5",
+                        "type": "stat",
+                        "props": {
+                          "label": "Rating",
+                          "value": "3.9",
+                          "description": "(230 reviews)",
+                          "icon": "star"
+                        }
+                      },
+                      {
+                        "id": "product-status-5",
+                        "type": "badge",
+                        "props": {
+                          "label": "In Stock",
+                          "variant": "success"
+                        }
+                      },
+                      {
+                        "id": "view-button-5",
+                        "type": "button",
+                        "props": {
+                          "label": "View Details",
+                          "variant": "primary",
+                          "size": "sm",
+                          "onClick": "view-product-retro-wired"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "product-card-6",
+                "type": "card",
+                "props": {
+                  "variant": "outline"
+                },
+                "children": [
+                  {
+                    "id": "product-image-6",
+                    "type": "image",
+                    "props": {
+                      "src": "https://images.example.com/products/kids-safe.png",
+                      "alt": "Kids Safe Volume-Limited Headphones in blue",
+                      "width": 200,
+                      "height": 200,
+                      "rounded": true
+                    }
+                  },
+                  {
+                    "id": "product-details-6",
+                    "type": "stack",
+                    "props": {
+                      "gap": "sm"
+                    },
+                    "children": [
+                      {
+                        "id": "product-name-6",
+                        "type": "text",
+                        "props": {
+                          "content": "Kids Safe Volume-Limited Headphones",
+                          "weight": "bold",
+                          "size": "lg"
+                        }
+                      },
+                      {
+                        "id": "product-price-6",
+                        "type": "text",
+                        "props": {
+                          "content": "$35.00",
+                          "weight": "bold",
+                          "size": "md"
+                        }
+                      },
+                      {
+                        "id": "product-rating-6",
+                        "type": "stat",
+                        "props": {
+                          "label": "Rating",
+                          "value": "4.6",
+                          "description": "(780 reviews)",
+                          "icon": "star"
+                        }
+                      },
+                      {
+                        "id": "product-status-6",
+                        "type": "badge",
+                        "props": {
+                          "label": "In Stock",
+                          "variant": "success"
+                        }
+                      },
+                      {
+                        "id": "view-button-6",
+                        "type": "button",
+                        "props": {
+                          "label": "View Details",
+                          "variant": "primary",
+                          "size": "sm",
+                          "onClick": "view-product-kids-safe"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "product-card-7",
+                "type": "card",
+                "props": {
+                  "variant": "outline"
+                },
+                "children": [
+                  {
+                    "id": "product-image-7",
+                    "type": "image",
+                    "props": {
+                      "src": "https://images.example.com/products/gaming-headset.png",
+                      "alt": "Pro Gaming Headset with Microphone",
+                      "width": 200,
+                      "height": 200,
+                      "rounded": true
+                    }
+                  },
+                  {
+                    "id": "product-details-7",
+                    "type": "stack",
+                    "props": {
+                      "gap": "sm"
+                    },
+                    "children": [
+                      {
+                        "id": "product-name-7",
+                        "type": "text",
+                        "props": {
+                          "content": "Pro Gaming Headset with Mic",
+                          "weight": "bold",
+                          "size": "lg"
+                        }
+                      },
+                      {
+                        "id": "product-price-7",
+                        "type": "text",
+                        "props": {
+                          "content": "$189.00",
+                          "weight": "bold",
+                          "size": "md"
+                        }
+                      },
+                      {
+                        "id": "product-rating-7",
+                        "type": "stat",
+                        "props": {
+                          "label": "Rating",
+                          "value": "4.9",
+                          "description": "(2,100 reviews)",
+                          "icon": "star"
+                        }
+                      },
+                      {
+                        "id": "product-status-7",
+                        "type": "badge",
+                        "props": {
+                          "label": "In Stock",
+                          "variant": "success"
+                        }
+                      },
+                      {
+                        "id": "view-button-7",
+                        "type": "button",
+                        "props": {
+                          "label": "View Details",
+                          "variant": "primary",
+                          "size": "sm",
+                          "onClick": "view-product-gaming-headset"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "product-card-8",
+                "type": "card",
+                "props": {
+                  "variant": "outline"
+                },
+                "children": [
+                  {
+                    "id": "product-image-8",
+                    "type": "image",
+                    "props": {
+                      "src": "https://images.example.com/products/noise-cancelling-earbuds.png",
+                      "alt": "Compact Noise Cancelling Earbuds in black",
+                      "width": 200,
+                      "height": 200,
+                      "rounded": true
+                    }
+                  },
+                  {
+                    "id": "product-details-8",
+                    "type": "stack",
+                    "props": {
+                      "gap": "sm"
+                    },
+                    "children": [
+                      {
+                        "id": "product-name-8",
+                        "type": "text",
+                        "props": {
+                          "content": "Compact Noise Cancelling Earbuds",
+                          "weight": "bold",
+                          "size": "lg"
+                        }
+                      },
+                      {
+                        "id": "product-price-8",
+                        "type": "text",
+                        "props": {
+                          "content": "$99.00",
+                          "weight": "bold",
+                          "size": "md"
+                        }
+                      },
+                      {
+                        "id": "product-rating-8",
+                        "type": "stat",
+                        "props": {
+                          "label": "Rating",
+                          "value": "4.3",
+                          "description": "(670 reviews)",
+                          "icon": "star"
+                        }
+                      },
+                      {
+                        "id": "product-status-8",
+                        "type": "badge",
+                        "props": {
+                          "label": "Out of Stock",
+                          "variant": "error"
+                        }
+                      },
+                      {
+                        "id": "view-button-8",
+                        "type": "button",
+                        "props": {
+                          "label": "View Details",
+                          "variant": "primary",
+                          "size": "sm",
+                          "onClick": "view-product-compact-earbuds",
+                          "disabled": true
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "title": "Headphones Search Results",
+      "description": "Display of various headphone products found through search, with details and actions."
+    }
+  },
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "componentTypes": [
+      "stack",
+      "section",
+      "container",
+      "card",
+      "image",
+      "text",
+      "stat",
+      "badge",
+      "button"
+    ],
+    "nestingDepth": 5,
+    "placeholderDetected": false
+  }
+}
